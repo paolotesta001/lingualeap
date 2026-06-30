@@ -12,6 +12,11 @@
         fr: 'french.json', de: 'german.json',
     };
     const LANG_NAMES = { en: 'English', es: 'Spanish', it: 'Italian', fr: 'French', de: 'German' };
+    const DEEPSEEK_MODEL = 'deepseek-v4-flash';
+    // V4 Flash is a reasoning model: it spends tokens on hidden reasoning before
+    // the answer, so we pad the output budget to leave room for the content.
+    const DEEPSEEK_REASONING_BUDGET = 2000;
+    const DEEPSEEK_KEY_STORE = 'lingualeap_deepseek_key';
     const GEMINI_MODEL = 'gemini-2.5-flash';
     const KEY_STORE = 'lingualeap_gemini_key';
 
@@ -30,7 +35,14 @@
         return r.json();
     }
 
-    // ---------- Gemini (browser, user's own key) ----------
+    // ---------- API keys (browser, user's own keys, stored on device only) ----------
+    // DeepSeek is the primary model; Gemini is the fallback.
+    window.LinguaLeapDeepSeekKey = {
+        get: () => (localStorage.getItem(DEEPSEEK_KEY_STORE) || '').trim(),
+        set: (v) => localStorage.setItem(DEEPSEEK_KEY_STORE, (v || '').trim()),
+        clear: () => localStorage.removeItem(DEEPSEEK_KEY_STORE),
+        has: () => !!(localStorage.getItem(DEEPSEEK_KEY_STORE) || '').trim(),
+    };
     window.LinguaLeapKey = {
         get: () => (localStorage.getItem(KEY_STORE) || '').trim(),
         set: (v) => localStorage.setItem(KEY_STORE, (v || '').trim()),
@@ -40,6 +52,70 @@
 
     class QuotaError extends Error {}
     class NoKeyError extends Error {}
+    // Thrown when DeepSeek can't fulfil a request, so we fall back to Gemini.
+    class AIUnavailable extends Error {}
+
+    // ---------- DeepSeek (primary, browser, user's own key) ----------
+    async function deepseekGenerate(prompt, opts) {
+        opts = opts || {};
+        const key = window.LinguaLeapDeepSeekKey.get();
+        if (!key) throw new AIUnavailable('no key');
+
+        const messages = [];
+        if (opts.system) messages.push({ role: 'system', content: opts.system });
+        messages.push({ role: 'user', content: prompt });
+
+        const body = {
+            model: DEEPSEEK_MODEL,
+            messages: messages,
+            temperature: opts.temperature != null ? opts.temperature : 0.7,
+            // Pad for hidden reasoning tokens — max_tokens caps reasoning + answer.
+            max_tokens: (opts.maxTokens || 800) + DEEPSEEK_REASONING_BUDGET,
+        };
+
+        let res;
+        try {
+            res = await realFetch('https://api.deepseek.com/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + key,
+                },
+                body: JSON.stringify(body),
+            });
+        } catch (e) {
+            throw new AIUnavailable('network');
+        }
+        if (!res.ok) {
+            const t = await res.text().catch(() => '');
+            console.warn('DeepSeek error', res.status, t.slice(0, 200));
+            // 402 balance, 429 rate limit, 5xx — all mean "fall back to Gemini".
+            throw new AIUnavailable('http ' + res.status);
+        }
+        const data = await res.json();
+        const content = data && data.choices && data.choices[0] &&
+            data.choices[0].message && data.choices[0].message.content;
+        const text = (content || '').trim();
+        if (!text) throw new AIUnavailable('empty content');
+        return text;
+    }
+
+    // ---------- Unified generator: DeepSeek primary, Gemini fallback ----------
+    async function aiGenerate(prompt, opts) {
+        const hasDeep = window.LinguaLeapDeepSeekKey.has();
+        const hasGem = window.LinguaLeapKey.has();
+        if (!hasDeep && !hasGem) throw new NoKeyError();
+
+        if (hasDeep) {
+            try {
+                return await deepseekGenerate(prompt, opts);
+            } catch (e) {
+                console.warn('DeepSeek unavailable, falling back to Gemini:', e && e.message);
+                if (!hasGem) return null;  // no fallback configured
+            }
+        }
+        return await geminiGenerate(prompt, opts);
+    }
 
     async function geminiGenerate(prompt, opts) {
         opts = opts || {};
@@ -85,10 +161,10 @@
     }
 
     const NO_KEY_REPLY =
-        "🔑 **Add your Gemini key to chat.**\n\nTap the ⚙️ Settings button (top-right) and paste your free Google Gemini API key. " +
-        "It's stored only on this device — never uploaded anywhere.";
+        "🔑 **Add an API key to chat.**\n\nTap the ⚙️ Settings button (top-right) and paste your DeepSeek API key " +
+        "(or a Google Gemini key as backup). It's stored only on this device — never uploaded anywhere.";
     const QUOTA_REPLY =
-        "⏳ **Free-tier limit reached.** No charges — the free Gemini quota resets after a short wait. Please try again in a little while.";
+        "⏳ **Limit reached.** The model is temporarily unavailable (quota or rate limit). Please try again in a little while.";
 
     // ---------- Dictionary: MyMemory + bundled local dictionary ----------
     async function myMemoryGet(q, langpair) {
@@ -306,7 +382,7 @@ Reply ONLY with valid JSON, no fences:
 
         let reply = null;
         try {
-            reply = await geminiGenerate(prompt, { temperature: 0.2, maxTokens: 300 });
+            reply = await aiGenerate(prompt, { temperature: 0.2, maxTokens: 300 });
         } catch (e) {
             return jsonResponse({
                 score: baseline, feedback: 'Checked using text comparison.',
@@ -372,7 +448,7 @@ For translation: saveable = queried word + best translation. For writing: saveab
 
         let reply;
         try {
-            reply = await geminiGenerate(fullPrompt, { system, temperature: 0.7, maxTokens: 800 });
+            reply = await aiGenerate(fullPrompt, { system, temperature: 0.7, maxTokens: 800 });
         } catch (e) {
             if (e instanceof NoKeyError) return jsonResponse({ reply: NO_KEY_REPLY, type: 'error' });
             if (e instanceof QuotaError) return jsonResponse({ reply: QUOTA_REPLY, type: 'quota_exceeded' });
@@ -400,8 +476,8 @@ For translation: saveable = queried word + best translation. For writing: saveab
         const targetLang = body.target_lang || 'en';
         const nativeLang = body.native_lang || 'en';
         if (!title) return jsonResponse({ error: 'Please enter a film or series title.' }, 400);
-        if (!window.LinguaLeapKey.has()) {
-            return jsonResponse({ error: 'Add your Gemini key in ⚙️ Settings to use Movie Phrases.' }, 503);
+        if (!window.LinguaLeapDeepSeekKey.has() && !window.LinguaLeapKey.has()) {
+            return jsonResponse({ error: 'Add your DeepSeek (or Gemini) key in ⚙️ Settings to use Movie Phrases.' }, 503);
         }
         const targetName = LANG_NAMES[targetLang] || targetLang;
         const nativeName = LANG_NAMES[nativeLang] || nativeLang;
@@ -419,9 +495,9 @@ Reply ONLY with valid JSON, no fences, EXACTLY:
 
         let reply;
         try {
-            reply = await geminiGenerate(prompt, { temperature: 0.8, maxTokens: 4000 });
+            reply = await aiGenerate(prompt, { temperature: 0.8, maxTokens: 4000 });
         } catch (e) {
-            if (e instanceof NoKeyError) return jsonResponse({ error: 'Add your Gemini key in ⚙️ Settings.' }, 503);
+            if (e instanceof NoKeyError) return jsonResponse({ error: 'Add your DeepSeek (or Gemini) key in ⚙️ Settings.' }, 503);
             if (e instanceof QuotaError) return jsonResponse({ error: 'Free-tier limit reached. Try again in a little while.', quota_exceeded: true }, 429);
             return jsonResponse({ error: 'Something went wrong. Try again.' }, 502);
         }

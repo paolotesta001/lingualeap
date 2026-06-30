@@ -415,8 +415,12 @@
                 <button class="modal-close" id="settingsClose">✕</button>
             </div>
             <div class="modal-body">
-                <label class="modal-label">Google Gemini API key</label>
-                <p class="settings-hint">Needed for the <strong>Chatbot</strong> and <strong>Movie Phrases</strong>. It's stored only on this device and never uploaded. The free tier is enough. Get one at <strong>aistudio.google.com/apikey</strong>.</p>
+                <label class="modal-label">DeepSeek API key <span style="opacity:.7;font-weight:400">(primary)</span></label>
+                <p class="settings-hint">Powers the <strong>Chatbot</strong> and <strong>Movie Phrases</strong> (model: deepseek-v4-flash). Stored only on this device, never uploaded. Get one at <strong>platform.deepseek.com</strong>.</p>
+                <input type="password" class="text-input" id="deepseekKeyInput" placeholder="sk-..." autocomplete="off">
+
+                <label class="modal-label" style="margin-top:16px">Google Gemini API key <span style="opacity:.7;font-weight:400">(fallback)</span></label>
+                <p class="settings-hint">Used automatically if DeepSeek is unavailable or out of quota. Optional. Free tier is enough. Get one at <strong>aistudio.google.com/apikey</strong>.</p>
                 <input type="password" class="text-input" id="geminiKeyInput" placeholder="AIza..." autocomplete="off">
                 <div class="settings-status" id="settingsStatus"></div>
             </div>
@@ -439,20 +443,35 @@
             });
         }
 
-        // ---- Settings modal (Gemini key) ----
+        // ---- Settings modal (DeepSeek primary + Gemini fallback keys) ----
         (function () {
             var modal = document.getElementById('settingsModal');
-            var input = document.getElementById('geminiKeyInput');
+            var deepInput = document.getElementById('deepseekKeyInput');
+            var gemInput = document.getElementById('geminiKeyInput');
             var status = document.getElementById('settingsStatus');
 
+            function hasDeep() { return window.LinguaLeapDeepSeekKey && window.LinguaLeapDeepSeekKey.has(); }
+            function hasGem() { return window.LinguaLeapKey && window.LinguaLeapKey.has(); }
+
             function refreshStatus() {
-                var has = window.LinguaLeapKey && window.LinguaLeapKey.has();
-                status.textContent = has ? '✅ Key saved — chatbot & movie phrases are ready.'
-                                         : '⚠️ No key yet — chatbot & movie phrases are disabled.';
-                status.className = 'settings-status ' + (has ? 'ok' : 'warn');
+                var msg, cls;
+                if (hasDeep()) {
+                    msg = '✅ DeepSeek key saved — chatbot & movie phrases are ready'
+                        + (hasGem() ? ' (Gemini fallback active).' : '.');
+                    cls = 'ok';
+                } else if (hasGem()) {
+                    msg = '✅ Gemini key saved (fallback only) — chatbot & movie phrases are ready.';
+                    cls = 'ok';
+                } else {
+                    msg = '⚠️ No key yet — chatbot & movie phrases are disabled.';
+                    cls = 'warn';
+                }
+                status.textContent = msg;
+                status.className = 'settings-status ' + cls;
             }
             function open() {
-                input.value = window.LinguaLeapKey ? window.LinguaLeapKey.get() : '';
+                deepInput.value = window.LinguaLeapDeepSeekKey ? window.LinguaLeapDeepSeekKey.get() : '';
+                gemInput.value = window.LinguaLeapKey ? window.LinguaLeapKey.get() : '';
                 refreshStatus();
                 modal.classList.remove('hidden');
             }
@@ -462,19 +481,22 @@
             document.getElementById('settingsClose').addEventListener('click', close);
             modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
             document.getElementById('settingsSave').addEventListener('click', function () {
-                window.LinguaLeapKey.set(input.value);
+                window.LinguaLeapDeepSeekKey.set(deepInput.value);
+                window.LinguaLeapKey.set(gemInput.value);
                 refreshStatus();
                 setTimeout(close, 600);
             });
             document.getElementById('settingsClear').addEventListener('click', function () {
+                window.LinguaLeapDeepSeekKey.clear();
                 window.LinguaLeapKey.clear();
-                input.value = '';
+                deepInput.value = '';
+                gemInput.value = '';
                 refreshStatus();
             });
 
             // Nudge the user to add a key on first run
             window.addEventListener('load', function () {
-                if (window.LinguaLeapKey && !window.LinguaLeapKey.has()) {
+                if (!hasDeep() && !hasGem()) {
                     setTimeout(open, 1200);
                 }
             });
