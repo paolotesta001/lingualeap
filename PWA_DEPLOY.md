@@ -20,7 +20,22 @@ What runs where now:
 
 ---
 
-## One-time setup
+## Fastest path (one command)
+
+The GitHub CLI is already installed. From the `learning_language` folder, run **once**:
+
+```powershell
+gh auth login          # pick: GitHub.com -> HTTPS -> Login with a web browser, then authorize
+.\publish.ps1          # creates the repo, pushes, enables Pages, prints + opens your live link
+```
+
+That's it — `publish.ps1` does everything and prints your URL
+(`https://<your-username>.github.io/lingualeap/`). The manual steps below are only
+if you prefer doing it by hand.
+
+---
+
+## One-time setup (manual)
 
 ### 1. Put the project on GitHub
 ```bash
