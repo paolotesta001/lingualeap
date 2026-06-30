@@ -1962,7 +1962,8 @@ const App = {
                 body: JSON.stringify({
                     message: text,
                     target_lang: this.currentLang || 'es',
-                    source_lang: 'en',
+                    // Native language for explanations: Italian when learning English, else English
+                    source_lang: (this.currentLang === 'en' ? 'it' : 'en'),
                     history: recentHistory,
                 }),
             });
