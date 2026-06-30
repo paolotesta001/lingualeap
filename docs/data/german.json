@@ -1,0 +1,623 @@
+{
+  "language": "German",
+  "code": "de",
+  "flag": "\ud83c\udde9\ud83c\uddea",
+  "tts_code": "de-DE",
+  "levels": [
+    {
+      "id": 1,
+      "name": "Basics",
+      "icon": "\ud83c\udf31",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Hallo! Ich hei\u00dfe Thomas. Ich komme aus Berlin. Ich bin f\u00fcnfundzwanzig Jahre alt. Ich bin Informatiker. Ich mag Fu\u00dfball und Musik. Ich wohne mit meiner Freundin in einer kleinen Wohnung in der Stadtmitte.",
+            "translation": "Hello! My name is Thomas. I am from Berlin. I am twenty-five years old. I am a computer scientist. I like football and music. I live with my girlfriend in a small apartment in the city center.",
+            "questions": [
+              {
+                "question": "What is Thomas's profession?",
+                "options": ["Teacher", "Doctor", "Computer scientist", "Engineer"],
+                "correct": 2
+              },
+              {
+                "question": "Where does Thomas live?",
+                "options": ["In a house", "In a small apartment in the city center", "With his parents", "In the suburbs"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Guten Morgen! Ich bin Lisa. Ich habe eine Katze. Sie hei\u00dft Mimi. Mimi ist grau und wei\u00df. Sie schl\u00e4ft gerne auf dem Sofa. Jeden Morgen gebe ich ihr Futter und dann spielen wir zusammen.",
+            "translation": "Good morning! I am Lisa. I have a cat. Her name is Mimi. Mimi is gray and white. She likes to sleep on the sofa. Every morning I give her food and then we play together.",
+            "questions": [
+              {
+                "question": "What color is Mimi?",
+                "options": ["Black and white", "Orange", "Gray and white", "Brown"],
+                "correct": 2
+              },
+              {
+                "question": "What does Lisa do with Mimi every morning?",
+                "options": ["Goes for a walk", "Feeds her and plays together", "Brushes her", "Takes her to the park"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Meine Familie ist gro\u00df. Meine Mutter hei\u00dft Petra und mein Vater hei\u00dft Klaus. Ich habe zwei Br\u00fcder und eine Schwester. Am Sonntag essen wir immer zusammen bei meinen Gro\u00dfeltern. Meine Oma kocht immer Braten mit Kartoffeln.",
+            "translation": "My family is big. My mother is called Petra and my father is called Klaus. I have two brothers and one sister. On Sundays we always eat together at my grandparents' house. My grandma always cooks roast with potatoes.",
+            "questions": [
+              {
+                "question": "How many brothers does the speaker have?",
+                "options": ["One", "Two", "Three", "None"],
+                "correct": 1
+              },
+              {
+                "question": "What does the grandma always cook?",
+                "options": ["Soup", "Schnitzel", "Roast with potatoes", "Sausages"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Heute ist Montag. Es ist sonnig. Ich habe Deutschkurs um zehn Uhr. Nach dem Kurs gehe ich mit meinen Freunden in die Mensa. Am Nachmittag lerne ich in der Bibliothek bis f\u00fcnf Uhr.",
+            "translation": "Today is Monday. It is sunny. I have German class at ten o'clock. After the class I go with my friends to the cafeteria. In the afternoon I study in the library until five o'clock.",
+            "questions": [
+              {
+                "question": "What is the weather like?",
+                "options": ["Rainy", "Cloudy", "Sunny", "Snowy"],
+                "correct": 2
+              },
+              {
+                "question": "Where does the speaker eat after class?",
+                "options": ["At home", "At a restaurant", "In the cafeteria", "In the library"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "Hello, how are you?",
+            "acceptable_answers": ["Hallo, wie geht es Ihnen?", "Hallo, wie geht es dir?", "Hallo wie geht es dir?", "Hallo wie geht es Ihnen", "hallo wie geht es dir"],
+            "hint": "Hallo, wie geht..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Ich ___ Student.",
+            "answer": "bin",
+            "options": ["bin", "ist", "bist", "sind"],
+            "translation": "I am a student."
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "My name is Anna.",
+            "acceptable_answers": ["Ich hei\u00dfe Anna.", "Ich heisse Anna.", "Ich hei\u00dfe Anna", "ich heisse Anna", "Mein Name ist Anna."],
+            "hint": "Ich hei\u00dfe..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "Sie ___ Lehrerin.",
+            "answer": "ist",
+            "options": ["bin", "ist", "bist", "sind"],
+            "translation": "She is a teacher."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Wir ___ aus Deutschland.",
+            "answer": "sind",
+            "options": ["bin", "ist", "seid", "sind"],
+            "translation": "We are from Germany."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "I really like coffee.",
+            "acceptable_answers": ["Ich mag Kaffee sehr.", "Ich mag Kaffee sehr", "ich mag Kaffee sehr", "Ich trinke sehr gerne Kaffee."],
+            "hint": "Ich mag Kaffee..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Guten Morgen",
+            "translation": "Good morning",
+            "acceptable_answers": ["Guten Morgen", "guten Morgen", "guten morgen"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Vielen Dank",
+            "options": ["You're welcome", "Thank you very much", "Excuse me", "I'm sorry"],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Freut mich, Sie kennenzulernen",
+            "translation": "Nice to meet you",
+            "acceptable_answers": ["Freut mich, Sie kennenzulernen", "Freut mich Sie kennenzulernen", "freut mich sie kennenzulernen", "Freut mich, sie kennenzulernen"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "Wo ist die Toilette?",
+            "options": ["Where is the exit?", "Where is the toilet?", "Where is the restaurant?", "Where is the hotel?"],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Bitte",
+            "translation": "Please / You're welcome",
+            "acceptable_answers": ["Bitte", "bitte"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Ich verstehe nicht",
+            "options": ["I don't want", "I don't like", "I don't understand", "I don't know"],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Hallo, ich hei\u00dfe Anna.",
+            "translation": "Hello, my name is Anna.",
+            "key_words": ["hallo", "hei\u00dfe", "anna"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Ich komme aus M\u00fcnchen und bin drei\u00dfig Jahre alt.",
+            "translation": "I am from Munich and I am thirty years old.",
+            "key_words": ["komme", "m\u00fcnchen", "drei\u00dfig", "jahre"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Ich habe zwei Br\u00fcder und eine Schwester.",
+            "translation": "I have two brothers and one sister.",
+            "key_words": ["habe", "br\u00fcder", "schwester"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Ich mag Musik und Kino sehr gerne.",
+            "translation": "I really like music and cinema.",
+            "key_words": ["mag", "musik", "kino", "gerne"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Travel",
+      "icon": "\u2708\ufe0f",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Willkommen im Hotel am See. Die Rezeption ist rund um die Uhr ge\u00f6ffnet. Das Fr\u00fchst\u00fcck wird von sieben bis zehn Uhr im Restaurant im Erdgeschoss serviert. Die Sauna befindet sich im Untergeschoss. Kostenloses WLAN ist in allen Zimmern verf\u00fcgbar.",
+            "translation": "Welcome to Hotel am See. The reception is open around the clock. Breakfast is served from seven to ten in the ground-floor restaurant. The sauna is in the basement. Free Wi-Fi is available in all rooms.",
+            "questions": [
+              {
+                "question": "Where is the sauna?",
+                "options": ["Ground floor", "First floor", "Top floor", "Basement"],
+                "correct": 3
+              },
+              {
+                "question": "When is breakfast served?",
+                "options": ["6 to 9", "7 to 10", "7 to 11", "8 to 11"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Entschuldigung, wie komme ich zum Brandenburger Tor? Nehmen Sie die U-Bahn Linie 5, Richtung Alexanderplatz. Steigen Sie an der Station Brandenburger Tor aus. Es sind nur drei Stationen von hier. Eine Fahrkarte kostet drei Euro. Sie k\u00f6nnen sie am Automaten kaufen.",
+            "translation": "Excuse me, how do I get to the Brandenburg Gate? Take the U-Bahn line 5, direction Alexanderplatz. Get off at the Brandenburg Gate station. It's only three stops from here. A ticket costs three euros. You can buy it at the machine.",
+            "questions": [
+              {
+                "question": "How many stops is it?",
+                "options": ["Two", "Three", "Four", "Five"],
+                "correct": 1
+              },
+              {
+                "question": "How much does a ticket cost?",
+                "options": ["Two euros", "Two fifty", "Three euros", "Four euros"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Im Restaurant: Heute haben wir als Tagesgericht Wiener Schnitzel mit Kartoffelsalat f\u00fcr vierzehn Euro und Gem\u00fcsesuppe f\u00fcr sechs Euro. Als Nachtisch gibt es Apfelstrudel f\u00fcr f\u00fcnf Euro. Wir haben auch eine gute Auswahl an deutschen Bieren.",
+            "translation": "At the restaurant: Today we have Wiener Schnitzel with potato salad for fourteen euros as the daily special and vegetable soup for six euros. For dessert there is apple strudel for five euros. We also have a good selection of German beers.",
+            "questions": [
+              {
+                "question": "How much does the Wiener Schnitzel cost?",
+                "options": ["Ten euros", "Twelve euros", "Fourteen euros", "Sixteen euros"],
+                "correct": 2
+              },
+              {
+                "question": "What is for dessert?",
+                "options": ["Chocolate cake", "Apple strudel", "Black Forest cake", "Ice cream"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Der Zug nach Hamburg f\u00e4hrt um vierzehn Uhr drei\u00dfig von Gleis Nummer vier ab. Die Fahrt dauert eine Stunde und f\u00fcnfundvierzig Minuten. Eine einfache Fahrt kostet f\u00fcnfunddrei\u00dfig Euro. Hin und zur\u00fcck kostet f\u00fcnfundf\u00fcnfzig Euro. Es gibt ein Bordbistro im Zug.",
+            "translation": "The train to Hamburg departs at 2:30 PM from platform number four. The trip lasts one hour and forty-five minutes. A one-way trip costs thirty-five euros. Round trip costs fifty-five euros. There is an onboard bistro on the train.",
+            "questions": [
+              {
+                "question": "How long is the trip?",
+                "options": ["One hour", "One hour and thirty minutes", "One hour and forty-five minutes", "Two hours"],
+                "correct": 2
+              },
+              {
+                "question": "How much is a round-trip ticket?",
+                "options": ["Thirty-five euros", "Forty-five euros", "Fifty-five euros", "Sixty-five euros"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "I would like a table for two, please.",
+            "acceptable_answers": ["Ich h\u00e4tte gerne einen Tisch f\u00fcr zwei, bitte.", "Ich h\u00e4tte gerne einen Tisch f\u00fcr zwei bitte.", "Ich hatte gerne einen Tisch fur zwei, bitte.", "Ich m\u00f6chte einen Tisch f\u00fcr zwei, bitte.", "ich hatte gerne einen tisch fur zwei bitte"],
+            "hint": "Ich h\u00e4tte gerne..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Wie viel ___ das?",
+            "answer": "kostet",
+            "options": ["kostet", "zahlt", "macht", "gibt"],
+            "translation": "How much does this cost?"
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "Where is the train station?",
+            "acceptable_answers": ["Wo ist der Bahnhof?", "Wo ist der Bahnhof", "wo ist der Bahnhof?", "wo ist der bahnhof"],
+            "hint": "Wo ist der..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "Ich muss ein Taxi zum Flughafen ___.",
+            "answer": "nehmen",
+            "options": ["nehmen", "machen", "geben", "bringen"],
+            "translation": "I need to take a taxi to the airport."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Die Rechnung, ___.",
+            "answer": "bitte",
+            "options": ["bitte", "danke", "gerne", "gut"],
+            "translation": "The check, please."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "Can you help me? I am lost.",
+            "acceptable_answers": ["K\u00f6nnen Sie mir helfen? Ich habe mich verlaufen.", "Konnen Sie mir helfen? Ich habe mich verlaufen.", "Kannst du mir helfen? Ich habe mich verlaufen.", "K\u00f6nnen Sie mir helfen? Ich bin verloren.", "konnen sie mir helfen ich habe mich verlaufen"],
+            "hint": "K\u00f6nnen Sie mir helfen?..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Ich m\u00f6chte ein Zimmer reservieren.",
+            "translation": "I would like to reserve a room.",
+            "acceptable_answers": ["Ich m\u00f6chte ein Zimmer reservieren.", "Ich mochte ein Zimmer reservieren.", "Ich mochte ein Zimmer reservieren", "ich mochte ein zimmer reservieren"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Der Flug hat Versp\u00e4tung.",
+            "options": ["The flight is cancelled.", "The flight is on time.", "The flight is delayed.", "The flight is boarding."],
+            "correct": 2
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Biegen Sie an der Ecke links ab.",
+            "translation": "Turn left at the corner.",
+            "acceptable_answers": ["Biegen Sie an der Ecke links ab.", "Biegen Sie an der Ecke links ab", "biegen sie an der ecke links ab"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "Haben Sie einen Tisch am Fenster?",
+            "options": ["Do you have a reservation?", "Do you have a table by the window?", "Do you have the menu?", "Do you have a bigger table?"],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Wann f\u00e4hrt der n\u00e4chste Zug?",
+            "translation": "When does the next train leave?",
+            "acceptable_answers": ["Wann f\u00e4hrt der n\u00e4chste Zug?", "Wann fahrt der nachste Zug?", "Wann fahrt der nachste Zug", "wann fahrt der nachste zug"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Ich muss Geld wechseln.",
+            "options": ["I need to save money.", "I need to exchange money.", "I need to find money.", "I need to count money."],
+            "correct": 1
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Entschuldigung, wie komme ich zum Stadtzentrum?",
+            "translation": "Excuse me, how do I get to the city center?",
+            "key_words": ["entschuldigung", "wie", "komme", "stadtzentrum"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Ich h\u00e4tte gerne das Wiener Schnitzel, bitte.",
+            "translation": "I would like the Wiener Schnitzel, please.",
+            "key_words": ["h\u00e4tte", "gerne", "schnitzel", "bitte"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Haben Sie noch freie Zimmer f\u00fcr heute Nacht?",
+            "translation": "Do you still have rooms available for tonight?",
+            "key_words": ["haben", "freie", "zimmer", "nacht"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Kann ich mit Kreditkarte bezahlen?",
+            "translation": "Can I pay with a credit card?",
+            "key_words": ["kann", "kreditkarte", "bezahlen"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Daily Life",
+      "icon": "\ud83c\udfe0",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Ich wache um sieben Uhr morgens auf. Zuerst dusche ich und ziehe mich an. Dann fr\u00fchst\u00fccke ich: Kaffee und Br\u00f6tchen. Ich verlasse das Haus um Viertel nach acht. Ich arbeite in einem B\u00fcro in der Innenstadt. Mittags esse ich in einem Bistro in der N\u00e4he. Ich h\u00f6re um sechs Uhr auf und gehe dreimal pro Woche ins Fitnessstudio.",
+            "translation": "I wake up at seven in the morning. First I shower and get dressed. Then I have breakfast: coffee and rolls. I leave the house at quarter past eight. I work in an office downtown. At noon I eat at a bistro nearby. I finish at six and go to the gym three times a week.",
+            "questions": [
+              {
+                "question": "What does the speaker have for breakfast?",
+                "options": ["Tea and toast", "Coffee and rolls", "Juice and muesli", "Milk and cereal"],
+                "correct": 1
+              },
+              {
+                "question": "What time does the speaker leave the house?",
+                "options": ["Seven thirty", "Eight o'clock", "Eight fifteen", "Eight thirty"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Letztes Wochenende bin ich mit meinem Bruder auf den Wochenmarkt gegangen. Wir haben frisches Gem\u00fcse, Obst und Brot gekauft. Am Nachmittag haben wir zusammen ein gro\u00dfes Essen gekocht. Mein Bruder hat eine Suppe gemacht und ich habe einen Salat zubereitet. Nach dem Essen haben wir einen Spaziergang am Fluss gemacht.",
+            "translation": "Last weekend I went to the weekly market with my brother. We bought fresh vegetables, fruit, and bread. In the afternoon we cooked a big meal together. My brother made a soup and I prepared a salad. After the meal we went for a walk by the river.",
+            "questions": [
+              {
+                "question": "Who did the speaker go to the market with?",
+                "options": ["A friend", "Their mother", "Their brother", "Alone"],
+                "correct": 2
+              },
+              {
+                "question": "What did the speaker prepare?",
+                "options": ["Soup", "A salad", "Bread", "A cake"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Morgen habe ich ein Vorstellungsgespr\u00e4ch. Ich bin etwas nerv\u00f6s, aber auch aufgeregt. Das Unternehmen ist ein Technologie-Startup in der Innenstadt. Ich muss einen Anzug tragen und um neun Uhr da sein. Ich habe mich vorbereitet, indem ich das Unternehmen online recherchiert und h\u00e4ufige Fragen ge\u00fcbt habe.",
+            "translation": "Tomorrow I have a job interview. I am a bit nervous but also excited. The company is a technology startup downtown. I have to wear a suit and be there at nine. I prepared by researching the company online and practicing common questions.",
+            "questions": [
+              {
+                "question": "What does the speaker need to wear?",
+                "options": ["Casual clothes", "A uniform", "A suit", "Smart casual"],
+                "correct": 2
+              },
+              {
+                "question": "How did the speaker prepare?",
+                "options": ["Asked friends for advice", "Researched the company and practiced questions", "Visited the office", "Bought new clothes"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Unser Geb\u00e4ude hat ein Problem mit der Heizung. Der Vermieter hat gesagt, dass ein Techniker am Donnerstag zwischen zehn und vierzehn Uhr kommt. Jemand muss zu Hause sein, um die T\u00fcr zu \u00f6ffnen. Ich habe meine Nachbarin gefragt, ob sie helfen kann, weil ich arbeiten muss. Sie hat ja gesagt, was sehr nett von ihr war.",
+            "translation": "Our building has a problem with the heating. The landlord said a technician will come on Thursday between ten and two. Someone has to be home to open the door. I asked my neighbor if she can help because I have to work. She said yes, which was very nice of her.",
+            "questions": [
+              {
+                "question": "What is the problem?",
+                "options": ["The electricity", "The water", "The heating", "The internet"],
+                "correct": 2
+              },
+              {
+                "question": "Why can't the speaker be home?",
+                "options": ["They have a doctor's appointment", "They have to work", "They are traveling", "They are at school"],
+                "correct": 1
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "I usually go grocery shopping on Saturdays.",
+            "acceptable_answers": ["Normalerweise gehe ich samstags einkaufen.", "Normalerweise gehe ich samstags einkaufen", "normalerweise gehe ich samstags einkaufen", "Ich gehe normalerweise samstags einkaufen."],
+            "hint": "Normalerweise gehe ich..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Ich muss einen Termin beim Arzt ___.",
+            "answer": "machen",
+            "options": ["machen", "nehmen", "geben", "haben"],
+            "translation": "I need to make an appointment with the doctor."
+          },
+          {
+            "id": "w3",
+            "type": "fill_blank",
+            "sentence": "Kannst du mir einen ___ tun?",
+            "answer": "Gefallen",
+            "options": ["Gefallen", "Dienst", "Hilfe", "Freude"],
+            "translation": "Can you do me a favor?"
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "I have been living here for three years.",
+            "acceptable_answers": ["Ich wohne seit drei Jahren hier.", "Ich wohne seit drei Jahren hier", "ich wohne seit drei jahren hier", "Ich lebe seit drei Jahren hier."],
+            "hint": "Ich wohne seit..."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Sie arbeitet seit letztem Monat von zu Hause ___.",
+            "answer": "aus",
+            "options": ["aus", "an", "ab", "auf"],
+            "translation": "She has been working from home since last month."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to German:",
+            "sentence": "If it rains tomorrow, we will stay home.",
+            "acceptable_answers": ["Wenn es morgen regnet, bleiben wir zu Hause.", "Wenn es morgen regnet bleiben wir zu Hause.", "Wenn es morgen regnet, bleiben wir zu Hause", "wenn es morgen regnet bleiben wir zu hause"],
+            "hint": "Wenn es morgen regnet..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Ich habe um drei Uhr eine Besprechung.",
+            "translation": "I have a meeting at three o'clock.",
+            "acceptable_answers": ["Ich habe um drei Uhr eine Besprechung.", "Ich habe um drei Uhr eine Besprechung", "ich habe um drei uhr eine besprechung"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "W\u00fcrde es Ihnen etwas ausmachen, das Fenster zu schlie\u00dfen?",
+            "options": ["Can you open the window?", "Would you mind closing the window?", "Is the window broken?", "Do you like the window open?"],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Ich habe vergessen, Milch zu kaufen.",
+            "translation": "I forgot to buy milk.",
+            "acceptable_answers": ["Ich habe vergessen, Milch zu kaufen.", "Ich habe vergessen Milch zu kaufen.", "Ich habe vergessen Milch zu kaufen", "ich habe vergessen milch zu kaufen"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "In letzter Zeit geht es ihr nicht so gut.",
+            "options": ["She's been very busy lately.", "She hasn't been feeling well lately.", "She's been traveling lately.", "She moved recently."],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Trinken wir nach der Arbeit einen Kaffee?",
+            "translation": "Shall we grab a coffee after work?",
+            "acceptable_answers": ["Trinken wir nach der Arbeit einen Kaffee?", "Trinken wir nach der Arbeit einen Kaffee", "trinken wir nach der arbeit einen kaffee"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Ich bin sp\u00e4t dran, ich bin in zehn Minuten da.",
+            "options": ["I'm going for a walk.", "I'm lost, can you help?", "I'm running late, I'll be there in ten minutes.", "I'm early, where should I wait?"],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Normalerweise wache ich um sieben Uhr auf und gehe joggen.",
+            "translation": "Usually I wake up at seven and go jogging.",
+            "key_words": ["normalerweise", "wache", "sieben", "joggen"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "K\u00f6nnten Sie mir ein gutes Restaurant in der N\u00e4he empfehlen?",
+            "translation": "Could you recommend a good restaurant nearby?",
+            "key_words": ["k\u00f6nnten", "empfehlen", "restaurant", "n\u00e4he"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Ich lerne seit ungef\u00e4hr zwei Jahren Deutsch.",
+            "translation": "I have been learning German for about two years.",
+            "key_words": ["lerne", "zwei", "jahren", "deutsch"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Das Wetter war diese Woche wirklich sch\u00f6n, oder?",
+            "translation": "The weather has been really nice this week, hasn't it?",
+            "key_words": ["wetter", "woche", "sch\u00f6n"]
+          }
+        ]
+      }
+    }
+  ]
+}

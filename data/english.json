@@ -1,0 +1,964 @@
+{
+  "language": "English",
+  "code": "en",
+  "flag": "🇺🇸",
+  "tts_code": "en-US",
+  "levels": [
+    {
+      "id": 1,
+      "name": "Basics",
+      "icon": "🌱",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Hello! My name is Tom. I am from New York. I am a teacher. I like coffee and books. Every morning, I drink coffee and read the news.",
+            "translation": "A man named Tom introduces himself, his job, and his morning routine.",
+            "questions": [
+              {
+                "question": "What is Tom's job?",
+                "options": [
+                  "Doctor",
+                  "Teacher",
+                  "Student",
+                  "Driver"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "What does Tom do every morning?",
+                "options": [
+                  "He goes running",
+                  "He watches TV",
+                  "He drinks coffee and reads the news",
+                  "He cooks breakfast"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "This is my family. My mother's name is Susan. My father's name is John. I have one brother and one sister. My brother is older than me. My sister is younger.",
+            "translation": "Someone describes their family members and their ages.",
+            "questions": [
+              {
+                "question": "How many siblings does the speaker have?",
+                "options": [
+                  "One",
+                  "Two",
+                  "Three",
+                  "Four"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "Who is older, the brother or the sister?",
+                "options": [
+                  "The sister",
+                  "They are the same age",
+                  "The brother",
+                  "We don't know"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Today is Monday. The weather is sunny. I go to school at 8 o'clock. My favorite subject is math. After school, I play soccer with my friends.",
+            "translation": "A student talks about their typical Monday.",
+            "questions": [
+              {
+                "question": "What day is it?",
+                "options": [
+                  "Sunday",
+                  "Tuesday",
+                  "Monday",
+                  "Friday"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "What is the speaker's favorite subject?",
+                "options": [
+                  "English",
+                  "Science",
+                  "History",
+                  "Math"
+                ],
+                "correct": 3
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "I live in a small apartment. It has two bedrooms, one kitchen, and one bathroom. The living room is big. I have a cat. Her name is Luna. She likes to sleep on the sofa.",
+            "translation": "Someone describes their home and their pet cat.",
+            "questions": [
+              {
+                "question": "How many bedrooms does the apartment have?",
+                "options": [
+                  "One",
+                  "Two",
+                  "Three",
+                  "Four"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "Where does Luna like to sleep?",
+                "options": [
+                  "On the bed",
+                  "On the floor",
+                  "On the sofa",
+                  "In the kitchen"
+                ],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "My name are Tom. I is a teacher.",
+            "acceptable_answers": [
+              "My name is Tom. I am a teacher.",
+              "My name is Tom. I am a teacher",
+              "my name is Tom. I am a teacher"
+            ],
+            "hint": "Check the verbs \"to be\"..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "She ___ a doctor.",
+            "answer": "is",
+            "options": [
+              "is",
+              "am",
+              "are",
+              "be"
+            ],
+            "translation": "She is a doctor."
+          },
+          {
+            "id": "w3",
+            "type": "fill_blank",
+            "sentence": "I ___ from Brazil.",
+            "answer": "am",
+            "options": [
+              "is",
+              "am",
+              "are",
+              "be"
+            ],
+            "translation": "I am from Brazil."
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "She have two brother and one sister.",
+            "acceptable_answers": [
+              "She has two brothers and one sister.",
+              "She has two brothers and one sister"
+            ],
+            "hint": "has/have... singular/plural..."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "They ___ students.",
+            "answer": "are",
+            "options": [
+              "is",
+              "am",
+              "are",
+              "be"
+            ],
+            "translation": "They are students."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "I am go to school every days.",
+            "acceptable_answers": [
+              "I go to school every day.",
+              "I go to school every day"
+            ],
+            "hint": "Simple present tense..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Good morning",
+            "translation": "A common greeting used in the morning",
+            "acceptable_answers": [
+              "Good morning",
+              "good morning",
+              "Good Morning"
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Thank you very much",
+            "options": [
+              "You're welcome",
+              "Thank you very much",
+              "Excuse me",
+              "I'm sorry"
+            ],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Nice to meet you",
+            "translation": "A polite phrase when meeting someone for the first time",
+            "acceptable_answers": [
+              "Nice to meet you",
+              "nice to meet you",
+              "Nice to meet you."
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "How are you?",
+            "options": [
+              "What is your name?",
+              "Where are you from?",
+              "How are you?",
+              "How old are you?"
+            ],
+            "correct": 2
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "See you later",
+            "translation": "A casual way to say goodbye",
+            "acceptable_answers": [
+              "See you later",
+              "see you later",
+              "See you later."
+            ]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Excuse me, where is the bathroom?",
+            "options": [
+              "Where is the exit?",
+              "Excuse me, where is the bathroom?",
+              "Can I have the menu?",
+              "What time is it?"
+            ],
+            "correct": 1
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Hello, my name is Anna.",
+            "translation": "A basic self-introduction.",
+            "key_words": [
+              "hello",
+              "name",
+              "anna"
+            ]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "I am from the United States.",
+            "translation": "Saying where you are from.",
+            "key_words": [
+              "from",
+              "united",
+              "states"
+            ]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Nice to meet you. How are you?",
+            "translation": "A polite greeting when meeting someone.",
+            "key_words": [
+              "nice",
+              "meet",
+              "how",
+              "are"
+            ]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "I have two brothers and one sister.",
+            "translation": "Talking about your family.",
+            "key_words": [
+              "have",
+              "brothers",
+              "sister"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Travel",
+      "icon": "✈️",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Welcome to the Grand Hotel. Check-in is at 3 PM and check-out is at 11 AM. Breakfast is served from 7 AM to 10 AM in the restaurant on the first floor. Free Wi-Fi is available in all rooms. If you need anything, please call the front desk.",
+            "translation": "Hotel information for guests about check-in times and services.",
+            "questions": [
+              {
+                "question": "What time is check-out?",
+                "options": [
+                  "10 AM",
+                  "11 AM",
+                  "12 PM",
+                  "3 PM"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "Where is breakfast served?",
+                "options": [
+                  "In the room",
+                  "On the second floor",
+                  "On the first floor",
+                  "Outside"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Excuse me, I need to get to the airport. You can take the bus number 42 from the station. It leaves every 30 minutes. The trip takes about 45 minutes. A one-way ticket costs five dollars. You can buy it from the driver.",
+            "translation": "Someone asks for directions to the airport and gets bus information.",
+            "questions": [
+              {
+                "question": "How often does the bus leave?",
+                "options": [
+                  "Every 15 minutes",
+                  "Every 30 minutes",
+                  "Every 45 minutes",
+                  "Every hour"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "Where can you buy a ticket?",
+                "options": [
+                  "Online",
+                  "At the station",
+                  "From the driver",
+                  "At the airport"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Today's specials: Grilled chicken with vegetables for twelve dollars. Fresh fish with rice for fifteen dollars. Vegetarian pasta for ten dollars. All specials include a drink and dessert. We also have gluten-free options. Please ask your server.",
+            "translation": "A restaurant menu describing today's special dishes.",
+            "questions": [
+              {
+                "question": "How much is the vegetarian pasta?",
+                "options": [
+                  "Eight dollars",
+                  "Ten dollars",
+                  "Twelve dollars",
+                  "Fifteen dollars"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "What is included with the specials?",
+                "options": [
+                  "Just the food",
+                  "A drink only",
+                  "A drink and dessert",
+                  "Bread and salad"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "The museum is open Tuesday to Sunday, from 9 AM to 6 PM. It is closed on Mondays. Adult tickets are twenty dollars. Children under 12 enter free. There is a gift shop on the ground floor. Guided tours start at 10 AM and 2 PM.",
+            "translation": "Information about visiting a museum.",
+            "questions": [
+              {
+                "question": "When is the museum closed?",
+                "options": [
+                  "Sunday",
+                  "Saturday",
+                  "Monday",
+                  "Tuesday"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "How much do children under 12 pay?",
+                "options": [
+                  "Five dollars",
+                  "Ten dollars",
+                  "Twenty dollars",
+                  "Free"
+                ],
+                "correct": 3
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "I would like booking a room for two night.",
+            "acceptable_answers": [
+              "I would like to book a room for two nights.",
+              "I would like to book a room for two nights"
+            ],
+            "hint": "would like + to + verb..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Can I have the ___, please?",
+            "answer": "menu",
+            "options": [
+              "menu",
+              "money",
+              "morning",
+              "map"
+            ],
+            "translation": "Can I have the menu, please?"
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "Where is the most near train station?",
+            "acceptable_answers": [
+              "Where is the nearest train station?",
+              "Where is the nearest train station"
+            ],
+            "hint": "near -> nearest..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "How much does this ___?",
+            "answer": "cost",
+            "options": [
+              "cost",
+              "pay",
+              "price",
+              "buy"
+            ],
+            "translation": "How much does this cost?"
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "I need to ___ a taxi to the airport.",
+            "answer": "take",
+            "options": [
+              "take",
+              "make",
+              "do",
+              "give"
+            ],
+            "translation": "I need to take a taxi to the airport."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "Could you help me please? I am lose.",
+            "acceptable_answers": [
+              "Could you help me, please? I am lost.",
+              "Could you help me please? I am lost.",
+              "Could you help me please? I am lost"
+            ],
+            "hint": "lose (verb) vs lost (adjective)..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "I would like a table for two, please.",
+            "translation": "Requesting a table at a restaurant",
+            "acceptable_answers": [
+              "I would like a table for two, please.",
+              "I would like a table for two please",
+              "i would like a table for two please"
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "The flight has been delayed.",
+            "options": [
+              "The flight is on time.",
+              "The flight has been cancelled.",
+              "The flight has been delayed.",
+              "The flight is boarding now."
+            ],
+            "correct": 2
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Where is the nearest pharmacy?",
+            "translation": "Asking for directions to a pharmacy",
+            "acceptable_answers": [
+              "Where is the nearest pharmacy?",
+              "Where is the nearest pharmacy",
+              "where is the nearest pharmacy"
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "Could I see your passport, please?",
+            "options": [
+              "Can I have your ticket?",
+              "Could I see your passport, please?",
+              "Do you have a reservation?",
+              "Where is your luggage?"
+            ],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Turn left at the traffic light.",
+            "translation": "Giving directions",
+            "acceptable_answers": [
+              "Turn left at the traffic light.",
+              "Turn left at the traffic light",
+              "turn left at the traffic light"
+            ]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Your room is on the third floor.",
+            "options": [
+              "Your room is ready.",
+              "Your room is on the third floor.",
+              "Your room has a view.",
+              "Your room is not available."
+            ],
+            "correct": 1
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Excuse me, how do I get to the train station?",
+            "translation": "Asking for directions to the train station.",
+            "key_words": [
+              "excuse",
+              "how",
+              "get",
+              "train",
+              "station"
+            ]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "I would like to order the grilled chicken, please.",
+            "translation": "Ordering food at a restaurant.",
+            "key_words": [
+              "would",
+              "like",
+              "order",
+              "grilled",
+              "chicken"
+            ]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Do you have any rooms available for tonight?",
+            "translation": "Asking about hotel room availability.",
+            "key_words": [
+              "have",
+              "rooms",
+              "available",
+              "tonight"
+            ]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Can I pay by credit card?",
+            "translation": "Asking about payment options.",
+            "key_words": [
+              "can",
+              "pay",
+              "credit",
+              "card"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Daily Life",
+      "icon": "🏠",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "I usually wake up at 6:30 AM. First, I take a shower and get dressed. Then I have breakfast, usually toast and orange juice. I leave the house at 7:45 and walk to the bus stop. I start work at 9 AM. During my lunch break, I go to a cafe near my office. I finish work at 5 PM and go to the gym three times a week.",
+            "translation": "A person describes their typical daily routine.",
+            "questions": [
+              {
+                "question": "What does the speaker usually have for breakfast?",
+                "options": [
+                  "Eggs and bacon",
+                  "Cereal and milk",
+                  "Toast and orange juice",
+                  "Coffee and a muffin"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "How often does the speaker go to the gym?",
+                "options": [
+                  "Every day",
+                  "Twice a week",
+                  "Three times a week",
+                  "On weekends"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Last weekend, I went to the farmer's market with my roommate. We bought fresh vegetables, fruit, and bread. In the afternoon, we cooked a big meal together. I made a salad and she made soup. After dinner, we watched a movie at home. It was a really nice day.",
+            "translation": "Someone talks about their weekend activities.",
+            "questions": [
+              {
+                "question": "Where did they go on the weekend?",
+                "options": [
+                  "The supermarket",
+                  "The farmer's market",
+                  "A restaurant",
+                  "A friend's house"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "What did the speaker make for dinner?",
+                "options": [
+                  "Soup",
+                  "Pasta",
+                  "A salad",
+                  "Bread"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "I have a job interview tomorrow morning. I'm a little nervous but also excited. The company is a technology startup downtown. I need to wear a suit and arrive by 9 AM. I prepared by researching the company online and practicing common interview questions. I hope it goes well!",
+            "translation": "Someone is preparing for a job interview.",
+            "questions": [
+              {
+                "question": "What kind of company is it?",
+                "options": [
+                  "A bank",
+                  "A hospital",
+                  "A technology startup",
+                  "A restaurant"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "How did the speaker prepare?",
+                "options": [
+                  "Called a friend",
+                  "Researched the company and practiced questions",
+                  "Bought new clothes",
+                  "Visited the office"
+                ],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "My apartment building has a problem with the heating. The landlord said a technician will come on Thursday between 10 AM and 2 PM. Someone needs to be home to let them in. I asked my neighbor if she could help because I have to work. She said yes, which was very kind of her.",
+            "translation": "Dealing with a household repair issue.",
+            "questions": [
+              {
+                "question": "What is the problem?",
+                "options": [
+                  "The water",
+                  "The electricity",
+                  "The heating",
+                  "The internet"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "Who will let the technician in?",
+                "options": [
+                  "The speaker",
+                  "The landlord",
+                  "The neighbor",
+                  "A friend"
+                ],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "I go usually grocery shopping in Saturdays.",
+            "acceptable_answers": [
+              "I usually go grocery shopping on Saturdays.",
+              "I usually go grocery shopping on Saturdays"
+            ],
+            "hint": "Adverb placement + on/in..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "I need to ___ an appointment with the doctor.",
+            "answer": "make",
+            "options": [
+              "make",
+              "do",
+              "take",
+              "have"
+            ],
+            "translation": "I need to make an appointment with the doctor."
+          },
+          {
+            "id": "w3",
+            "type": "fill_blank",
+            "sentence": "Could you ___ me a favor?",
+            "answer": "do",
+            "options": [
+              "do",
+              "make",
+              "give",
+              "take"
+            ],
+            "translation": "Could you do me a favor?"
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "I live here since three years.",
+            "acceptable_answers": [
+              "I have been living here for three years.",
+              "I have lived here for three years.",
+              "I have been living here for three years",
+              "I have lived here for three years"
+            ],
+            "hint": "Present perfect + for/since..."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "She ___ working from home since last month.",
+            "answer": "has been",
+            "options": [
+              "has been",
+              "have been",
+              "is",
+              "was"
+            ],
+            "translation": "She has been working from home since last month."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Fix the grammar:",
+            "sentence": "If it will rain tomorrow, we stay home.",
+            "acceptable_answers": [
+              "If it rains tomorrow, we will stay home.",
+              "If it rains tomorrow we will stay home.",
+              "If it rains tomorrow, we will stay home"
+            ],
+            "hint": "First conditional: if + present, will + verb..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "I have a meeting at three o'clock.",
+            "translation": "Talking about a scheduled meeting",
+            "acceptable_answers": [
+              "I have a meeting at three o'clock.",
+              "I have a meeting at three o'clock",
+              "i have a meeting at three o'clock",
+              "I have a meeting at 3 o'clock"
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Would you mind closing the window?",
+            "options": [
+              "Can you open the window?",
+              "Would you mind closing the window?",
+              "Is the window broken?",
+              "Do you like the window open?"
+            ],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "I forgot to buy milk at the store.",
+            "translation": "Someone forgot to buy something",
+            "acceptable_answers": [
+              "I forgot to buy milk at the store.",
+              "I forgot to buy milk at the store",
+              "i forgot to buy milk at the store"
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "She has been feeling under the weather lately.",
+            "options": [
+              "She likes rainy weather.",
+              "She has been feeling sick lately.",
+              "She is checking the weather.",
+              "She prefers cold weather."
+            ],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Let's grab a coffee after work.",
+            "translation": "Suggesting getting coffee together",
+            "acceptable_answers": [
+              "Let's grab a coffee after work.",
+              "Let's grab a coffee after work",
+              "lets grab a coffee after work"
+            ]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "I'm running late, I'll be there in ten minutes.",
+            "options": [
+              "I'm going for a run.",
+              "I'm lost, can you help?",
+              "I'm running late, I'll be there in ten minutes.",
+              "I'm early, where should I wait?"
+            ],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "I usually wake up at seven and go for a jog.",
+            "translation": "Describing a morning routine.",
+            "key_words": [
+              "usually",
+              "wake",
+              "seven",
+              "jog"
+            ]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Could you recommend a good restaurant nearby?",
+            "translation": "Asking for a recommendation.",
+            "key_words": [
+              "could",
+              "recommend",
+              "good",
+              "restaurant",
+              "nearby"
+            ]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "I have been studying English for about two years now.",
+            "translation": "Talking about how long you have been learning.",
+            "key_words": [
+              "have",
+              "been",
+              "studying",
+              "english",
+              "two",
+              "years"
+            ]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "The weather has been really nice this week, hasn't it?",
+            "translation": "Making small talk about the weather.",
+            "key_words": [
+              "weather",
+              "really",
+              "nice",
+              "week"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

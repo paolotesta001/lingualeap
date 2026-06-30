@@ -1,0 +1,623 @@
+{
+  "language": "Spanish",
+  "code": "es",
+  "flag": "\ud83c\uddea\ud83c\uddf8",
+  "tts_code": "es-ES",
+  "levels": [
+    {
+      "id": 1,
+      "name": "Basics",
+      "icon": "\ud83c\udf31",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "\u00a1Hola! Me llamo Carlos. Soy de Madrid. Tengo veinticinco a\u00f1os. Soy estudiante de medicina. Me gusta el f\u00fatbol y la m\u00fasica. Vivo con mi familia en un apartamento grande.",
+            "translation": "Hello! My name is Carlos. I am from Madrid. I am twenty-five years old. I am a medical student. I like football and music. I live with my family in a big apartment.",
+            "questions": [
+              {
+                "question": "What does Carlos study?",
+                "options": ["Law", "Medicine", "Engineering", "Art"],
+                "correct": 1
+              },
+              {
+                "question": "Where does Carlos live?",
+                "options": ["Alone in a house", "With friends", "With his family in an apartment", "In a dormitory"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Buenos d\u00edas. Yo soy Ana. Tengo un perro. Se llama Max. Max es peque\u00f1o y marr\u00f3n. Le gusta jugar en el parque. Todos los d\u00edas caminamos por la ma\u00f1ana.",
+            "translation": "Good morning. I am Ana. I have a dog. His name is Max. Max is small and brown. He likes to play in the park. Every day we walk in the morning.",
+            "questions": [
+              {
+                "question": "What color is Max?",
+                "options": ["Black", "White", "Brown", "Gray"],
+                "correct": 2
+              },
+              {
+                "question": "When do Ana and Max walk?",
+                "options": ["In the afternoon", "At night", "In the morning", "On weekends"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Mi casa tiene tres habitaciones, una cocina y dos ba\u00f1os. La cocina es mi lugar favorito porque me gusta cocinar. Hoy voy a preparar una tortilla espa\u00f1ola. Necesito huevos, patatas y cebolla.",
+            "translation": "My house has three bedrooms, a kitchen, and two bathrooms. The kitchen is my favorite place because I like to cook. Today I am going to make a Spanish tortilla. I need eggs, potatoes, and onion.",
+            "questions": [
+              {
+                "question": "How many bathrooms does the house have?",
+                "options": ["One", "Two", "Three", "Four"],
+                "correct": 1
+              },
+              {
+                "question": "What ingredients are needed for the tortilla?",
+                "options": ["Rice, chicken, and tomato", "Eggs, potatoes, and onion", "Bread, cheese, and ham", "Fish, lemon, and garlic"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Hoy es lunes. Hace sol. Tengo clase de espa\u00f1ol a las diez de la ma\u00f1ana. Despu\u00e9s de clase, voy a comer con mis amigos en la cafeter\u00eda. Por la tarde, estudio en la biblioteca.",
+            "translation": "Today is Monday. It is sunny. I have Spanish class at ten in the morning. After class, I am going to eat with my friends in the cafeteria. In the afternoon, I study in the library.",
+            "questions": [
+              {
+                "question": "What time is Spanish class?",
+                "options": ["8 AM", "9 AM", "10 AM", "11 AM"],
+                "correct": 2
+              },
+              {
+                "question": "Where does the speaker study in the afternoon?",
+                "options": ["At home", "In the cafeteria", "In the library", "In the park"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "Hello, how are you?",
+            "acceptable_answers": ["Hola, \u00bfc\u00f3mo est\u00e1s?", "Hola, como estas?", "Hola como estas", "Hola, \u00bfc\u00f3mo est\u00e1s", "hola como estas"],
+            "hint": "Hola..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Yo ___ estudiante.",
+            "answer": "soy",
+            "options": ["soy", "es", "eres", "son"],
+            "translation": "I am a student."
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "My name is Maria.",
+            "acceptable_answers": ["Me llamo Maria.", "Me llamo Mar\u00eda.", "Me llamo Maria", "me llamo maria", "Mi nombre es Maria", "Mi nombre es Mar\u00eda"],
+            "hint": "Me llamo..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "Ella ___ profesora.",
+            "answer": "es",
+            "options": ["soy", "es", "eres", "somos"],
+            "translation": "She is a teacher."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Nosotros ___ de M\u00e9xico.",
+            "answer": "somos",
+            "options": ["soy", "es", "son", "somos"],
+            "translation": "We are from Mexico."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "I like coffee very much.",
+            "acceptable_answers": ["Me gusta mucho el caf\u00e9.", "Me gusta mucho el cafe.", "Me gusta mucho el caf\u00e9", "me gusta mucho el cafe"],
+            "hint": "Me gusta mucho..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Buenos d\u00edas",
+            "translation": "Good morning",
+            "acceptable_answers": ["Buenos d\u00edas", "Buenos dias", "buenos dias", "buenos d\u00edas"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Gracias",
+            "options": ["Thank you", "Please", "Sorry", "Hello"],
+            "correct": 0
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Mucho gusto",
+            "translation": "Nice to meet you",
+            "acceptable_answers": ["Mucho gusto", "mucho gusto", "Mucho Gusto"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "\u00bfD\u00f3nde est\u00e1 el ba\u00f1o?",
+            "options": ["Where is the exit?", "Where is the bathroom?", "Where is the restaurant?", "Where is the hotel?"],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Por favor",
+            "translation": "Please",
+            "acceptable_answers": ["Por favor", "por favor", "Por Favor"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "No entiendo",
+            "options": ["I don't want", "I don't like", "I don't understand", "I don't know"],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Hola, me llamo Mar\u00eda.",
+            "translation": "Hello, my name is Mar\u00eda.",
+            "key_words": ["hola", "llamo", "mar\u00eda"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Soy de Espa\u00f1a y tengo treinta a\u00f1os.",
+            "translation": "I am from Spain and I am thirty years old.",
+            "key_words": ["soy", "espa\u00f1a", "treinta", "a\u00f1os"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Tengo dos hermanos y una hermana.",
+            "translation": "I have two brothers and one sister.",
+            "key_words": ["tengo", "hermanos", "hermana"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Me gusta mucho la m\u00fasica y el cine.",
+            "translation": "I really like music and cinema.",
+            "key_words": ["gusta", "mucho", "m\u00fasica", "cine"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Travel",
+      "icon": "\u2708\ufe0f",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Bienvenido al Hotel Sol. La recepci\u00f3n est\u00e1 abierta las veinticuatro horas. El desayuno se sirve de siete a diez de la ma\u00f1ana en el restaurante del primer piso. La piscina est\u00e1 en la azotea y est\u00e1 abierta de nueve a ocho de la noche. Wi-Fi gratis en todas las habitaciones.",
+            "translation": "Welcome to Hotel Sol. The reception is open 24 hours. Breakfast is served from 7 to 10 AM in the first-floor restaurant. The pool is on the rooftop and is open from 9 AM to 8 PM. Free Wi-Fi in all rooms.",
+            "questions": [
+              {
+                "question": "Where is the pool?",
+                "options": ["On the first floor", "In the garden", "On the rooftop", "Next to the restaurant"],
+                "correct": 2
+              },
+              {
+                "question": "When does breakfast end?",
+                "options": ["9 AM", "10 AM", "11 AM", "12 PM"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Disculpe, \u00bfc\u00f3mo llego al museo? Tiene que caminar dos calles recto y luego girar a la derecha. El museo est\u00e1 al lado de la iglesia. Est\u00e1 abierto de martes a domingo. La entrada cuesta diez euros para adultos. Los ni\u00f1os entran gratis.",
+            "translation": "Excuse me, how do I get to the museum? You have to walk two blocks straight and then turn right. The museum is next to the church. It's open Tuesday to Sunday. Entry costs ten euros for adults. Children enter free.",
+            "questions": [
+              {
+                "question": "Where is the museum located?",
+                "options": ["Next to the park", "Next to the church", "Next to the station", "Next to the hotel"],
+                "correct": 1
+              },
+              {
+                "question": "How much is the adult ticket?",
+                "options": ["Five euros", "Eight euros", "Ten euros", "Fifteen euros"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "En el restaurante: Hoy tenemos paella de mariscos por quince euros, ensalada mixta por seis euros, y gazpacho por cinco euros. Tambi\u00e9n tenemos sangr\u00eda y vino de la casa. El postre del d\u00eda es flan casero.",
+            "translation": "At the restaurant: Today we have seafood paella for fifteen euros, mixed salad for six euros, and gazpacho for five euros. We also have sangria and house wine. The dessert of the day is homemade flan.",
+            "questions": [
+              {
+                "question": "How much does the gazpacho cost?",
+                "options": ["Three euros", "Five euros", "Six euros", "Ten euros"],
+                "correct": 1
+              },
+              {
+                "question": "What is the dessert of the day?",
+                "options": ["Churros", "Cake", "Ice cream", "Homemade flan"],
+                "correct": 3
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "El tren a Barcelona sale a las tres de la tarde del and\u00e9n n\u00famero cinco. El viaje dura dos horas y media. Un billete de ida cuesta treinta euros. Un billete de ida y vuelta cuesta cincuenta euros. Hay cafeter\u00eda en el tren.",
+            "translation": "The train to Barcelona leaves at 3 PM from platform number five. The trip lasts two and a half hours. A one-way ticket costs thirty euros. A round-trip ticket costs fifty euros. There is a cafeteria on the train.",
+            "questions": [
+              {
+                "question": "How long is the trip?",
+                "options": ["One hour", "Two hours", "Two and a half hours", "Three hours"],
+                "correct": 2
+              },
+              {
+                "question": "How much is a round-trip ticket?",
+                "options": ["Thirty euros", "Forty euros", "Fifty euros", "Sixty euros"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "I would like a table for two, please.",
+            "acceptable_answers": ["Quisiera una mesa para dos, por favor.", "Quisiera una mesa para dos por favor", "Me gustar\u00eda una mesa para dos, por favor.", "Me gustaria una mesa para dos por favor", "Quiero una mesa para dos, por favor"],
+            "hint": "Quisiera una mesa..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "\u00bfCu\u00e1nto ___ esto?",
+            "answer": "cuesta",
+            "options": ["cuesta", "paga", "vale", "tiene"],
+            "translation": "How much does this cost?"
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "Where is the train station?",
+            "acceptable_answers": ["\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?", "Donde esta la estacion de tren?", "Donde esta la estacion de tren", "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren"],
+            "hint": "\u00bfD\u00f3nde est\u00e1..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "Necesito ___ un taxi.",
+            "answer": "tomar",
+            "options": ["tomar", "hacer", "dar", "poner"],
+            "translation": "I need to take a taxi."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "La cuenta, por ___.",
+            "answer": "favor",
+            "options": ["favor", "ejemplo", "supuesto", "cierto"],
+            "translation": "The check, please."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "Can you help me? I am lost.",
+            "acceptable_answers": ["\u00bfPuede ayudarme? Estoy perdido.", "Puede ayudarme? Estoy perdido", "\u00bfPuedes ayudarme? Estoy perdido.", "\u00bfMe puede ayudar? Estoy perdido.", "Puedes ayudarme? Estoy perdido"],
+            "hint": "\u00bfPuede ayudarme?..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Quisiera reservar una habitaci\u00f3n.",
+            "translation": "I would like to book a room.",
+            "acceptable_answers": ["Quisiera reservar una habitaci\u00f3n.", "Quisiera reservar una habitacion.", "Quisiera reservar una habitacion", "quisiera reservar una habitacion"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "El vuelo tiene retraso.",
+            "options": ["The flight is cancelled.", "The flight is on time.", "The flight is delayed.", "The flight is boarding."],
+            "correct": 2
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Gire a la izquierda en la esquina.",
+            "translation": "Turn left at the corner.",
+            "acceptable_answers": ["Gire a la izquierda en la esquina.", "Gire a la izquierda en la esquina", "gire a la izquierda en la esquina"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "\u00bfTiene una mesa junto a la ventana?",
+            "options": ["Do you have a reservation?", "Do you have a table by the window?", "Do you have the menu?", "Do you have a bigger table?"],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "\u00bfA qu\u00e9 hora sale el pr\u00f3ximo tren?",
+            "translation": "What time does the next train leave?",
+            "acceptable_answers": ["\u00bfA qu\u00e9 hora sale el pr\u00f3ximo tren?", "A que hora sale el proximo tren?", "A que hora sale el proximo tren", "a que hora sale el proximo tren"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Necesito cambiar dinero.",
+            "options": ["I need to save money.", "I need to exchange money.", "I need to find money.", "I need to count money."],
+            "correct": 1
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Disculpe, \u00bfc\u00f3mo llego al centro de la ciudad?",
+            "translation": "Excuse me, how do I get to the city center?",
+            "key_words": ["disculpe", "c\u00f3mo", "llego", "centro", "ciudad"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Me gustar\u00eda probar la paella, por favor.",
+            "translation": "I would like to try the paella, please.",
+            "key_words": ["gustar\u00eda", "probar", "paella", "favor"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "\u00bfTiene habitaciones disponibles para esta noche?",
+            "translation": "Do you have rooms available for tonight?",
+            "key_words": ["tiene", "habitaciones", "disponibles", "noche"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "\u00bfSe puede pagar con tarjeta de cr\u00e9dito?",
+            "translation": "Can I pay with a credit card?",
+            "key_words": ["puede", "pagar", "tarjeta", "cr\u00e9dito"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Daily Life",
+      "icon": "\ud83c\udfe0",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Me despierto a las siete de la ma\u00f1ana. Primero, me ducho y me visto. Luego desayuno caf\u00e9 con tostadas. Salgo de casa a las ocho y cuarto. Trabajo en una oficina en el centro. A mediod\u00eda, como en un restaurante cerca del trabajo. Termino a las seis y voy al gimnasio tres veces por semana.",
+            "translation": "I wake up at seven in the morning. First, I shower and get dressed. Then I have coffee with toast for breakfast. I leave the house at eight fifteen. I work in an office downtown. At noon, I eat at a restaurant near work. I finish at six and go to the gym three times a week.",
+            "questions": [
+              {
+                "question": "What does the speaker have for breakfast?",
+                "options": ["Fruit and yogurt", "Coffee with toast", "Cereal and milk", "Eggs and juice"],
+                "correct": 1
+              },
+              {
+                "question": "Where does the speaker work?",
+                "options": ["In a hospital", "In a school", "In an office downtown", "At home"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "El fin de semana pasado fui al mercado con mi madre. Compramos verduras frescas, fruta y pan. Por la tarde, cocinamos juntas una comida grande. Mi madre hizo una sopa deliciosa y yo prepar\u00e9 una ensalada. Despu\u00e9s de comer, dimos un paseo por el parque.",
+            "translation": "Last weekend I went to the market with my mother. We bought fresh vegetables, fruit, and bread. In the afternoon, we cooked a big meal together. My mother made a delicious soup and I prepared a salad. After eating, we went for a walk in the park.",
+            "questions": [
+              {
+                "question": "Who did the speaker go to the market with?",
+                "options": ["A friend", "A sister", "Their mother", "Alone"],
+                "correct": 2
+              },
+              {
+                "question": "What did the speaker prepare?",
+                "options": ["Soup", "A salad", "Bread", "Pasta"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Ma\u00f1ana tengo una entrevista de trabajo. Estoy un poco nerviosa pero tambi\u00e9n emocionada. La empresa es una compa\u00f1\u00eda de tecnolog\u00eda en el centro. Tengo que llevar ropa formal y llegar a las nueve. He preparado respuestas para las preguntas m\u00e1s comunes. \u00a1Espero que todo salga bien!",
+            "translation": "Tomorrow I have a job interview. I am a little nervous but also excited. The company is a technology firm downtown. I have to wear formal clothes and arrive at nine. I have prepared answers for the most common questions. I hope everything goes well!",
+            "questions": [
+              {
+                "question": "How does the speaker feel?",
+                "options": ["Only nervous", "Only excited", "Nervous and excited", "Calm and relaxed"],
+                "correct": 2
+              },
+              {
+                "question": "What kind of company is it?",
+                "options": ["A bank", "A technology company", "A hospital", "A restaurant"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Nuestro edificio tiene un problema con la calefacci\u00f3n. El casero dijo que un t\u00e9cnico vendr\u00e1 el jueves entre las diez y las dos. Alguien tiene que estar en casa para abrir la puerta. Le ped\u00ed a mi vecina si pod\u00eda ayudar porque yo tengo que trabajar. Ella dijo que s\u00ed, lo cual fue muy amable.",
+            "translation": "Our building has a problem with the heating. The landlord said a technician will come on Thursday between ten and two. Someone has to be home to open the door. I asked my neighbor if she could help because I have to work. She said yes, which was very kind.",
+            "questions": [
+              {
+                "question": "What is the problem in the building?",
+                "options": ["The electricity", "The water", "The heating", "The elevator"],
+                "correct": 2
+              },
+              {
+                "question": "When will the technician come?",
+                "options": ["Monday", "Wednesday", "Thursday", "Friday"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "I usually go shopping on Saturdays.",
+            "acceptable_answers": ["Normalmente voy de compras los s\u00e1bados.", "Normalmente voy de compras los sabados.", "Normalmente voy de compras los sabados", "Generalmente voy de compras los s\u00e1bados", "normalmente voy de compras los sabados"],
+            "hint": "Normalmente voy de compras..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Tengo que ___ una cita con el m\u00e9dico.",
+            "answer": "pedir",
+            "options": ["pedir", "hacer", "tomar", "dar"],
+            "translation": "I have to make an appointment with the doctor."
+          },
+          {
+            "id": "w3",
+            "type": "fill_blank",
+            "sentence": "\u00bfMe ___ un favor?",
+            "answer": "haces",
+            "options": ["haces", "das", "tienes", "pones"],
+            "translation": "Can you do me a favor?"
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "I have been living here for three years.",
+            "acceptable_answers": ["Llevo tres a\u00f1os viviendo aqu\u00ed.", "Llevo tres anos viviendo aqui.", "Llevo tres a\u00f1os viviendo aqu\u00ed", "He vivido aqu\u00ed durante tres a\u00f1os", "llevo tres anos viviendo aqui"],
+            "hint": "Llevo tres a\u00f1os..."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Ella ___ trabajando desde casa desde el mes pasado.",
+            "answer": "lleva",
+            "options": ["lleva", "tiene", "est\u00e1", "hace"],
+            "translation": "She has been working from home since last month."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to Spanish:",
+            "sentence": "If it rains tomorrow, we will stay home.",
+            "acceptable_answers": ["Si llueve ma\u00f1ana, nos quedaremos en casa.", "Si llueve manana, nos quedaremos en casa.", "Si llueve ma\u00f1ana nos quedaremos en casa", "si llueve manana nos quedaremos en casa"],
+            "hint": "Si llueve ma\u00f1ana..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Tengo una reuni\u00f3n a las tres.",
+            "translation": "I have a meeting at three.",
+            "acceptable_answers": ["Tengo una reuni\u00f3n a las tres.", "Tengo una reunion a las tres.", "Tengo una reunion a las tres", "tengo una reunion a las tres"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "\u00bfTe importar\u00eda cerrar la ventana?",
+            "options": ["Can you open the window?", "Would you mind closing the window?", "Is the window broken?", "Do you like the window open?"],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Se me olvid\u00f3 comprar leche en la tienda.",
+            "translation": "I forgot to buy milk at the store.",
+            "acceptable_answers": ["Se me olvid\u00f3 comprar leche en la tienda.", "Se me olvido comprar leche en la tienda.", "Se me olvido comprar leche en la tienda", "se me olvido comprar leche en la tienda"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "\u00daltimamente no se ha sentido muy bien.",
+            "options": ["She's been very busy lately.", "She hasn't been feeling well lately.", "She's been traveling lately.", "She moved recently."],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "\u00bfTomamos un caf\u00e9 despu\u00e9s del trabajo?",
+            "translation": "Shall we grab a coffee after work?",
+            "acceptable_answers": ["\u00bfTomamos un caf\u00e9 despu\u00e9s del trabajo?", "Tomamos un cafe despues del trabajo?", "Tomamos un cafe despues del trabajo", "tomamos un cafe despues del trabajo"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Voy tarde, llego en diez minutos.",
+            "options": ["I'm going for a walk.", "I'm lost, can you help?", "I'm running late, I'll be there in ten minutes.", "I'm early, where should I wait?"],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Normalmente me despierto a las siete y salgo a correr.",
+            "translation": "I usually wake up at seven and go for a run.",
+            "key_words": ["normalmente", "despierto", "siete", "correr"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "\u00bfMe podr\u00edas recomendar un buen restaurante por aqu\u00ed?",
+            "translation": "Could you recommend a good restaurant around here?",
+            "key_words": ["podr\u00edas", "recomendar", "restaurante", "aqu\u00ed"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Llevo dos a\u00f1os estudiando espa\u00f1ol.",
+            "translation": "I have been studying Spanish for two years.",
+            "key_words": ["llevo", "a\u00f1os", "estudiando", "espa\u00f1ol"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "El tiempo ha estado muy bueno esta semana, \u00bfverdad?",
+            "translation": "The weather has been really nice this week, right?",
+            "key_words": ["tiempo", "bueno", "semana", "verdad"]
+          }
+        ]
+      }
+    }
+  ]
+}

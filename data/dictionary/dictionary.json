@@ -1,0 +1,2445 @@
+{
+  "languages": [
+    "es",
+    "it",
+    "fr",
+    "de",
+    "en"
+  ],
+  "entries": [
+    {
+      "en": [
+        "hello",
+        "hi",
+        "hey"
+      ],
+      "es": [
+        "hola",
+        "buenas",
+        "qué tal"
+      ],
+      "it": [
+        "ciao",
+        "salve",
+        "buongiorno"
+      ],
+      "fr": [
+        "bonjour",
+        "salut",
+        "coucou"
+      ],
+      "de": [
+        "hallo",
+        "guten Tag",
+        "servus"
+      ]
+    },
+    {
+      "en": [
+        "goodbye",
+        "bye",
+        "see you"
+      ],
+      "es": [
+        "adiós",
+        "hasta luego",
+        "chao"
+      ],
+      "it": [
+        "arrivederci",
+        "ciao",
+        "addio"
+      ],
+      "fr": [
+        "au revoir",
+        "salut",
+        "à bientôt"
+      ],
+      "de": [
+        "auf Wiedersehen",
+        "tschüss",
+        "ciao"
+      ]
+    },
+    {
+      "en": [
+        "thank you",
+        "thanks",
+        "much appreciated"
+      ],
+      "es": [
+        "gracias",
+        "muchas gracias",
+        "te lo agradezco"
+      ],
+      "it": [
+        "grazie",
+        "grazie mille",
+        "ti ringrazio"
+      ],
+      "fr": [
+        "merci",
+        "merci beaucoup",
+        "je te remercie"
+      ],
+      "de": [
+        "danke",
+        "danke schön",
+        "vielen Dank"
+      ]
+    },
+    {
+      "en": [
+        "please",
+        "kindly"
+      ],
+      "es": [
+        "por favor",
+        "porfa"
+      ],
+      "it": [
+        "per favore",
+        "per piacere",
+        "prego"
+      ],
+      "fr": [
+        "s'il vous plaît",
+        "s'il te plaît",
+        "je vous en prie"
+      ],
+      "de": [
+        "bitte",
+        "bitte schön"
+      ]
+    },
+    {
+      "en": [
+        "yes",
+        "yeah",
+        "sure"
+      ],
+      "es": [
+        "sí",
+        "claro",
+        "por supuesto"
+      ],
+      "it": [
+        "sì",
+        "certo",
+        "certamente"
+      ],
+      "fr": [
+        "oui",
+        "ouais",
+        "bien sûr"
+      ],
+      "de": [
+        "ja",
+        "jawohl",
+        "klar"
+      ]
+    },
+    {
+      "en": [
+        "no",
+        "nope",
+        "not at all"
+      ],
+      "es": [
+        "no",
+        "nope",
+        "para nada"
+      ],
+      "it": [
+        "no",
+        "nessuno",
+        "affatto"
+      ],
+      "fr": [
+        "non",
+        "pas du tout",
+        "nan"
+      ],
+      "de": [
+        "nein",
+        "nö",
+        "keineswegs"
+      ]
+    },
+    {
+      "en": [
+        "sorry",
+        "excuse me",
+        "my apologies"
+      ],
+      "es": [
+        "lo siento",
+        "perdón",
+        "disculpa"
+      ],
+      "it": [
+        "mi dispiace",
+        "scusa",
+        "perdono"
+      ],
+      "fr": [
+        "désolé",
+        "pardon",
+        "je suis désolé"
+      ],
+      "de": [
+        "entschuldigung",
+        "es tut mir leid",
+        "verzeihung"
+      ]
+    },
+    {
+      "en": [
+        "excuse me",
+        "pardon me"
+      ],
+      "es": [
+        "disculpe",
+        "perdone",
+        "permiso"
+      ],
+      "it": [
+        "scusi",
+        "mi scusi",
+        "permesso"
+      ],
+      "fr": [
+        "excusez-moi",
+        "pardon",
+        "excuse-moi"
+      ],
+      "de": [
+        "entschuldigen Sie",
+        "verzeihung"
+      ]
+    },
+    {
+      "en": [
+        "man",
+        "guy",
+        "gentleman"
+      ],
+      "es": [
+        "hombre",
+        "señor",
+        "tipo"
+      ],
+      "it": [
+        "uomo",
+        "signore",
+        "tipo"
+      ],
+      "fr": [
+        "homme",
+        "monsieur",
+        "mec"
+      ],
+      "de": [
+        "Mann",
+        "Herr",
+        "Kerl"
+      ]
+    },
+    {
+      "en": [
+        "woman",
+        "lady",
+        "female"
+      ],
+      "es": [
+        "mujer",
+        "señora",
+        "dama"
+      ],
+      "it": [
+        "donna",
+        "signora",
+        "ragazza"
+      ],
+      "fr": [
+        "femme",
+        "madame",
+        "dame"
+      ],
+      "de": [
+        "Frau",
+        "Dame"
+      ]
+    },
+    {
+      "en": [
+        "child",
+        "kid",
+        "youngster"
+      ],
+      "es": [
+        "niño",
+        "niña",
+        "chico"
+      ],
+      "it": [
+        "bambino",
+        "bambina",
+        "ragazzo"
+      ],
+      "fr": [
+        "enfant",
+        "gamin",
+        "petit"
+      ],
+      "de": [
+        "Kind",
+        "Junge",
+        "Mädchen"
+      ]
+    },
+    {
+      "en": [
+        "friend",
+        "buddy",
+        "pal"
+      ],
+      "es": [
+        "amigo",
+        "amiga",
+        "compañero"
+      ],
+      "it": [
+        "amico",
+        "amica",
+        "compagno"
+      ],
+      "fr": [
+        "ami",
+        "amie",
+        "copain"
+      ],
+      "de": [
+        "Freund",
+        "Freundin",
+        "Kumpel"
+      ]
+    },
+    {
+      "en": [
+        "family",
+        "relatives"
+      ],
+      "es": [
+        "familia",
+        "parientes"
+      ],
+      "it": [
+        "famiglia",
+        "parenti"
+      ],
+      "fr": [
+        "famille",
+        "proches"
+      ],
+      "de": [
+        "Familie",
+        "Verwandte"
+      ]
+    },
+    {
+      "en": [
+        "father",
+        "dad",
+        "papa"
+      ],
+      "es": [
+        "padre",
+        "papá"
+      ],
+      "it": [
+        "padre",
+        "papà"
+      ],
+      "fr": [
+        "père",
+        "papa"
+      ],
+      "de": [
+        "Vater",
+        "Papa"
+      ]
+    },
+    {
+      "en": [
+        "mother",
+        "mom",
+        "mama"
+      ],
+      "es": [
+        "madre",
+        "mamá"
+      ],
+      "it": [
+        "madre",
+        "mamma"
+      ],
+      "fr": [
+        "mère",
+        "maman"
+      ],
+      "de": [
+        "Mutter",
+        "Mama"
+      ]
+    },
+    {
+      "en": [
+        "brother",
+        "bro"
+      ],
+      "es": [
+        "hermano"
+      ],
+      "it": [
+        "fratello"
+      ],
+      "fr": [
+        "frère"
+      ],
+      "de": [
+        "Bruder"
+      ]
+    },
+    {
+      "en": [
+        "sister",
+        "sis"
+      ],
+      "es": [
+        "hermana"
+      ],
+      "it": [
+        "sorella"
+      ],
+      "fr": [
+        "sœur"
+      ],
+      "de": [
+        "Schwester"
+      ]
+    },
+    {
+      "en": [
+        "water"
+      ],
+      "es": [
+        "agua"
+      ],
+      "it": [
+        "acqua"
+      ],
+      "fr": [
+        "eau"
+      ],
+      "de": [
+        "Wasser"
+      ]
+    },
+    {
+      "en": [
+        "bread",
+        "loaf"
+      ],
+      "es": [
+        "pan"
+      ],
+      "it": [
+        "pane"
+      ],
+      "fr": [
+        "pain"
+      ],
+      "de": [
+        "Brot"
+      ]
+    },
+    {
+      "en": [
+        "coffee"
+      ],
+      "es": [
+        "café"
+      ],
+      "it": [
+        "caffè"
+      ],
+      "fr": [
+        "café"
+      ],
+      "de": [
+        "Kaffee"
+      ]
+    },
+    {
+      "en": [
+        "tea"
+      ],
+      "es": [
+        "té",
+        "infusión"
+      ],
+      "it": [
+        "tè"
+      ],
+      "fr": [
+        "thé"
+      ],
+      "de": [
+        "Tee"
+      ]
+    },
+    {
+      "en": [
+        "milk"
+      ],
+      "es": [
+        "leche"
+      ],
+      "it": [
+        "latte"
+      ],
+      "fr": [
+        "lait"
+      ],
+      "de": [
+        "Milch"
+      ]
+    },
+    {
+      "en": [
+        "wine"
+      ],
+      "es": [
+        "vino"
+      ],
+      "it": [
+        "vino"
+      ],
+      "fr": [
+        "vin"
+      ],
+      "de": [
+        "Wein"
+      ]
+    },
+    {
+      "en": [
+        "beer",
+        "brew"
+      ],
+      "es": [
+        "cerveza",
+        "birra"
+      ],
+      "it": [
+        "birra"
+      ],
+      "fr": [
+        "bière"
+      ],
+      "de": [
+        "Bier"
+      ]
+    },
+    {
+      "en": [
+        "food",
+        "meal"
+      ],
+      "es": [
+        "comida",
+        "alimento"
+      ],
+      "it": [
+        "cibo",
+        "alimento"
+      ],
+      "fr": [
+        "nourriture",
+        "aliment"
+      ],
+      "de": [
+        "Essen",
+        "Nahrung"
+      ]
+    },
+    {
+      "en": [
+        "fruit"
+      ],
+      "es": [
+        "fruta",
+        "frutas"
+      ],
+      "it": [
+        "frutta",
+        "frutto"
+      ],
+      "fr": [
+        "fruit"
+      ],
+      "de": [
+        "Obst",
+        "Frucht"
+      ]
+    },
+    {
+      "en": [
+        "apple"
+      ],
+      "es": [
+        "manzana"
+      ],
+      "it": [
+        "mela"
+      ],
+      "fr": [
+        "pomme"
+      ],
+      "de": [
+        "Apfel"
+      ]
+    },
+    {
+      "en": [
+        "meat"
+      ],
+      "es": [
+        "carne"
+      ],
+      "it": [
+        "carne"
+      ],
+      "fr": [
+        "viande"
+      ],
+      "de": [
+        "Fleisch"
+      ]
+    },
+    {
+      "en": [
+        "fish"
+      ],
+      "es": [
+        "pescado",
+        "pez"
+      ],
+      "it": [
+        "pesce"
+      ],
+      "fr": [
+        "poisson"
+      ],
+      "de": [
+        "Fisch"
+      ]
+    },
+    {
+      "en": [
+        "cheese"
+      ],
+      "es": [
+        "queso"
+      ],
+      "it": [
+        "formaggio"
+      ],
+      "fr": [
+        "fromage"
+      ],
+      "de": [
+        "Käse"
+      ]
+    },
+    {
+      "en": [
+        "to eat",
+        "to consume"
+      ],
+      "es": [
+        "comer",
+        "ingerir"
+      ],
+      "it": [
+        "mangiare",
+        "ingerire"
+      ],
+      "fr": [
+        "manger",
+        "bouffer"
+      ],
+      "de": [
+        "essen",
+        "speisen"
+      ]
+    },
+    {
+      "en": [
+        "to drink"
+      ],
+      "es": [
+        "beber",
+        "tomar"
+      ],
+      "it": [
+        "bere"
+      ],
+      "fr": [
+        "boire"
+      ],
+      "de": [
+        "trinken"
+      ]
+    },
+    {
+      "en": [
+        "to sleep",
+        "to rest"
+      ],
+      "es": [
+        "dormir",
+        "descansar"
+      ],
+      "it": [
+        "dormire",
+        "riposare"
+      ],
+      "fr": [
+        "dormir",
+        "se reposer"
+      ],
+      "de": [
+        "schlafen",
+        "ruhen"
+      ]
+    },
+    {
+      "en": [
+        "to go",
+        "to leave"
+      ],
+      "es": [
+        "ir",
+        "marcharse"
+      ],
+      "it": [
+        "andare",
+        "andarsene"
+      ],
+      "fr": [
+        "aller",
+        "partir"
+      ],
+      "de": [
+        "gehen",
+        "fahren"
+      ]
+    },
+    {
+      "en": [
+        "to come",
+        "to arrive"
+      ],
+      "es": [
+        "venir",
+        "llegar"
+      ],
+      "it": [
+        "venire",
+        "arrivare"
+      ],
+      "fr": [
+        "venir",
+        "arriver"
+      ],
+      "de": [
+        "kommen",
+        "ankommen"
+      ]
+    },
+    {
+      "en": [
+        "to see",
+        "to look"
+      ],
+      "es": [
+        "ver",
+        "mirar"
+      ],
+      "it": [
+        "vedere",
+        "guardare"
+      ],
+      "fr": [
+        "voir",
+        "regarder"
+      ],
+      "de": [
+        "sehen",
+        "schauen"
+      ]
+    },
+    {
+      "en": [
+        "to speak",
+        "to talk"
+      ],
+      "es": [
+        "hablar",
+        "decir"
+      ],
+      "it": [
+        "parlare",
+        "dire"
+      ],
+      "fr": [
+        "parler",
+        "dire"
+      ],
+      "de": [
+        "sprechen",
+        "reden"
+      ]
+    },
+    {
+      "en": [
+        "to read"
+      ],
+      "es": [
+        "leer"
+      ],
+      "it": [
+        "leggere"
+      ],
+      "fr": [
+        "lire"
+      ],
+      "de": [
+        "lesen"
+      ]
+    },
+    {
+      "en": [
+        "to write"
+      ],
+      "es": [
+        "escribir",
+        "redactar"
+      ],
+      "it": [
+        "scrivere"
+      ],
+      "fr": [
+        "écrire",
+        "rédiger"
+      ],
+      "de": [
+        "schreiben",
+        "verfassen"
+      ]
+    },
+    {
+      "en": [
+        "to learn",
+        "to study"
+      ],
+      "es": [
+        "aprender",
+        "estudiar"
+      ],
+      "it": [
+        "imparare",
+        "studiare"
+      ],
+      "fr": [
+        "apprendre",
+        "étudier"
+      ],
+      "de": [
+        "lernen",
+        "studieren"
+      ]
+    },
+    {
+      "en": [
+        "to work"
+      ],
+      "es": [
+        "trabajar"
+      ],
+      "it": [
+        "lavorare"
+      ],
+      "fr": [
+        "travailler",
+        "bosser"
+      ],
+      "de": [
+        "arbeiten"
+      ]
+    },
+    {
+      "en": [
+        "to love"
+      ],
+      "es": [
+        "amar",
+        "querer"
+      ],
+      "it": [
+        "amare",
+        "voler bene"
+      ],
+      "fr": [
+        "aimer",
+        "adorer"
+      ],
+      "de": [
+        "lieben",
+        "mögen"
+      ]
+    },
+    {
+      "en": [
+        "to like",
+        "to enjoy"
+      ],
+      "es": [
+        "gustar",
+        "agradar"
+      ],
+      "it": [
+        "piacere"
+      ],
+      "fr": [
+        "aimer",
+        "apprécier"
+      ],
+      "de": [
+        "mögen",
+        "gefallen"
+      ]
+    },
+    {
+      "en": [
+        "to want",
+        "to desire"
+      ],
+      "es": [
+        "querer",
+        "desear"
+      ],
+      "it": [
+        "volere",
+        "desiderare"
+      ],
+      "fr": [
+        "vouloir",
+        "désirer"
+      ],
+      "de": [
+        "wollen",
+        "möchten"
+      ]
+    },
+    {
+      "en": [
+        "to need",
+        "to require"
+      ],
+      "es": [
+        "necesitar",
+        "requerir"
+      ],
+      "it": [
+        "avere bisogno",
+        "necessitare"
+      ],
+      "fr": [
+        "avoir besoin",
+        "nécessiter"
+      ],
+      "de": [
+        "brauchen",
+        "benötigen"
+      ]
+    },
+    {
+      "en": [
+        "to have",
+        "to own"
+      ],
+      "es": [
+        "tener",
+        "haber"
+      ],
+      "it": [
+        "avere"
+      ],
+      "fr": [
+        "avoir",
+        "posséder"
+      ],
+      "de": [
+        "haben",
+        "besitzen"
+      ]
+    },
+    {
+      "en": [
+        "to be"
+      ],
+      "es": [
+        "ser",
+        "estar"
+      ],
+      "it": [
+        "essere",
+        "stare"
+      ],
+      "fr": [
+        "être"
+      ],
+      "de": [
+        "sein"
+      ]
+    },
+    {
+      "en": [
+        "to do",
+        "to make"
+      ],
+      "es": [
+        "hacer",
+        "realizar"
+      ],
+      "it": [
+        "fare",
+        "realizzare"
+      ],
+      "fr": [
+        "faire",
+        "réaliser"
+      ],
+      "de": [
+        "machen",
+        "tun"
+      ]
+    },
+    {
+      "en": [
+        "to give"
+      ],
+      "es": [
+        "dar",
+        "entregar"
+      ],
+      "it": [
+        "dare",
+        "consegnare"
+      ],
+      "fr": [
+        "donner",
+        "offrir"
+      ],
+      "de": [
+        "geben",
+        "schenken"
+      ]
+    },
+    {
+      "en": [
+        "to take"
+      ],
+      "es": [
+        "tomar",
+        "coger",
+        "llevar"
+      ],
+      "it": [
+        "prendere",
+        "portare"
+      ],
+      "fr": [
+        "prendre"
+      ],
+      "de": [
+        "nehmen"
+      ]
+    },
+    {
+      "en": [
+        "to find",
+        "to discover"
+      ],
+      "es": [
+        "encontrar",
+        "hallar"
+      ],
+      "it": [
+        "trovare",
+        "scoprire"
+      ],
+      "fr": [
+        "trouver",
+        "découvrir"
+      ],
+      "de": [
+        "finden",
+        "entdecken"
+      ]
+    },
+    {
+      "en": [
+        "to think",
+        "to believe"
+      ],
+      "es": [
+        "pensar",
+        "creer"
+      ],
+      "it": [
+        "pensare",
+        "credere"
+      ],
+      "fr": [
+        "penser",
+        "croire"
+      ],
+      "de": [
+        "denken",
+        "glauben"
+      ]
+    },
+    {
+      "en": [
+        "to know"
+      ],
+      "es": [
+        "saber",
+        "conocer"
+      ],
+      "it": [
+        "sapere",
+        "conoscere"
+      ],
+      "fr": [
+        "savoir",
+        "connaître"
+      ],
+      "de": [
+        "wissen",
+        "kennen"
+      ]
+    },
+    {
+      "en": [
+        "house",
+        "home"
+      ],
+      "es": [
+        "casa",
+        "vivienda",
+        "hogar"
+      ],
+      "it": [
+        "casa",
+        "abitazione"
+      ],
+      "fr": [
+        "maison",
+        "demeure",
+        "logement"
+      ],
+      "de": [
+        "Haus",
+        "Zuhause",
+        "Wohnung"
+      ]
+    },
+    {
+      "en": [
+        "city",
+        "town"
+      ],
+      "es": [
+        "ciudad",
+        "urbe"
+      ],
+      "it": [
+        "città"
+      ],
+      "fr": [
+        "ville",
+        "cité"
+      ],
+      "de": [
+        "Stadt"
+      ]
+    },
+    {
+      "en": [
+        "country",
+        "nation"
+      ],
+      "es": [
+        "país",
+        "nación"
+      ],
+      "it": [
+        "paese",
+        "nazione"
+      ],
+      "fr": [
+        "pays",
+        "nation"
+      ],
+      "de": [
+        "Land",
+        "Nation"
+      ]
+    },
+    {
+      "en": [
+        "school"
+      ],
+      "es": [
+        "escuela",
+        "colegio"
+      ],
+      "it": [
+        "scuola"
+      ],
+      "fr": [
+        "école"
+      ],
+      "de": [
+        "Schule"
+      ]
+    },
+    {
+      "en": [
+        "work",
+        "job"
+      ],
+      "es": [
+        "trabajo",
+        "empleo"
+      ],
+      "it": [
+        "lavoro",
+        "impiego"
+      ],
+      "fr": [
+        "travail",
+        "boulot"
+      ],
+      "de": [
+        "Arbeit",
+        "Job"
+      ]
+    },
+    {
+      "en": [
+        "store",
+        "shop"
+      ],
+      "es": [
+        "tienda",
+        "comercio"
+      ],
+      "it": [
+        "negozio",
+        "bottega"
+      ],
+      "fr": [
+        "magasin",
+        "boutique"
+      ],
+      "de": [
+        "Geschäft",
+        "Laden"
+      ]
+    },
+    {
+      "en": [
+        "restaurant"
+      ],
+      "es": [
+        "restaurante"
+      ],
+      "it": [
+        "ristorante"
+      ],
+      "fr": [
+        "restaurant"
+      ],
+      "de": [
+        "Restaurant",
+        "Lokal"
+      ]
+    },
+    {
+      "en": [
+        "hotel"
+      ],
+      "es": [
+        "hotel"
+      ],
+      "it": [
+        "hotel",
+        "albergo"
+      ],
+      "fr": [
+        "hôtel"
+      ],
+      "de": [
+        "Hotel"
+      ]
+    },
+    {
+      "en": [
+        "street",
+        "road"
+      ],
+      "es": [
+        "calle",
+        "vía"
+      ],
+      "it": [
+        "strada",
+        "via"
+      ],
+      "fr": [
+        "rue",
+        "voie"
+      ],
+      "de": [
+        "Straße",
+        "Weg"
+      ]
+    },
+    {
+      "en": [
+        "airport"
+      ],
+      "es": [
+        "aeropuerto"
+      ],
+      "it": [
+        "aeroporto"
+      ],
+      "fr": [
+        "aéroport"
+      ],
+      "de": [
+        "Flughafen"
+      ]
+    },
+    {
+      "en": [
+        "train station"
+      ],
+      "es": [
+        "estación de tren"
+      ],
+      "it": [
+        "stazione ferroviaria"
+      ],
+      "fr": [
+        "gare"
+      ],
+      "de": [
+        "Bahnhof"
+      ]
+    },
+    {
+      "en": [
+        "today"
+      ],
+      "es": [
+        "hoy"
+      ],
+      "it": [
+        "oggi"
+      ],
+      "fr": [
+        "aujourd'hui"
+      ],
+      "de": [
+        "heute"
+      ]
+    },
+    {
+      "en": [
+        "tomorrow"
+      ],
+      "es": [
+        "mañana"
+      ],
+      "it": [
+        "domani"
+      ],
+      "fr": [
+        "demain"
+      ],
+      "de": [
+        "morgen"
+      ]
+    },
+    {
+      "en": [
+        "yesterday"
+      ],
+      "es": [
+        "ayer"
+      ],
+      "it": [
+        "ieri"
+      ],
+      "fr": [
+        "hier"
+      ],
+      "de": [
+        "gestern"
+      ]
+    },
+    {
+      "en": [
+        "now",
+        "right now"
+      ],
+      "es": [
+        "ahora",
+        "ya"
+      ],
+      "it": [
+        "adesso",
+        "ora"
+      ],
+      "fr": [
+        "maintenant",
+        "à présent"
+      ],
+      "de": [
+        "jetzt",
+        "nun"
+      ]
+    },
+    {
+      "en": [
+        "morning"
+      ],
+      "es": [
+        "mañana"
+      ],
+      "it": [
+        "mattina"
+      ],
+      "fr": [
+        "matin"
+      ],
+      "de": [
+        "Morgen"
+      ]
+    },
+    {
+      "en": [
+        "evening"
+      ],
+      "es": [
+        "tarde",
+        "noche"
+      ],
+      "it": [
+        "sera"
+      ],
+      "fr": [
+        "soir"
+      ],
+      "de": [
+        "Abend"
+      ]
+    },
+    {
+      "en": [
+        "night"
+      ],
+      "es": [
+        "noche"
+      ],
+      "it": [
+        "notte"
+      ],
+      "fr": [
+        "nuit"
+      ],
+      "de": [
+        "Nacht"
+      ]
+    },
+    {
+      "en": [
+        "day"
+      ],
+      "es": [
+        "día"
+      ],
+      "it": [
+        "giorno"
+      ],
+      "fr": [
+        "jour"
+      ],
+      "de": [
+        "Tag"
+      ]
+    },
+    {
+      "en": [
+        "week"
+      ],
+      "es": [
+        "semana"
+      ],
+      "it": [
+        "settimana"
+      ],
+      "fr": [
+        "semaine"
+      ],
+      "de": [
+        "Woche"
+      ]
+    },
+    {
+      "en": [
+        "month"
+      ],
+      "es": [
+        "mes"
+      ],
+      "it": [
+        "mese"
+      ],
+      "fr": [
+        "mois"
+      ],
+      "de": [
+        "Monat"
+      ]
+    },
+    {
+      "en": [
+        "year"
+      ],
+      "es": [
+        "año"
+      ],
+      "it": [
+        "anno"
+      ],
+      "fr": [
+        "an",
+        "année"
+      ],
+      "de": [
+        "Jahr"
+      ]
+    },
+    {
+      "en": [
+        "hour"
+      ],
+      "es": [
+        "hora"
+      ],
+      "it": [
+        "ora"
+      ],
+      "fr": [
+        "heure"
+      ],
+      "de": [
+        "Stunde"
+      ]
+    },
+    {
+      "en": [
+        "minute"
+      ],
+      "es": [
+        "minuto"
+      ],
+      "it": [
+        "minuto"
+      ],
+      "fr": [
+        "minute"
+      ],
+      "de": [
+        "Minute"
+      ]
+    },
+    {
+      "en": [
+        "good",
+        "fine"
+      ],
+      "es": [
+        "bueno",
+        "buen"
+      ],
+      "it": [
+        "buono",
+        "bravo"
+      ],
+      "fr": [
+        "bon",
+        "bien"
+      ],
+      "de": [
+        "gut"
+      ]
+    },
+    {
+      "en": [
+        "bad"
+      ],
+      "es": [
+        "malo",
+        "mal"
+      ],
+      "it": [
+        "cattivo",
+        "brutto"
+      ],
+      "fr": [
+        "mauvais",
+        "mal"
+      ],
+      "de": [
+        "schlecht",
+        "böse"
+      ]
+    },
+    {
+      "en": [
+        "big",
+        "large"
+      ],
+      "es": [
+        "grande",
+        "amplio"
+      ],
+      "it": [
+        "grande",
+        "grosso"
+      ],
+      "fr": [
+        "grand",
+        "gros"
+      ],
+      "de": [
+        "groß"
+      ]
+    },
+    {
+      "en": [
+        "small",
+        "little"
+      ],
+      "es": [
+        "pequeño",
+        "chico"
+      ],
+      "it": [
+        "piccolo"
+      ],
+      "fr": [
+        "petit"
+      ],
+      "de": [
+        "klein"
+      ]
+    },
+    {
+      "en": [
+        "beautiful",
+        "pretty"
+      ],
+      "es": [
+        "hermoso",
+        "bonito",
+        "bello"
+      ],
+      "it": [
+        "bello",
+        "bellissimo"
+      ],
+      "fr": [
+        "beau",
+        "belle",
+        "joli"
+      ],
+      "de": [
+        "schön",
+        "wunderschön"
+      ]
+    },
+    {
+      "en": [
+        "ugly"
+      ],
+      "es": [
+        "feo"
+      ],
+      "it": [
+        "brutto"
+      ],
+      "fr": [
+        "laid",
+        "moche"
+      ],
+      "de": [
+        "hässlich"
+      ]
+    },
+    {
+      "en": [
+        "happy",
+        "joyful",
+        "glad"
+      ],
+      "es": [
+        "feliz",
+        "contento",
+        "alegre"
+      ],
+      "it": [
+        "felice",
+        "contento",
+        "allegro"
+      ],
+      "fr": [
+        "heureux",
+        "content",
+        "joyeux"
+      ],
+      "de": [
+        "glücklich",
+        "froh",
+        "zufrieden"
+      ]
+    },
+    {
+      "en": [
+        "sad",
+        "unhappy"
+      ],
+      "es": [
+        "triste",
+        "afligido"
+      ],
+      "it": [
+        "triste",
+        "infelice"
+      ],
+      "fr": [
+        "triste",
+        "malheureux"
+      ],
+      "de": [
+        "traurig",
+        "betrübt"
+      ]
+    },
+    {
+      "en": [
+        "fast",
+        "quick"
+      ],
+      "es": [
+        "rápido",
+        "veloz"
+      ],
+      "it": [
+        "veloce",
+        "rapido"
+      ],
+      "fr": [
+        "rapide",
+        "vite"
+      ],
+      "de": [
+        "schnell"
+      ]
+    },
+    {
+      "en": [
+        "slow"
+      ],
+      "es": [
+        "lento",
+        "despacio"
+      ],
+      "it": [
+        "lento"
+      ],
+      "fr": [
+        "lent",
+        "lente"
+      ],
+      "de": [
+        "langsam"
+      ]
+    },
+    {
+      "en": [
+        "hot",
+        "warm"
+      ],
+      "es": [
+        "caliente",
+        "caluroso"
+      ],
+      "it": [
+        "caldo"
+      ],
+      "fr": [
+        "chaud"
+      ],
+      "de": [
+        "heiß",
+        "warm"
+      ]
+    },
+    {
+      "en": [
+        "cold"
+      ],
+      "es": [
+        "frío"
+      ],
+      "it": [
+        "freddo"
+      ],
+      "fr": [
+        "froid"
+      ],
+      "de": [
+        "kalt"
+      ]
+    },
+    {
+      "en": [
+        "easy",
+        "simple"
+      ],
+      "es": [
+        "fácil",
+        "sencillo"
+      ],
+      "it": [
+        "facile",
+        "semplice"
+      ],
+      "fr": [
+        "facile",
+        "simple"
+      ],
+      "de": [
+        "einfach",
+        "leicht"
+      ]
+    },
+    {
+      "en": [
+        "difficult",
+        "hard"
+      ],
+      "es": [
+        "difícil",
+        "complicado"
+      ],
+      "it": [
+        "difficile",
+        "complicato"
+      ],
+      "fr": [
+        "difficile",
+        "compliqué"
+      ],
+      "de": [
+        "schwierig",
+        "schwer"
+      ]
+    },
+    {
+      "en": [
+        "one"
+      ],
+      "es": [
+        "uno",
+        "un"
+      ],
+      "it": [
+        "uno",
+        "un"
+      ],
+      "fr": [
+        "un",
+        "une"
+      ],
+      "de": [
+        "eins",
+        "ein"
+      ]
+    },
+    {
+      "en": [
+        "two"
+      ],
+      "es": [
+        "dos"
+      ],
+      "it": [
+        "due"
+      ],
+      "fr": [
+        "deux"
+      ],
+      "de": [
+        "zwei"
+      ]
+    },
+    {
+      "en": [
+        "three"
+      ],
+      "es": [
+        "tres"
+      ],
+      "it": [
+        "tre"
+      ],
+      "fr": [
+        "trois"
+      ],
+      "de": [
+        "drei"
+      ]
+    },
+    {
+      "en": [
+        "four"
+      ],
+      "es": [
+        "cuatro"
+      ],
+      "it": [
+        "quattro"
+      ],
+      "fr": [
+        "quatre"
+      ],
+      "de": [
+        "vier"
+      ]
+    },
+    {
+      "en": [
+        "five"
+      ],
+      "es": [
+        "cinco"
+      ],
+      "it": [
+        "cinque"
+      ],
+      "fr": [
+        "cinq"
+      ],
+      "de": [
+        "fünf"
+      ]
+    },
+    {
+      "en": [
+        "ten"
+      ],
+      "es": [
+        "diez"
+      ],
+      "it": [
+        "dieci"
+      ],
+      "fr": [
+        "dix"
+      ],
+      "de": [
+        "zehn"
+      ]
+    },
+    {
+      "en": [
+        "hundred"
+      ],
+      "es": [
+        "cien",
+        "ciento"
+      ],
+      "it": [
+        "cento"
+      ],
+      "fr": [
+        "cent"
+      ],
+      "de": [
+        "hundert"
+      ]
+    },
+    {
+      "en": [
+        "red"
+      ],
+      "es": [
+        "rojo"
+      ],
+      "it": [
+        "rosso"
+      ],
+      "fr": [
+        "rouge"
+      ],
+      "de": [
+        "rot"
+      ]
+    },
+    {
+      "en": [
+        "blue"
+      ],
+      "es": [
+        "azul"
+      ],
+      "it": [
+        "blu",
+        "azzurro"
+      ],
+      "fr": [
+        "bleu"
+      ],
+      "de": [
+        "blau"
+      ]
+    },
+    {
+      "en": [
+        "green"
+      ],
+      "es": [
+        "verde"
+      ],
+      "it": [
+        "verde"
+      ],
+      "fr": [
+        "vert"
+      ],
+      "de": [
+        "grün"
+      ]
+    },
+    {
+      "en": [
+        "white"
+      ],
+      "es": [
+        "blanco"
+      ],
+      "it": [
+        "bianco"
+      ],
+      "fr": [
+        "blanc"
+      ],
+      "de": [
+        "weiß"
+      ]
+    },
+    {
+      "en": [
+        "black"
+      ],
+      "es": [
+        "negro"
+      ],
+      "it": [
+        "nero"
+      ],
+      "fr": [
+        "noir"
+      ],
+      "de": [
+        "schwarz"
+      ]
+    },
+    {
+      "en": [
+        "yellow"
+      ],
+      "es": [
+        "amarillo"
+      ],
+      "it": [
+        "giallo"
+      ],
+      "fr": [
+        "jaune"
+      ],
+      "de": [
+        "gelb"
+      ]
+    },
+    {
+      "en": [
+        "book"
+      ],
+      "es": [
+        "libro"
+      ],
+      "it": [
+        "libro"
+      ],
+      "fr": [
+        "livre"
+      ],
+      "de": [
+        "Buch"
+      ]
+    },
+    {
+      "en": [
+        "car",
+        "automobile"
+      ],
+      "es": [
+        "coche",
+        "auto",
+        "carro"
+      ],
+      "it": [
+        "macchina",
+        "auto",
+        "automobile"
+      ],
+      "fr": [
+        "voiture",
+        "auto",
+        "bagnole"
+      ],
+      "de": [
+        "Auto",
+        "Wagen"
+      ]
+    },
+    {
+      "en": [
+        "phone",
+        "cell phone"
+      ],
+      "es": [
+        "teléfono",
+        "móvil"
+      ],
+      "it": [
+        "telefono",
+        "cellulare"
+      ],
+      "fr": [
+        "téléphone",
+        "portable"
+      ],
+      "de": [
+        "Telefon",
+        "Handy"
+      ]
+    },
+    {
+      "en": [
+        "money",
+        "cash"
+      ],
+      "es": [
+        "dinero",
+        "plata"
+      ],
+      "it": [
+        "soldi",
+        "denaro"
+      ],
+      "fr": [
+        "argent",
+        "fric"
+      ],
+      "de": [
+        "Geld"
+      ]
+    },
+    {
+      "en": [
+        "door"
+      ],
+      "es": [
+        "puerta"
+      ],
+      "it": [
+        "porta"
+      ],
+      "fr": [
+        "porte"
+      ],
+      "de": [
+        "Tür"
+      ]
+    },
+    {
+      "en": [
+        "window"
+      ],
+      "es": [
+        "ventana"
+      ],
+      "it": [
+        "finestra"
+      ],
+      "fr": [
+        "fenêtre"
+      ],
+      "de": [
+        "Fenster"
+      ]
+    },
+    {
+      "en": [
+        "table"
+      ],
+      "es": [
+        "mesa"
+      ],
+      "it": [
+        "tavolo",
+        "tavola"
+      ],
+      "fr": [
+        "table"
+      ],
+      "de": [
+        "Tisch"
+      ]
+    },
+    {
+      "en": [
+        "chair"
+      ],
+      "es": [
+        "silla"
+      ],
+      "it": [
+        "sedia"
+      ],
+      "fr": [
+        "chaise"
+      ],
+      "de": [
+        "Stuhl"
+      ]
+    },
+    {
+      "en": [
+        "key"
+      ],
+      "es": [
+        "llave"
+      ],
+      "it": [
+        "chiave"
+      ],
+      "fr": [
+        "clé",
+        "clef"
+      ],
+      "de": [
+        "Schlüssel"
+      ]
+    },
+    {
+      "en": [
+        "sun"
+      ],
+      "es": [
+        "sol"
+      ],
+      "it": [
+        "sole"
+      ],
+      "fr": [
+        "soleil"
+      ],
+      "de": [
+        "Sonne"
+      ]
+    },
+    {
+      "en": [
+        "moon"
+      ],
+      "es": [
+        "luna"
+      ],
+      "it": [
+        "luna"
+      ],
+      "fr": [
+        "lune"
+      ],
+      "de": [
+        "Mond"
+      ]
+    },
+    {
+      "en": [
+        "rain"
+      ],
+      "es": [
+        "lluvia"
+      ],
+      "it": [
+        "pioggia"
+      ],
+      "fr": [
+        "pluie"
+      ],
+      "de": [
+        "Regen"
+      ]
+    },
+    {
+      "en": [
+        "snow"
+      ],
+      "es": [
+        "nieve"
+      ],
+      "it": [
+        "neve"
+      ],
+      "fr": [
+        "neige"
+      ],
+      "de": [
+        "Schnee"
+      ]
+    },
+    {
+      "en": [
+        "tree"
+      ],
+      "es": [
+        "árbol"
+      ],
+      "it": [
+        "albero"
+      ],
+      "fr": [
+        "arbre"
+      ],
+      "de": [
+        "Baum"
+      ]
+    },
+    {
+      "en": [
+        "flower"
+      ],
+      "es": [
+        "flor"
+      ],
+      "it": [
+        "fiore"
+      ],
+      "fr": [
+        "fleur"
+      ],
+      "de": [
+        "Blume"
+      ]
+    },
+    {
+      "en": [
+        "sea"
+      ],
+      "es": [
+        "mar"
+      ],
+      "it": [
+        "mare"
+      ],
+      "fr": [
+        "mer"
+      ],
+      "de": [
+        "Meer",
+        "See"
+      ]
+    },
+    {
+      "en": [
+        "mountain"
+      ],
+      "es": [
+        "montaña"
+      ],
+      "it": [
+        "montagna"
+      ],
+      "fr": [
+        "montagne"
+      ],
+      "de": [
+        "Berg"
+      ]
+    },
+    {
+      "en": [
+        "river"
+      ],
+      "es": [
+        "río"
+      ],
+      "it": [
+        "fiume"
+      ],
+      "fr": [
+        "rivière",
+        "fleuve"
+      ],
+      "de": [
+        "Fluss"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLeap - Learn Languages</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-bar">
+        <div class="top-bar-left">
+            <div class="logo">🌍 LinguaLeap</div>
+        </div>
+        <div class="top-bar-center">
+            <div class="streak-display" id="streakDisplay" title="Day streak">
+                🔥 <span id="streakCount">0</span>
+            </div>
+            <div class="xp-display" id="xpDisplay" title="Total XP">
+                ⭐ <span id="xpCount">0</span> XP
+            </div>
+            <div class="hearts-display" id="heartsDisplay" title="Hearts remaining">
+                ❤️ <span id="heartsCount">5</span>
+            </div>
+        </div>
+        <div class="top-bar-right">
+            <div class="level-badge" id="levelBadge">Lv. <span id="userLevel">1</span></div>
+        </div>
+    </nav>
+
+    <!-- Language Selection Screen -->
+    <div class="screen active" id="languageScreen">
+        <div class="screen-content">
+            <h1 class="screen-title">Choose a Language</h1>
+            <p class="screen-subtitle">What would you like to learn today?</p>
+            <div class="language-grid" id="languageGrid">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Screen -->
+    <div class="screen" id="dashboardScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backToLanguages">← Languages</button>
+                <h1 class="screen-title" id="dashboardTitle">Spanish</h1>
+            </div>
+            <div class="xp-progress-bar">
+                <div class="xp-progress-fill" id="xpProgressFill"></div>
+                <span class="xp-progress-text" id="xpProgressText">0 / 100 XP</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="reading">
+                    <div class="skill-icon">📖</div>
+                    <div class="skill-name">Reading</div>
+                    <div class="skill-progress"><div class="skill-progress-fill" id="readingProgress"></div></div>
+                </div>
+                <div class="skill-card" data-skill="writing">
+                    <div class="skill-icon">✍️</div>
+                    <div class="skill-name">Writing</div>
+                    <div class="skill-progress"><div class="skill-progress-fill" id="writingProgress"></div></div>
+                </div>
+                <div class="skill-card" data-skill="listening">
+                    <div class="skill-icon">👂</div>
+                    <div class="skill-name">Listening</div>
+                    <div class="skill-progress"><div class="skill-progress-fill" id="listeningProgress"></div></div>
+                </div>
+                <div class="skill-card" data-skill="speaking">
+                    <div class="skill-icon">🗣️</div>
+                    <div class="skill-name">Speaking</div>
+                    <div class="skill-progress"><div class="skill-progress-fill" id="speakingProgress"></div></div>
+                </div>
+            </div>
+            <h2 class="section-title">Levels</h2>
+            <div class="levels-list" id="levelsList">
+                <!-- Filled by JS -->
+            </div>
+
+            <h2 class="section-title" style="margin-top:32px">Vocabulary</h2>
+            <div class="vocab-buttons">
+                <button class="vocab-btn" id="openDictionaryBtn">
+                    <span class="vocab-icon">🔍</span>
+                    <span class="vocab-label">Dictionary</span>
+                    <span class="vocab-desc">Look up words</span>
+                </button>
+                <button class="vocab-btn" id="openMyWordsBtn">
+                    <span class="vocab-icon">📚</span>
+                    <span class="vocab-label">My Words</span>
+                    <span class="vocab-desc"><span id="savedWordsCount">0</span> saved</span>
+                </button>
+            </div>
+
+            <h2 class="section-title" style="margin-top:32px">Practice & Learn</h2>
+            <div class="vocab-buttons">
+                <button class="vocab-btn vocab-btn-chat" id="openChatbotBtn">
+                    <span class="vocab-icon">💬</span>
+                    <span class="vocab-label">Chatbot</span>
+                    <span class="vocab-desc">Ask language questions</span>
+                </button>
+                <button class="vocab-btn vocab-btn-test" id="openLessonsBtn">
+                    <span class="vocab-icon">🎓</span>
+                    <span class="vocab-label">Lessons</span>
+                    <span class="vocab-desc">10 levels + placement test</span>
+                </button>
+                <button class="vocab-btn vocab-btn-movie" id="openMoviePhrasesBtn">
+                    <span class="vocab-icon">🎬</span>
+                    <span class="vocab-label">Movie Phrases</span>
+                    <span class="vocab-desc">Phrases by level (B1–C2)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Save Word Modal -->
+    <div class="modal-overlay hidden" id="saveWordModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>💾 Save to My Words</h2>
+                <button class="modal-close" id="saveModalClose">✕</button>
+            </div>
+            <div class="modal-body">
+                <label class="modal-label">Word / Phrase</label>
+                <input type="text" class="text-input" id="saveModalSource" placeholder="Source word">
+                <label class="modal-label">Translation</label>
+                <input type="text" class="text-input" id="saveModalTranslation" placeholder="Your preferred translation">
+                <label class="modal-label">Language pair</label>
+                <div class="modal-lang-row">
+                    <select class="modal-select" id="saveModalLangFrom">
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                    </select>
+                    <span style="color: var(--text-secondary);">→</span>
+                    <select class="modal-select" id="saveModalLangTo">
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" id="saveModalCancel">Cancel</button>
+                <button class="btn btn-primary" id="saveModalConfirm">✓ Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learned Words Modal -->
+    <div class="modal-overlay hidden" id="learnedModal">
+        <div class="modal modal-wide">
+            <div class="modal-header">
+                <h2>🎓 Words Learned (<span id="learnedModalCount">0</span>)</h2>
+                <button class="modal-close" id="learnedModalClose">✕</button>
+            </div>
+            <div class="modal-body" id="learnedModalBody">
+                <!-- Filled by JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" id="learnedModalCancel">Close</button>
+                <button class="btn btn-primary" id="learnedModalPractice">🎮 Practice these words</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Screen -->
+    <div class="screen" id="chatbotScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backFromChatbot">← Back</button>
+                <h1 class="screen-title">💬 Chatbot</h1>
+            </div>
+            <div class="chat-info">Ask questions like "How do you say 'good morning'?" or "What does 'grazie' mean?"</div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input-row">
+                <input type="text" class="text-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off">
+                <button class="dict-search-btn" id="chatSendBtn" title="Send">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lessons Screen -->
+    <div class="screen" id="lessonsScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backFromLessons">← Back</button>
+                <h1 class="screen-title">🎓 Lessons</h1>
+            </div>
+            <div class="lessons-intro">
+                <p>10 progressive levels from absolute beginner to advanced.</p>
+                <button class="btn btn-primary" id="startPlacementBtn">📝 Take Placement Test</button>
+            </div>
+            <div class="placement-result hidden" id="placementResult">
+                <span class="placement-emoji" id="placementEmoji">🎯</span>
+                <span class="placement-text">Recommended starting level: <strong id="recommendedLevel">1</strong></span>
+            </div>
+            <h2 class="section-title" style="margin-top:24px">All Levels</h2>
+            <div class="lessons-grid" id="lessonsGrid"></div>
+        </div>
+    </div>
+
+    <!-- Placement Test Screen -->
+    <div class="screen" id="placementScreen">
+        <div class="screen-content">
+            <div class="exercise-header">
+                <button class="back-btn" id="backFromPlacement">✕</button>
+                <div class="exercise-progress-bar">
+                    <div class="exercise-progress-fill" id="placementProgressFill"></div>
+                </div>
+                <div class="flashcard-counter"><span id="placementCurrent">1</span>/<span id="placementTotal">10</span></div>
+            </div>
+            <div class="exercise-body" id="placementBody"></div>
+            <div class="exercise-footer">
+                <button class="btn btn-primary" id="placementNextBtn" disabled>Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Single Lesson Screen -->
+    <div class="screen" id="lessonDetailScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backFromLessonDetail">← Lessons</button>
+                <h1 class="screen-title" id="lessonDetailTitle">Level 1</h1>
+            </div>
+            <div id="lessonDetailBody"></div>
+        </div>
+    </div>
+
+    <!-- Dictionary Screen -->
+    <div class="screen" id="dictionaryScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backFromDictionary">← Back</button>
+                <h1 class="screen-title">🔍 Dictionary</h1>
+            </div>
+            <div class="dict-search-row">
+                <input type="text" class="text-input" id="dictSearchInput" placeholder="Type a word or phrase..." autocomplete="off">
+                <button class="dict-search-btn" id="dictSearchBtn" title="Search">🔍</button>
+                <button class="dict-swap-btn" id="dictSwapBtn" title="Swap languages">⇄</button>
+            </div>
+            <div class="dict-lang-selector">
+                <div class="dict-lang-group">
+                    <span class="dict-lang-label">From:</span>
+                    <div class="dict-lang-chips" id="dictFromChips"></div>
+                </div>
+                <div class="dict-lang-group">
+                    <span class="dict-lang-label">To:</span>
+                    <div class="dict-lang-chips" id="dictToChips"></div>
+                </div>
+            </div>
+            <div class="dict-results" id="dictResults">
+                <div class="dict-empty">Start typing to search the dictionary</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Words Screen -->
+    <div class="screen" id="myWordsScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backFromMyWords">← Back</button>
+                <h1 class="screen-title">📚 My Words</h1>
+            </div>
+            <div class="my-words-stats">
+                <div class="my-words-stat">
+                    <span class="my-words-stat-value" id="myWordsTotal">0</span>
+                    <span class="my-words-stat-label">Words saved</span>
+                </div>
+                <button class="my-words-stat my-words-stat-learned my-words-stat-clickable" id="openLearnedBtn" title="View learned words">
+                    <span class="my-words-stat-value" id="myWordsLearned">0</span>
+                    <span class="my-words-stat-label">Words learned ›</span>
+                </button>
+            </div>
+            <div class="words-tabs">
+                <button class="words-tab active" data-tab="saved">
+                    📚 My Words <span class="words-tab-count" id="tabCountSaved">0</span>
+                </button>
+                <button class="words-tab" data-tab="reverse">
+                    🔁 Reverse Translation <span class="words-tab-count" id="tabCountReverse">0</span>
+                </button>
+                <button class="words-tab" data-tab="sentences">
+                    🎬 My Sentences <span class="words-tab-count" id="tabCountSentences">0</span>
+                </button>
+            </div>
+            <div class="my-words-actions">
+                <button class="btn btn-primary" id="practiceWordsBtn">🎮 Practice with Flashcards</button>
+                <button class="btn btn-secondary" id="importFavouritesBtn">📥 Import from folder</button>
+                <label class="btn btn-secondary btn-upload-label" for="csvFileInput">📂 Upload CSV file</label>
+                <input type="file" id="csvFileInput" accept=".csv" style="display:none">
+            </div>
+            <div class="my-words-list" id="myWordsList">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Movie / TV Phrases Screen -->
+    <div class="screen" id="moviePhrasesScreen">
+        <div class="screen-content">
+            <div class="dashboard-header">
+                <button class="back-btn" id="backFromMoviePhrases">← Back</button>
+                <h1 class="screen-title">🎬 Movie Phrases</h1>
+            </div>
+            <div class="chat-info">Type a film or TV series (e.g. "Titanic") to get useful phrases by level, then add the ones you like to <strong>My Sentences</strong>.</div>
+            <div class="dict-search-row">
+                <input type="text" class="text-input" id="moviePhraseInput" placeholder="Titanic, Friends, Breaking Bad..." autocomplete="off">
+                <button class="dict-search-btn" id="moviePhraseSearchBtn" title="Search">🔍</button>
+            </div>
+            <div class="movie-lang-note" id="movieLangNote"></div>
+            <div class="movie-results" id="movieResults">
+                <div class="dict-empty">Enter a title to discover phrases.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flashcard Game Screen -->
+    <div class="screen" id="flashcardScreen">
+        <div class="screen-content">
+            <div class="exercise-header">
+                <button class="back-btn" id="backFromFlashcard">✕</button>
+                <div class="exercise-progress-bar">
+                    <div class="exercise-progress-fill" id="flashcardProgressFill"></div>
+                </div>
+                <div class="flashcard-counter"><span id="flashcardCurrent">1</span>/<span id="flashcardTotal">10</span></div>
+            </div>
+            <div class="flashcard-area">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-side flashcard-front" id="flashcardFront">
+                        <div class="flashcard-label">Word</div>
+                        <div class="flashcard-word" id="flashcardWord">word</div>
+                        <div class="flashcard-tap">Tap to reveal</div>
+                    </div>
+                    <div class="flashcard-side flashcard-back hidden" id="flashcardBack">
+                        <div class="flashcard-label">Translation</div>
+                        <div class="flashcard-word" id="flashcardTranslation">translation</div>
+                    </div>
+                </div>
+                <button class="flashcard-listen" id="flashcardListenBtn" title="Listen to pronunciation">🔊 Listen</button>
+                <div class="flashcard-buttons hidden" id="flashcardButtons">
+                    <button class="btn-flashcard btn-flashcard-bad" id="flashcardBadBtn">😕 Don't know</button>
+                    <button class="btn-flashcard btn-flashcard-good" id="flashcardGoodBtn">😊 Got it!</button>
+                    <button class="btn-flashcard btn-flashcard-delete" id="flashcardDeleteBtn" title="Delete this word">🗑️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise Screen -->
+    <div class="screen" id="exerciseScreen">
+        <div class="screen-content">
+            <div class="exercise-header">
+                <button class="back-btn" id="backToDashboard">✕</button>
+                <div class="exercise-progress-bar">
+                    <div class="exercise-progress-fill" id="exerciseProgressFill"></div>
+                </div>
+                <div class="exercise-hearts">❤️ <span id="exerciseHearts">5</span></div>
+            </div>
+            <div class="exercise-body" id="exerciseBody">
+                <!-- Filled dynamically -->
+            </div>
+            <div class="exercise-footer">
+                <div class="feedback-area" id="feedbackArea"></div>
+                <button class="btn btn-primary btn-check" id="checkBtn">Check</button>
+                <button class="btn btn-primary btn-continue hidden" id="continueBtn">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="screen" id="resultsScreen">
+        <div class="screen-content results-content">
+            <div class="results-icon" id="resultsIcon">🎉</div>
+            <h1 class="results-title" id="resultsTitle">Lesson Complete!</h1>
+            <div class="results-stats">
+                <div class="result-stat">
+                    <div class="result-stat-value" id="resultXP">+30</div>
+                    <div class="result-stat-label">XP earned</div>
+                </div>
+                <div class="result-stat">
+                    <div class="result-stat-value" id="resultAccuracy">85%</div>
+                    <div class="result-stat-label">Accuracy</div>
+                </div>
+                <div class="result-stat">
+                    <div class="result-stat-value" id="resultStreak">3</div>
+                    <div class="result-stat-label">Day streak</div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-large" id="continueToMenu">Continue</button>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

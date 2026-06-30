@@ -1,0 +1,623 @@
+{
+  "language": "Italian",
+  "code": "it",
+  "flag": "\ud83c\uddee\ud83c\uddf9",
+  "tts_code": "it-IT",
+  "levels": [
+    {
+      "id": 1,
+      "name": "Basics",
+      "icon": "\ud83c\udf31",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Ciao! Mi chiamo Luca. Sono di Roma. Ho ventotto anni. Sono un ingegnere. Mi piace cucinare e viaggiare. Vivo con la mia ragazza in un appartamento nel centro della citt\u00e0.",
+            "translation": "Hi! My name is Luca. I am from Rome. I am twenty-eight years old. I am an engineer. I like cooking and traveling. I live with my girlfriend in an apartment in the city center.",
+            "questions": [
+              {
+                "question": "What is Luca's profession?",
+                "options": ["Doctor", "Teacher", "Engineer", "Chef"],
+                "correct": 2
+              },
+              {
+                "question": "Who does Luca live with?",
+                "options": ["Alone", "With his parents", "With his girlfriend", "With a roommate"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Buongiorno! Io sono Giulia. Ho un gatto che si chiama Micio. Micio \u00e8 nero e bianco. Gli piace dormire sul divano. Ogni mattina gli do da mangiare e poi andiamo in giardino insieme.",
+            "translation": "Good morning! I am Giulia. I have a cat named Micio. Micio is black and white. He likes to sleep on the sofa. Every morning I feed him and then we go to the garden together.",
+            "questions": [
+              {
+                "question": "What color is Micio?",
+                "options": ["Orange", "Gray", "Black and white", "Brown"],
+                "correct": 2
+              },
+              {
+                "question": "Where do Giulia and Micio go in the morning?",
+                "options": ["To the park", "To the garden", "For a walk", "To the kitchen"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "La mia famiglia \u00e8 grande. Mia madre si chiama Anna e mio padre si chiama Marco. Ho tre sorelle e un fratello. La domenica pranziamo tutti insieme a casa della nonna. La nonna cucina sempre la pasta fatta in casa.",
+            "translation": "My family is big. My mother is called Anna and my father is called Marco. I have three sisters and one brother. On Sundays we all have lunch together at grandmother's house. Grandma always cooks homemade pasta.",
+            "questions": [
+              {
+                "question": "How many sisters does the speaker have?",
+                "options": ["One", "Two", "Three", "Four"],
+                "correct": 2
+              },
+              {
+                "question": "What does the grandmother always cook?",
+                "options": ["Pizza", "Soup", "Homemade pasta", "Meat"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Oggi \u00e8 luned\u00ec. Fa bel tempo. Ho lezione di italiano alle dieci. Dopo la lezione, vado a pranzo con i miei amici alla mensa. Nel pomeriggio studio in biblioteca fino alle cinque.",
+            "translation": "Today is Monday. The weather is nice. I have Italian class at ten. After class, I go to lunch with my friends at the cafeteria. In the afternoon I study in the library until five.",
+            "questions": [
+              {
+                "question": "What time is the Italian class?",
+                "options": ["Eight", "Nine", "Ten", "Eleven"],
+                "correct": 2
+              },
+              {
+                "question": "Until what time does the speaker study?",
+                "options": ["Three", "Four", "Five", "Six"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "Hello, how are you?",
+            "acceptable_answers": ["Ciao, come stai?", "Ciao come stai?", "Ciao, come stai", "ciao come stai", "Salve, come sta?"],
+            "hint": "Ciao, come..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Io ___ studente.",
+            "answer": "sono",
+            "options": ["sono", "\u00e8", "sei", "siamo"],
+            "translation": "I am a student."
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "My name is Marco.",
+            "acceptable_answers": ["Mi chiamo Marco.", "Mi chiamo Marco", "mi chiamo Marco", "Il mio nome \u00e8 Marco"],
+            "hint": "Mi chiamo..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "Lei ___ professoressa.",
+            "answer": "\u00e8",
+            "options": ["sono", "\u00e8", "sei", "siamo"],
+            "translation": "She is a professor."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Noi ___ italiani.",
+            "answer": "siamo",
+            "options": ["sono", "\u00e8", "sei", "siamo"],
+            "translation": "We are Italian."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "I really like pizza.",
+            "acceptable_answers": ["Mi piace molto la pizza.", "Mi piace molto la pizza", "mi piace molto la pizza", "A me piace molto la pizza"],
+            "hint": "Mi piace molto..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Buongiorno",
+            "translation": "Good morning",
+            "acceptable_answers": ["Buongiorno", "buongiorno", "Buon giorno"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Grazie mille",
+            "options": ["You're welcome", "Thank you very much", "Excuse me", "I'm sorry"],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Piacere di conoscerti",
+            "translation": "Nice to meet you",
+            "acceptable_answers": ["Piacere di conoscerti", "piacere di conoscerti", "Piacere di Conoscerti"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "Dov'\u00e8 il bagno?",
+            "options": ["Where is the exit?", "Where is the bathroom?", "Where is the restaurant?", "Where is the hotel?"],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Per favore",
+            "translation": "Please",
+            "acceptable_answers": ["Per favore", "per favore", "Per Favore"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Non capisco",
+            "options": ["I don't want", "I don't like", "I don't understand", "I don't know"],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Ciao, mi chiamo Giulia.",
+            "translation": "Hi, my name is Giulia.",
+            "key_words": ["ciao", "chiamo", "giulia"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Sono di Milano e ho venticinque anni.",
+            "translation": "I am from Milan and I am twenty-five years old.",
+            "key_words": ["sono", "milano", "venticinque", "anni"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Ho due fratelli e una sorella.",
+            "translation": "I have two brothers and one sister.",
+            "key_words": ["ho", "fratelli", "sorella"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Mi piace molto la musica e il cinema.",
+            "translation": "I really like music and cinema.",
+            "key_words": ["piace", "molto", "musica", "cinema"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Travel",
+      "icon": "\u2708\ufe0f",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Benvenuti all'Hotel Bella Vista. La reception \u00e8 aperta ventiquattr'ore su ventiquattro. La colazione \u00e8 servita dalle sette alle dieci al ristorante al piano terra. La terrazza panoramica \u00e8 all'ultimo piano. Il Wi-Fi \u00e8 gratuito in tutte le camere.",
+            "translation": "Welcome to Hotel Bella Vista. The reception is open 24 hours. Breakfast is served from seven to ten at the ground-floor restaurant. The panoramic terrace is on the top floor. Wi-Fi is free in all rooms.",
+            "questions": [
+              {
+                "question": "Where is the terrace?",
+                "options": ["Ground floor", "First floor", "Second floor", "Top floor"],
+                "correct": 3
+              },
+              {
+                "question": "When does breakfast start?",
+                "options": ["Six", "Seven", "Eight", "Nine"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Scusi, come arrivo al Colosseo? Deve prendere la metropolitana linea B, direzione Laurentina. Scenda alla fermata Colosseo. Sono solo tre fermate da qui. Un biglietto costa un euro e cinquanta. Pu\u00f2 comprarlo alla macchinetta in stazione.",
+            "translation": "Excuse me, how do I get to the Colosseum? You need to take metro line B, direction Laurentina. Get off at the Colosseo stop. It's only three stops from here. A ticket costs one euro fifty. You can buy it at the machine in the station.",
+            "questions": [
+              {
+                "question": "How many stops is it to the Colosseum?",
+                "options": ["Two", "Three", "Four", "Five"],
+                "correct": 1
+              },
+              {
+                "question": "Where can you buy the ticket?",
+                "options": ["On the metro", "At the Colosseum", "At the machine in the station", "From the driver"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Al ristorante: Oggi abbiamo come primo piatto le tagliatelle al rag\u00f9 per dodici euro e il risotto ai funghi per tredici euro. Come secondo, c'\u00e8 la bistecca alla fiorentina per venti euro. Il dolce del giorno \u00e8 il tiramis\u00f9 fatto in casa.",
+            "translation": "At the restaurant: Today for the first course we have tagliatelle with rag\u00f9 for twelve euros and mushroom risotto for thirteen euros. For the second course, there's Florentine steak for twenty euros. The dessert of the day is homemade tiramis\u00f9.",
+            "questions": [
+              {
+                "question": "How much does the risotto cost?",
+                "options": ["Ten euros", "Twelve euros", "Thirteen euros", "Fifteen euros"],
+                "correct": 2
+              },
+              {
+                "question": "What is the dessert of the day?",
+                "options": ["Panna cotta", "Gelato", "Tiramis\u00f9", "Cannoli"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Il treno per Firenze parte alle quattordici e trenta dal binario numero tre. Il viaggio dura un'ora e venti minuti. Un biglietto di sola andata costa venticinque euro. Andata e ritorno costa quaranta euro. C'\u00e8 un bar sul treno.",
+            "translation": "The train to Florence leaves at 2:30 PM from platform number three. The trip lasts one hour and twenty minutes. A one-way ticket costs twenty-five euros. Round trip costs forty euros. There is a bar on the train.",
+            "questions": [
+              {
+                "question": "How long is the trip to Florence?",
+                "options": ["One hour", "One hour and twenty minutes", "One and a half hours", "Two hours"],
+                "correct": 1
+              },
+              {
+                "question": "How much is a round-trip ticket?",
+                "options": ["Twenty-five euros", "Thirty euros", "Thirty-five euros", "Forty euros"],
+                "correct": 3
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "I would like a table for two, please.",
+            "acceptable_answers": ["Vorrei un tavolo per due, per favore.", "Vorrei un tavolo per due per favore", "vorrei un tavolo per due per favore", "Vorrei un tavolo per due, per favore"],
+            "hint": "Vorrei un tavolo..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Quanto ___ questo?",
+            "answer": "costa",
+            "options": ["costa", "paga", "vale", "ha"],
+            "translation": "How much does this cost?"
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "Where is the train station?",
+            "acceptable_answers": ["Dov'\u00e8 la stazione dei treni?", "Dove e la stazione dei treni?", "Dov'\u00e8 la stazione dei treni", "dove e la stazione dei treni", "Dov'\u00e8 la stazione ferroviaria?"],
+            "hint": "Dov'\u00e8 la stazione..."
+          },
+          {
+            "id": "w4",
+            "type": "fill_blank",
+            "sentence": "Devo ___ un taxi per l'aeroporto.",
+            "answer": "prendere",
+            "options": ["prendere", "fare", "dare", "mettere"],
+            "translation": "I need to take a taxi to the airport."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Il conto, per ___.",
+            "answer": "favore",
+            "options": ["favore", "esempio", "piacere", "cortesia"],
+            "translation": "The check, please."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "Can you help me? I am lost.",
+            "acceptable_answers": ["Pu\u00f2 aiutarmi? Mi sono perso.", "Puo aiutarmi? Mi sono perso.", "Puoi aiutarmi? Mi sono perso.", "Pu\u00f2 aiutarmi? Sono perso.", "puo aiutarmi mi sono perso"],
+            "hint": "Pu\u00f2 aiutarmi?..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Vorrei prenotare una camera.",
+            "translation": "I would like to book a room.",
+            "acceptable_answers": ["Vorrei prenotare una camera.", "Vorrei prenotare una camera", "vorrei prenotare una camera"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Il volo \u00e8 in ritardo.",
+            "options": ["The flight is cancelled.", "The flight is on time.", "The flight is delayed.", "The flight is boarding."],
+            "correct": 2
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Giri a sinistra all'angolo.",
+            "translation": "Turn left at the corner.",
+            "acceptable_answers": ["Giri a sinistra all'angolo.", "Giri a sinistra all'angolo", "giri a sinistra all'angolo"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "Avete un tavolo vicino alla finestra?",
+            "options": ["Do you have a reservation?", "Do you have a table by the window?", "Do you have the menu?", "Do you have a bigger table?"],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "A che ora parte il prossimo treno?",
+            "translation": "What time does the next train leave?",
+            "acceptable_answers": ["A che ora parte il prossimo treno?", "A che ora parte il prossimo treno", "a che ora parte il prossimo treno"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Ho bisogno di cambiare dei soldi.",
+            "options": ["I need to save money.", "I need to exchange money.", "I need to find money.", "I need to count money."],
+            "correct": 1
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Scusi, come arrivo al centro della citt\u00e0?",
+            "translation": "Excuse me, how do I get to the city center?",
+            "key_words": ["scusi", "come", "arrivo", "centro", "citt\u00e0"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Vorrei provare la pasta alla carbonara, per favore.",
+            "translation": "I would like to try the carbonara pasta, please.",
+            "key_words": ["vorrei", "provare", "pasta", "carbonara", "favore"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Avete camere disponibili per stasera?",
+            "translation": "Do you have rooms available for tonight?",
+            "key_words": ["avete", "camere", "disponibili", "stasera"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Si pu\u00f2 pagare con la carta di credito?",
+            "translation": "Can I pay with a credit card?",
+            "key_words": ["pu\u00f2", "pagare", "carta", "credito"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Daily Life",
+      "icon": "\ud83c\udfe0",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Mi sveglio alle sette di mattina. Prima mi faccio la doccia e mi vesto. Poi faccio colazione con caff\u00e8 e cornetto. Esco di casa alle otto e un quarto. Lavoro in un ufficio in centro. A mezzogiorno mangio in una trattoria vicino al lavoro. Finisco alle sei e vado in palestra tre volte alla settimana.",
+            "translation": "I wake up at seven in the morning. First I take a shower and get dressed. Then I have breakfast with coffee and a croissant. I leave the house at eight fifteen. I work in an office downtown. At noon I eat at a trattoria near work. I finish at six and go to the gym three times a week.",
+            "questions": [
+              {
+                "question": "What does the speaker have for breakfast?",
+                "options": ["Tea and biscuits", "Coffee and a croissant", "Juice and fruit", "Milk and cereal"],
+                "correct": 1
+              },
+              {
+                "question": "How often does the speaker go to the gym?",
+                "options": ["Every day", "Twice a week", "Three times a week", "On weekends"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Lo scorso fine settimana sono andato al mercato rionale con mio padre. Abbiamo comprato verdure fresche, frutta e pane. Nel pomeriggio abbiamo cucinato insieme un pranzo abbondante. Mio padre ha fatto il sugo e io ho preparato l'insalata. Dopo pranzo, abbiamo fatto una passeggiata lungo il fiume.",
+            "translation": "Last weekend I went to the local market with my father. We bought fresh vegetables, fruit, and bread. In the afternoon we cooked a big lunch together. My father made the sauce and I prepared the salad. After lunch, we went for a walk along the river.",
+            "questions": [
+              {
+                "question": "Who did the speaker go to the market with?",
+                "options": ["A friend", "Their mother", "Their father", "Alone"],
+                "correct": 2
+              },
+              {
+                "question": "What did they do after lunch?",
+                "options": ["Watched TV", "Went for a walk along the river", "Went shopping", "Took a nap"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Domani ho un colloquio di lavoro. Sono un po' nervosa ma anche entusiasta. L'azienda \u00e8 una startup tecnologica in centro. Devo indossare un vestito elegante e arrivare alle nove. Mi sono preparata studiando l'azienda online e facendo pratica con le domande pi\u00f9 comuni.",
+            "translation": "Tomorrow I have a job interview. I am a little nervous but also excited. The company is a tech startup downtown. I have to wear elegant clothes and arrive at nine. I prepared by studying the company online and practicing the most common questions.",
+            "questions": [
+              {
+                "question": "What kind of company is it?",
+                "options": ["A bank", "A tech startup", "A fashion brand", "A restaurant"],
+                "correct": 1
+              },
+              {
+                "question": "What time does the speaker need to arrive?",
+                "options": ["Eight", "Nine", "Ten", "Eleven"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r4",
+            "type": "comprehension",
+            "text": "Il nostro palazzo ha un problema con il riscaldamento. Il proprietario ha detto che un tecnico verr\u00e0 gioved\u00ec tra le dieci e le due. Qualcuno deve essere a casa per aprire la porta. Ho chiesto alla mia vicina se poteva aiutare perch\u00e9 io devo lavorare. Ha detto di s\u00ec, \u00e8 stata molto gentile.",
+            "translation": "Our building has a problem with the heating. The owner said a technician will come Thursday between ten and two. Someone needs to be home to open the door. I asked my neighbor if she could help because I have to work. She said yes, she was very kind.",
+            "questions": [
+              {
+                "question": "What is the problem?",
+                "options": ["The electricity", "The water", "The heating", "The elevator"],
+                "correct": 2
+              },
+              {
+                "question": "Who will help open the door?",
+                "options": ["The speaker", "The owner", "The neighbor", "A friend"],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "I usually go grocery shopping on Saturdays.",
+            "acceptable_answers": ["Di solito faccio la spesa il sabato.", "Di solito faccio la spesa il sabato", "di solito faccio la spesa il sabato", "Normalmente faccio la spesa il sabato"],
+            "hint": "Di solito faccio la spesa..."
+          },
+          {
+            "id": "w2",
+            "type": "fill_blank",
+            "sentence": "Devo ___ un appuntamento dal medico.",
+            "answer": "prendere",
+            "options": ["prendere", "fare", "dare", "avere"],
+            "translation": "I need to make an appointment with the doctor."
+          },
+          {
+            "id": "w3",
+            "type": "fill_blank",
+            "sentence": "Mi ___ un favore?",
+            "answer": "fai",
+            "options": ["fai", "dai", "hai", "puoi"],
+            "translation": "Can you do me a favor?"
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "I have been living here for three years.",
+            "acceptable_answers": ["Vivo qui da tre anni.", "Vivo qui da tre anni", "vivo qui da tre anni", "Abito qui da tre anni."],
+            "hint": "Vivo qui da..."
+          },
+          {
+            "id": "w5",
+            "type": "fill_blank",
+            "sentence": "Lei ___ lavorando da casa dal mese scorso.",
+            "answer": "sta",
+            "options": ["sta", "ha", "\u00e8", "fa"],
+            "translation": "She has been working from home since last month."
+          },
+          {
+            "id": "w6",
+            "type": "translate",
+            "prompt": "Translate to Italian:",
+            "sentence": "If it rains tomorrow, we will stay home.",
+            "acceptable_answers": ["Se piove domani, resteremo a casa.", "Se piove domani resteremo a casa", "se piove domani resteremo a casa", "Se domani piove, resteremo a casa."],
+            "hint": "Se piove domani..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Ho una riunione alle tre.",
+            "translation": "I have a meeting at three.",
+            "acceptable_answers": ["Ho una riunione alle tre.", "Ho una riunione alle tre", "ho una riunione alle tre"]
+          },
+          {
+            "id": "l2",
+            "type": "choose_translation",
+            "text": "Ti dispiacerebbe chiudere la finestra?",
+            "options": ["Can you open the window?", "Would you mind closing the window?", "Is the window broken?", "Do you like the window open?"],
+            "correct": 1
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Mi sono dimenticato di comprare il latte.",
+            "translation": "I forgot to buy milk.",
+            "acceptable_answers": ["Mi sono dimenticato di comprare il latte.", "Mi sono dimenticato di comprare il latte", "mi sono dimenticato di comprare il latte"]
+          },
+          {
+            "id": "l4",
+            "type": "choose_translation",
+            "text": "Ultimamente non si \u00e8 sentita molto bene.",
+            "options": ["She's been very busy lately.", "She hasn't been feeling well lately.", "She's been traveling lately.", "She moved recently."],
+            "correct": 1
+          },
+          {
+            "id": "l5",
+            "type": "type_heard",
+            "text": "Prendiamo un caff\u00e8 dopo il lavoro?",
+            "translation": "Shall we grab a coffee after work?",
+            "acceptable_answers": ["Prendiamo un caff\u00e8 dopo il lavoro?", "Prendiamo un caffe dopo il lavoro?", "prendiamo un caffe dopo il lavoro", "Prendiamo un caff\u00e8 dopo il lavoro"]
+          },
+          {
+            "id": "l6",
+            "type": "choose_translation",
+            "text": "Sono in ritardo, arrivo tra dieci minuti.",
+            "options": ["I'm going for a walk.", "I'm lost, can you help?", "I'm running late, I'll be there in ten minutes.", "I'm early, where should I wait?"],
+            "correct": 2
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Di solito mi sveglio alle sette e vado a correre.",
+            "translation": "I usually wake up at seven and go for a run.",
+            "key_words": ["solito", "sveglio", "sette", "correre"]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Mi potresti consigliare un buon ristorante qui vicino?",
+            "translation": "Could you recommend a good restaurant nearby?",
+            "key_words": ["potresti", "consigliare", "ristorante", "vicino"]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Studio italiano da circa due anni ormai.",
+            "translation": "I have been studying Italian for about two years now.",
+            "key_words": ["studio", "italiano", "due", "anni"]
+          },
+          {
+            "id": "s4",
+            "type": "repeat",
+            "text": "Il tempo \u00e8 stato davvero bello questa settimana, vero?",
+            "translation": "The weather has been really nice this week, right?",
+            "key_words": ["tempo", "bello", "settimana", "vero"]
+          }
+        ]
+      }
+    }
+  ]
+}

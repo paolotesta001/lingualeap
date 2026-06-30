@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+test_chat.json
+user_progress.json
+
+.claude/settings.local.json
+scratch_*.txt
+tempCodeRunnerFile.py

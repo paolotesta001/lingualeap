@@ -1,0 +1,4027 @@
+{
+  "es": {
+    "language_code": "es",
+    "levels": [
+      {
+        "id": 1,
+        "name": "First Words",
+        "icon": "👋",
+        "desc": "Greetings and basic words",
+        "vocab": [
+          {
+            "target": "hola",
+            "translation": "hello"
+          },
+          {
+            "target": "adiós",
+            "translation": "goodbye"
+          },
+          {
+            "target": "sí",
+            "translation": "yes"
+          },
+          {
+            "target": "no",
+            "translation": "no"
+          },
+          {
+            "target": "por favor",
+            "translation": "please"
+          },
+          {
+            "target": "gracias",
+            "translation": "thank you"
+          },
+          {
+            "target": "perdón",
+            "translation": "sorry"
+          },
+          {
+            "target": "buenos días",
+            "translation": "good morning"
+          },
+          {
+            "target": "buenas noches",
+            "translation": "good night"
+          },
+          {
+            "target": "yo",
+            "translation": "I"
+          },
+          {
+            "target": "tú",
+            "translation": "you"
+          },
+          {
+            "target": "él",
+            "translation": "he"
+          },
+          {
+            "target": "ella",
+            "translation": "she"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "¿Cómo te llamas?",
+            "translation": "What's your name?"
+          },
+          {
+            "target": "Me llamo Ana.",
+            "translation": "My name is Ana."
+          },
+          {
+            "target": "Mucho gusto.",
+            "translation": "Nice to meet you."
+          },
+          {
+            "target": "¿Cómo estás?",
+            "translation": "How are you?"
+          },
+          {
+            "target": "Estoy bien, gracias.",
+            "translation": "I'm well, thank you."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Numbers & Colors",
+        "icon": "🔢",
+        "desc": "Counting and naming colors",
+        "vocab": [
+          {
+            "target": "uno",
+            "translation": "one"
+          },
+          {
+            "target": "dos",
+            "translation": "two"
+          },
+          {
+            "target": "tres",
+            "translation": "three"
+          },
+          {
+            "target": "cuatro",
+            "translation": "four"
+          },
+          {
+            "target": "cinco",
+            "translation": "five"
+          },
+          {
+            "target": "seis",
+            "translation": "six"
+          },
+          {
+            "target": "siete",
+            "translation": "seven"
+          },
+          {
+            "target": "ocho",
+            "translation": "eight"
+          },
+          {
+            "target": "nueve",
+            "translation": "nine"
+          },
+          {
+            "target": "diez",
+            "translation": "ten"
+          },
+          {
+            "target": "rojo",
+            "translation": "red"
+          },
+          {
+            "target": "azul",
+            "translation": "blue"
+          },
+          {
+            "target": "verde",
+            "translation": "green"
+          },
+          {
+            "target": "amarillo",
+            "translation": "yellow"
+          },
+          {
+            "target": "blanco",
+            "translation": "white"
+          },
+          {
+            "target": "negro",
+            "translation": "black"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Tengo cinco años.",
+            "translation": "I am five years old."
+          },
+          {
+            "target": "El cielo es azul.",
+            "translation": "The sky is blue."
+          },
+          {
+            "target": "Mi color favorito es el verde.",
+            "translation": "My favorite color is green."
+          },
+          {
+            "target": "Hay tres manzanas.",
+            "translation": "There are three apples."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Family & People",
+        "icon": "👨‍👩‍👧",
+        "desc": "Talking about family",
+        "vocab": [
+          {
+            "target": "madre",
+            "translation": "mother"
+          },
+          {
+            "target": "padre",
+            "translation": "father"
+          },
+          {
+            "target": "hermano",
+            "translation": "brother"
+          },
+          {
+            "target": "hermana",
+            "translation": "sister"
+          },
+          {
+            "target": "hijo",
+            "translation": "son"
+          },
+          {
+            "target": "hija",
+            "translation": "daughter"
+          },
+          {
+            "target": "abuelo",
+            "translation": "grandfather"
+          },
+          {
+            "target": "abuela",
+            "translation": "grandmother"
+          },
+          {
+            "target": "amigo",
+            "translation": "friend"
+          },
+          {
+            "target": "familia",
+            "translation": "family"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Tengo dos hermanos.",
+            "translation": "I have two brothers."
+          },
+          {
+            "target": "Mi madre es profesora.",
+            "translation": "My mother is a teacher."
+          },
+          {
+            "target": "Vivo con mi familia.",
+            "translation": "I live with my family."
+          },
+          {
+            "target": "Mi mejor amigo se llama Juan.",
+            "translation": "My best friend's name is Juan."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Food & Drinks",
+        "icon": "🍽️",
+        "desc": "Ordering and describing food",
+        "vocab": [
+          {
+            "target": "agua",
+            "translation": "water"
+          },
+          {
+            "target": "pan",
+            "translation": "bread"
+          },
+          {
+            "target": "café",
+            "translation": "coffee"
+          },
+          {
+            "target": "té",
+            "translation": "tea"
+          },
+          {
+            "target": "leche",
+            "translation": "milk"
+          },
+          {
+            "target": "vino",
+            "translation": "wine"
+          },
+          {
+            "target": "cerveza",
+            "translation": "beer"
+          },
+          {
+            "target": "manzana",
+            "translation": "apple"
+          },
+          {
+            "target": "queso",
+            "translation": "cheese"
+          },
+          {
+            "target": "carne",
+            "translation": "meat"
+          },
+          {
+            "target": "pescado",
+            "translation": "fish"
+          },
+          {
+            "target": "arroz",
+            "translation": "rice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Quiero un café, por favor.",
+            "translation": "I want a coffee, please."
+          },
+          {
+            "target": "¿Tiene menú en inglés?",
+            "translation": "Do you have a menu in English?"
+          },
+          {
+            "target": "La cuenta, por favor.",
+            "translation": "The bill, please."
+          },
+          {
+            "target": "Soy vegetariano.",
+            "translation": "I am vegetarian."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Daily Routine",
+        "icon": "⏰",
+        "desc": "Describing your day",
+        "vocab": [
+          {
+            "target": "despertarse",
+            "translation": "to wake up"
+          },
+          {
+            "target": "desayunar",
+            "translation": "to have breakfast"
+          },
+          {
+            "target": "ducharse",
+            "translation": "to shower"
+          },
+          {
+            "target": "trabajar",
+            "translation": "to work"
+          },
+          {
+            "target": "comer",
+            "translation": "to eat"
+          },
+          {
+            "target": "dormir",
+            "translation": "to sleep"
+          },
+          {
+            "target": "estudiar",
+            "translation": "to study"
+          },
+          {
+            "target": "leer",
+            "translation": "to read"
+          },
+          {
+            "target": "mañana",
+            "translation": "morning"
+          },
+          {
+            "target": "tarde",
+            "translation": "afternoon"
+          },
+          {
+            "target": "noche",
+            "translation": "night"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Me despierto a las siete.",
+            "translation": "I wake up at seven."
+          },
+          {
+            "target": "Trabajo de nueve a cinco.",
+            "translation": "I work from nine to five."
+          },
+          {
+            "target": "Por la tarde estudio español.",
+            "translation": "In the afternoon I study Spanish."
+          },
+          {
+            "target": "Me acuesto a las once.",
+            "translation": "I go to bed at eleven."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Travel & Places",
+        "icon": "✈️",
+        "desc": "Asking directions, hotels",
+        "vocab": [
+          {
+            "target": "aeropuerto",
+            "translation": "airport"
+          },
+          {
+            "target": "hotel",
+            "translation": "hotel"
+          },
+          {
+            "target": "estación",
+            "translation": "station"
+          },
+          {
+            "target": "calle",
+            "translation": "street"
+          },
+          {
+            "target": "mapa",
+            "translation": "map"
+          },
+          {
+            "target": "derecha",
+            "translation": "right"
+          },
+          {
+            "target": "izquierda",
+            "translation": "left"
+          },
+          {
+            "target": "cerca",
+            "translation": "near"
+          },
+          {
+            "target": "lejos",
+            "translation": "far"
+          },
+          {
+            "target": "habitación",
+            "translation": "room"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "¿Dónde está la estación?",
+            "translation": "Where is the station?"
+          },
+          {
+            "target": "Gire a la derecha.",
+            "translation": "Turn right."
+          },
+          {
+            "target": "Quisiera reservar una habitación.",
+            "translation": "I would like to book a room."
+          },
+          {
+            "target": "¿Cuánto cuesta?",
+            "translation": "How much does it cost?"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Past & Future",
+        "icon": "📅",
+        "desc": "Tenses beyond the present",
+        "vocab": [
+          {
+            "target": "ayer",
+            "translation": "yesterday"
+          },
+          {
+            "target": "hoy",
+            "translation": "today"
+          },
+          {
+            "target": "mañana",
+            "translation": "tomorrow"
+          },
+          {
+            "target": "la semana pasada",
+            "translation": "last week"
+          },
+          {
+            "target": "el año próximo",
+            "translation": "next year"
+          },
+          {
+            "target": "fui",
+            "translation": "I went"
+          },
+          {
+            "target": "comí",
+            "translation": "I ate"
+          },
+          {
+            "target": "hice",
+            "translation": "I did"
+          },
+          {
+            "target": "iré",
+            "translation": "I will go"
+          },
+          {
+            "target": "haré",
+            "translation": "I will do"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ayer fui al cine.",
+            "translation": "Yesterday I went to the cinema."
+          },
+          {
+            "target": "Mañana viajaré a Madrid.",
+            "translation": "Tomorrow I will travel to Madrid."
+          },
+          {
+            "target": "La semana pasada vi a María.",
+            "translation": "Last week I saw María."
+          },
+          {
+            "target": "El año próximo aprenderé francés.",
+            "translation": "Next year I will learn French."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Opinions & Feelings",
+        "icon": "💭",
+        "desc": "Expressing yourself",
+        "vocab": [
+          {
+            "target": "creo que",
+            "translation": "I think that"
+          },
+          {
+            "target": "me gusta",
+            "translation": "I like"
+          },
+          {
+            "target": "no me gusta",
+            "translation": "I don't like"
+          },
+          {
+            "target": "prefiero",
+            "translation": "I prefer"
+          },
+          {
+            "target": "estoy de acuerdo",
+            "translation": "I agree"
+          },
+          {
+            "target": "feliz",
+            "translation": "happy"
+          },
+          {
+            "target": "triste",
+            "translation": "sad"
+          },
+          {
+            "target": "enfadado",
+            "translation": "angry"
+          },
+          {
+            "target": "cansado",
+            "translation": "tired"
+          },
+          {
+            "target": "emocionado",
+            "translation": "excited"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Creo que es una buena idea.",
+            "translation": "I think it's a good idea."
+          },
+          {
+            "target": "Me gusta mucho la música.",
+            "translation": "I really like music."
+          },
+          {
+            "target": "Estoy un poco cansado hoy.",
+            "translation": "I'm a bit tired today."
+          },
+          {
+            "target": "¿Qué piensas tú?",
+            "translation": "What do you think?"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Complex Conversations",
+        "icon": "💬",
+        "desc": "Real-life dialogues",
+        "vocab": [
+          {
+            "target": "aunque",
+            "translation": "although"
+          },
+          {
+            "target": "sin embargo",
+            "translation": "however"
+          },
+          {
+            "target": "por lo tanto",
+            "translation": "therefore"
+          },
+          {
+            "target": "además",
+            "translation": "moreover"
+          },
+          {
+            "target": "a pesar de",
+            "translation": "despite"
+          },
+          {
+            "target": "mientras",
+            "translation": "while"
+          },
+          {
+            "target": "en cuanto a",
+            "translation": "regarding"
+          },
+          {
+            "target": "de hecho",
+            "translation": "in fact"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Aunque llueve, voy a salir.",
+            "translation": "Although it's raining, I'll go out."
+          },
+          {
+            "target": "Me gustaría hablar con el gerente.",
+            "translation": "I'd like to speak with the manager."
+          },
+          {
+            "target": "¿Podría repetir, por favor?",
+            "translation": "Could you repeat, please?"
+          },
+          {
+            "target": "No estoy seguro, déjame pensar.",
+            "translation": "I'm not sure, let me think."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Advanced Mastery",
+        "icon": "🎓",
+        "desc": "Idioms and nuances",
+        "vocab": [
+          {
+            "target": "estar en las nubes",
+            "translation": "to be daydreaming"
+          },
+          {
+            "target": "tomar el pelo",
+            "translation": "to pull someone's leg"
+          },
+          {
+            "target": "hablar por los codos",
+            "translation": "to talk a lot"
+          },
+          {
+            "target": "costar un ojo de la cara",
+            "translation": "to cost an arm and a leg"
+          },
+          {
+            "target": "ser pan comido",
+            "translation": "to be a piece of cake"
+          },
+          {
+            "target": "dar en el clavo",
+            "translation": "to hit the nail on the head"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "¡No me tomes el pelo!",
+            "translation": "Don't pull my leg!"
+          },
+          {
+            "target": "Ese examen fue pan comido.",
+            "translation": "That exam was a piece of cake."
+          },
+          {
+            "target": "Mi hermana habla por los codos.",
+            "translation": "My sister talks a lot."
+          },
+          {
+            "target": "Has dado en el clavo.",
+            "translation": "You've hit the nail on the head."
+          }
+        ]
+      }
+    ],
+    "placement_test": [
+      {
+        "level": 1,
+        "question": "How do you say 'hello' in Spanish?",
+        "options": [
+          "adiós",
+          "hola",
+          "gracias",
+          "por favor"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 1,
+        "question": "What does 'gracias' mean?",
+        "options": [
+          "please",
+          "sorry",
+          "thank you",
+          "hello"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 2,
+        "question": "How do you say 'three'?",
+        "options": [
+          "dos",
+          "tres",
+          "cuatro",
+          "cinco"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 3,
+        "question": "What does 'hermano' mean?",
+        "options": [
+          "sister",
+          "brother",
+          "father",
+          "friend"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 4,
+        "question": "How do you order coffee?",
+        "options": [
+          "Quiero un té",
+          "Quiero un café",
+          "Quiero agua",
+          "Quiero pan"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 5,
+        "question": "Complete: 'Yo ___ a las siete.'",
+        "options": [
+          "come",
+          "duermo",
+          "me despierto",
+          "trabajo"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 6,
+        "question": "How do you ask 'Where is the station?'",
+        "options": [
+          "¿Cuándo es?",
+          "¿Dónde está la estación?",
+          "¿Quién es?",
+          "¿Cómo está?"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 7,
+        "question": "Choose the past tense of 'voy' (I go):",
+        "options": [
+          "iré",
+          "voy",
+          "fui",
+          "iba"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 8,
+        "question": "Which expresses preference?",
+        "options": [
+          "Estoy cansado",
+          "Prefiero el té",
+          "Hace frío",
+          "Hablo español"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 10,
+        "question": "What does 'pan comido' mean idiomatically?",
+        "options": [
+          "eaten bread",
+          "very easy",
+          "hungry",
+          "delicious"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  "it": {
+    "language_code": "it",
+    "levels": [
+      {
+        "id": 1,
+        "name": "First Words",
+        "icon": "👋",
+        "desc": "Greetings and basic words",
+        "vocab": [
+          {
+            "target": "ciao",
+            "translation": "hello/bye"
+          },
+          {
+            "target": "arrivederci",
+            "translation": "goodbye"
+          },
+          {
+            "target": "sì",
+            "translation": "yes"
+          },
+          {
+            "target": "no",
+            "translation": "no"
+          },
+          {
+            "target": "per favore",
+            "translation": "please"
+          },
+          {
+            "target": "grazie",
+            "translation": "thank you"
+          },
+          {
+            "target": "scusa",
+            "translation": "sorry"
+          },
+          {
+            "target": "buongiorno",
+            "translation": "good morning"
+          },
+          {
+            "target": "buonanotte",
+            "translation": "good night"
+          },
+          {
+            "target": "io",
+            "translation": "I"
+          },
+          {
+            "target": "tu",
+            "translation": "you"
+          },
+          {
+            "target": "lui",
+            "translation": "he"
+          },
+          {
+            "target": "lei",
+            "translation": "she"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Come ti chiami?",
+            "translation": "What's your name?"
+          },
+          {
+            "target": "Mi chiamo Anna.",
+            "translation": "My name is Anna."
+          },
+          {
+            "target": "Piacere di conoscerti.",
+            "translation": "Nice to meet you."
+          },
+          {
+            "target": "Come stai?",
+            "translation": "How are you?"
+          },
+          {
+            "target": "Sto bene, grazie.",
+            "translation": "I'm well, thank you."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Numbers & Colors",
+        "icon": "🔢",
+        "desc": "Counting and naming colors",
+        "vocab": [
+          {
+            "target": "uno",
+            "translation": "one"
+          },
+          {
+            "target": "due",
+            "translation": "two"
+          },
+          {
+            "target": "tre",
+            "translation": "three"
+          },
+          {
+            "target": "quattro",
+            "translation": "four"
+          },
+          {
+            "target": "cinque",
+            "translation": "five"
+          },
+          {
+            "target": "sei",
+            "translation": "six"
+          },
+          {
+            "target": "sette",
+            "translation": "seven"
+          },
+          {
+            "target": "otto",
+            "translation": "eight"
+          },
+          {
+            "target": "nove",
+            "translation": "nine"
+          },
+          {
+            "target": "dieci",
+            "translation": "ten"
+          },
+          {
+            "target": "rosso",
+            "translation": "red"
+          },
+          {
+            "target": "blu",
+            "translation": "blue"
+          },
+          {
+            "target": "verde",
+            "translation": "green"
+          },
+          {
+            "target": "giallo",
+            "translation": "yellow"
+          },
+          {
+            "target": "bianco",
+            "translation": "white"
+          },
+          {
+            "target": "nero",
+            "translation": "black"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ho cinque anni.",
+            "translation": "I am five years old."
+          },
+          {
+            "target": "Il cielo è blu.",
+            "translation": "The sky is blue."
+          },
+          {
+            "target": "Il mio colore preferito è il verde.",
+            "translation": "My favorite color is green."
+          },
+          {
+            "target": "Ci sono tre mele.",
+            "translation": "There are three apples."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Family & People",
+        "icon": "👨‍👩‍👧",
+        "desc": "Talking about family",
+        "vocab": [
+          {
+            "target": "madre",
+            "translation": "mother"
+          },
+          {
+            "target": "padre",
+            "translation": "father"
+          },
+          {
+            "target": "fratello",
+            "translation": "brother"
+          },
+          {
+            "target": "sorella",
+            "translation": "sister"
+          },
+          {
+            "target": "figlio",
+            "translation": "son"
+          },
+          {
+            "target": "figlia",
+            "translation": "daughter"
+          },
+          {
+            "target": "nonno",
+            "translation": "grandfather"
+          },
+          {
+            "target": "nonna",
+            "translation": "grandmother"
+          },
+          {
+            "target": "amico",
+            "translation": "friend"
+          },
+          {
+            "target": "famiglia",
+            "translation": "family"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ho due fratelli.",
+            "translation": "I have two brothers."
+          },
+          {
+            "target": "Mia madre è insegnante.",
+            "translation": "My mother is a teacher."
+          },
+          {
+            "target": "Vivo con la mia famiglia.",
+            "translation": "I live with my family."
+          },
+          {
+            "target": "Il mio migliore amico si chiama Marco.",
+            "translation": "My best friend's name is Marco."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Food & Drinks",
+        "icon": "🍽️",
+        "desc": "Ordering and describing food",
+        "vocab": [
+          {
+            "target": "acqua",
+            "translation": "water"
+          },
+          {
+            "target": "pane",
+            "translation": "bread"
+          },
+          {
+            "target": "caffè",
+            "translation": "coffee"
+          },
+          {
+            "target": "tè",
+            "translation": "tea"
+          },
+          {
+            "target": "latte",
+            "translation": "milk"
+          },
+          {
+            "target": "vino",
+            "translation": "wine"
+          },
+          {
+            "target": "birra",
+            "translation": "beer"
+          },
+          {
+            "target": "mela",
+            "translation": "apple"
+          },
+          {
+            "target": "formaggio",
+            "translation": "cheese"
+          },
+          {
+            "target": "carne",
+            "translation": "meat"
+          },
+          {
+            "target": "pesce",
+            "translation": "fish"
+          },
+          {
+            "target": "riso",
+            "translation": "rice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Vorrei un caffè, per favore.",
+            "translation": "I'd like a coffee, please."
+          },
+          {
+            "target": "Avete un menù in inglese?",
+            "translation": "Do you have a menu in English?"
+          },
+          {
+            "target": "Il conto, per favore.",
+            "translation": "The bill, please."
+          },
+          {
+            "target": "Sono vegetariano.",
+            "translation": "I am vegetarian."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Daily Routine",
+        "icon": "⏰",
+        "desc": "Describing your day",
+        "vocab": [
+          {
+            "target": "svegliarsi",
+            "translation": "to wake up"
+          },
+          {
+            "target": "fare colazione",
+            "translation": "to have breakfast"
+          },
+          {
+            "target": "farsi la doccia",
+            "translation": "to shower"
+          },
+          {
+            "target": "lavorare",
+            "translation": "to work"
+          },
+          {
+            "target": "mangiare",
+            "translation": "to eat"
+          },
+          {
+            "target": "dormire",
+            "translation": "to sleep"
+          },
+          {
+            "target": "studiare",
+            "translation": "to study"
+          },
+          {
+            "target": "leggere",
+            "translation": "to read"
+          },
+          {
+            "target": "mattina",
+            "translation": "morning"
+          },
+          {
+            "target": "pomeriggio",
+            "translation": "afternoon"
+          },
+          {
+            "target": "sera",
+            "translation": "evening"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Mi sveglio alle sette.",
+            "translation": "I wake up at seven."
+          },
+          {
+            "target": "Lavoro dalle nove alle cinque.",
+            "translation": "I work from nine to five."
+          },
+          {
+            "target": "Il pomeriggio studio italiano.",
+            "translation": "In the afternoon I study Italian."
+          },
+          {
+            "target": "Vado a letto alle undici.",
+            "translation": "I go to bed at eleven."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Travel & Places",
+        "icon": "✈️",
+        "desc": "Asking directions, hotels",
+        "vocab": [
+          {
+            "target": "aeroporto",
+            "translation": "airport"
+          },
+          {
+            "target": "hotel",
+            "translation": "hotel"
+          },
+          {
+            "target": "stazione",
+            "translation": "station"
+          },
+          {
+            "target": "strada",
+            "translation": "street"
+          },
+          {
+            "target": "mappa",
+            "translation": "map"
+          },
+          {
+            "target": "destra",
+            "translation": "right"
+          },
+          {
+            "target": "sinistra",
+            "translation": "left"
+          },
+          {
+            "target": "vicino",
+            "translation": "near"
+          },
+          {
+            "target": "lontano",
+            "translation": "far"
+          },
+          {
+            "target": "camera",
+            "translation": "room"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Dov'è la stazione?",
+            "translation": "Where is the station?"
+          },
+          {
+            "target": "Giri a destra.",
+            "translation": "Turn right."
+          },
+          {
+            "target": "Vorrei prenotare una camera.",
+            "translation": "I would like to book a room."
+          },
+          {
+            "target": "Quanto costa?",
+            "translation": "How much does it cost?"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Past & Future",
+        "icon": "📅",
+        "desc": "Tenses beyond the present",
+        "vocab": [
+          {
+            "target": "ieri",
+            "translation": "yesterday"
+          },
+          {
+            "target": "oggi",
+            "translation": "today"
+          },
+          {
+            "target": "domani",
+            "translation": "tomorrow"
+          },
+          {
+            "target": "la settimana scorsa",
+            "translation": "last week"
+          },
+          {
+            "target": "l'anno prossimo",
+            "translation": "next year"
+          },
+          {
+            "target": "sono andato",
+            "translation": "I went"
+          },
+          {
+            "target": "ho mangiato",
+            "translation": "I ate"
+          },
+          {
+            "target": "ho fatto",
+            "translation": "I did"
+          },
+          {
+            "target": "andrò",
+            "translation": "I will go"
+          },
+          {
+            "target": "farò",
+            "translation": "I will do"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ieri sono andato al cinema.",
+            "translation": "Yesterday I went to the cinema."
+          },
+          {
+            "target": "Domani viaggerò a Roma.",
+            "translation": "Tomorrow I will travel to Rome."
+          },
+          {
+            "target": "La settimana scorsa ho visto Maria.",
+            "translation": "Last week I saw Maria."
+          },
+          {
+            "target": "L'anno prossimo imparerò il francese.",
+            "translation": "Next year I will learn French."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Opinions & Feelings",
+        "icon": "💭",
+        "desc": "Expressing yourself",
+        "vocab": [
+          {
+            "target": "penso che",
+            "translation": "I think that"
+          },
+          {
+            "target": "mi piace",
+            "translation": "I like"
+          },
+          {
+            "target": "non mi piace",
+            "translation": "I don't like"
+          },
+          {
+            "target": "preferisco",
+            "translation": "I prefer"
+          },
+          {
+            "target": "sono d'accordo",
+            "translation": "I agree"
+          },
+          {
+            "target": "felice",
+            "translation": "happy"
+          },
+          {
+            "target": "triste",
+            "translation": "sad"
+          },
+          {
+            "target": "arrabbiato",
+            "translation": "angry"
+          },
+          {
+            "target": "stanco",
+            "translation": "tired"
+          },
+          {
+            "target": "emozionato",
+            "translation": "excited"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Penso che sia una buona idea.",
+            "translation": "I think it's a good idea."
+          },
+          {
+            "target": "Mi piace molto la musica.",
+            "translation": "I really like music."
+          },
+          {
+            "target": "Sono un po' stanco oggi.",
+            "translation": "I'm a bit tired today."
+          },
+          {
+            "target": "Cosa ne pensi?",
+            "translation": "What do you think?"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Complex Conversations",
+        "icon": "💬",
+        "desc": "Real-life dialogues",
+        "vocab": [
+          {
+            "target": "anche se",
+            "translation": "although"
+          },
+          {
+            "target": "tuttavia",
+            "translation": "however"
+          },
+          {
+            "target": "quindi",
+            "translation": "therefore"
+          },
+          {
+            "target": "inoltre",
+            "translation": "moreover"
+          },
+          {
+            "target": "nonostante",
+            "translation": "despite"
+          },
+          {
+            "target": "mentre",
+            "translation": "while"
+          },
+          {
+            "target": "riguardo a",
+            "translation": "regarding"
+          },
+          {
+            "target": "infatti",
+            "translation": "in fact"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Anche se piove, esco.",
+            "translation": "Although it's raining, I'm going out."
+          },
+          {
+            "target": "Vorrei parlare con il direttore.",
+            "translation": "I'd like to speak with the manager."
+          },
+          {
+            "target": "Potrebbe ripetere, per favore?",
+            "translation": "Could you repeat, please?"
+          },
+          {
+            "target": "Non sono sicuro, fammi pensare.",
+            "translation": "I'm not sure, let me think."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Advanced Mastery",
+        "icon": "🎓",
+        "desc": "Idioms and nuances",
+        "vocab": [
+          {
+            "target": "essere al settimo cielo",
+            "translation": "to be on cloud nine"
+          },
+          {
+            "target": "prendere in giro",
+            "translation": "to make fun of"
+          },
+          {
+            "target": "avere la testa fra le nuvole",
+            "translation": "to have one's head in the clouds"
+          },
+          {
+            "target": "costare un occhio della testa",
+            "translation": "to cost an arm and a leg"
+          },
+          {
+            "target": "essere un gioco da ragazzi",
+            "translation": "to be a piece of cake"
+          },
+          {
+            "target": "rompere il ghiaccio",
+            "translation": "to break the ice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Non prendermi in giro!",
+            "translation": "Don't make fun of me!"
+          },
+          {
+            "target": "Quell'esame è stato un gioco da ragazzi.",
+            "translation": "That exam was a piece of cake."
+          },
+          {
+            "target": "Sono al settimo cielo!",
+            "translation": "I'm on cloud nine!"
+          },
+          {
+            "target": "Cerchiamo di rompere il ghiaccio.",
+            "translation": "Let's break the ice."
+          }
+        ]
+      }
+    ],
+    "placement_test": [
+      {
+        "level": 1,
+        "question": "How do you say 'hello/bye' in Italian?",
+        "options": [
+          "grazie",
+          "ciao",
+          "scusa",
+          "prego"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 1,
+        "question": "What does 'grazie' mean?",
+        "options": [
+          "please",
+          "thank you",
+          "sorry",
+          "yes"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 2,
+        "question": "How do you say 'four'?",
+        "options": [
+          "tre",
+          "cinque",
+          "quattro",
+          "sei"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 3,
+        "question": "What does 'sorella' mean?",
+        "options": [
+          "brother",
+          "sister",
+          "mother",
+          "friend"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 4,
+        "question": "How do you say 'I'd like a coffee'?",
+        "options": [
+          "Voglio un tè",
+          "Vorrei un caffè",
+          "Bevo acqua",
+          "Mangio pane"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 5,
+        "question": "Complete: 'Mi ___ alle sette.'",
+        "options": [
+          "mangio",
+          "dormo",
+          "sveglio",
+          "lavoro"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 6,
+        "question": "How do you ask 'Where is the station?'",
+        "options": [
+          "Quando è?",
+          "Dov'è la stazione?",
+          "Chi è?",
+          "Come stai?"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 7,
+        "question": "Past tense of 'vado' (I go):",
+        "options": [
+          "andrò",
+          "vado",
+          "sono andato",
+          "andavo"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 8,
+        "question": "Which expresses preference?",
+        "options": [
+          "Sono stanco",
+          "Preferisco il tè",
+          "Fa freddo",
+          "Parlo italiano"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 10,
+        "question": "What does 'gioco da ragazzi' mean?",
+        "options": [
+          "children's game",
+          "very easy",
+          "playful",
+          "young people"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  "fr": {
+    "language_code": "fr",
+    "levels": [
+      {
+        "id": 1,
+        "name": "First Words",
+        "icon": "👋",
+        "desc": "Greetings and basic words",
+        "vocab": [
+          {
+            "target": "bonjour",
+            "translation": "hello"
+          },
+          {
+            "target": "au revoir",
+            "translation": "goodbye"
+          },
+          {
+            "target": "oui",
+            "translation": "yes"
+          },
+          {
+            "target": "non",
+            "translation": "no"
+          },
+          {
+            "target": "s'il vous plaît",
+            "translation": "please"
+          },
+          {
+            "target": "merci",
+            "translation": "thank you"
+          },
+          {
+            "target": "pardon",
+            "translation": "sorry"
+          },
+          {
+            "target": "bonsoir",
+            "translation": "good evening"
+          },
+          {
+            "target": "bonne nuit",
+            "translation": "good night"
+          },
+          {
+            "target": "je",
+            "translation": "I"
+          },
+          {
+            "target": "tu",
+            "translation": "you"
+          },
+          {
+            "target": "il",
+            "translation": "he"
+          },
+          {
+            "target": "elle",
+            "translation": "she"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Comment t'appelles-tu?",
+            "translation": "What's your name?"
+          },
+          {
+            "target": "Je m'appelle Marie.",
+            "translation": "My name is Marie."
+          },
+          {
+            "target": "Enchanté.",
+            "translation": "Nice to meet you."
+          },
+          {
+            "target": "Comment vas-tu?",
+            "translation": "How are you?"
+          },
+          {
+            "target": "Je vais bien, merci.",
+            "translation": "I'm well, thank you."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Numbers & Colors",
+        "icon": "🔢",
+        "desc": "Counting and naming colors",
+        "vocab": [
+          {
+            "target": "un",
+            "translation": "one"
+          },
+          {
+            "target": "deux",
+            "translation": "two"
+          },
+          {
+            "target": "trois",
+            "translation": "three"
+          },
+          {
+            "target": "quatre",
+            "translation": "four"
+          },
+          {
+            "target": "cinq",
+            "translation": "five"
+          },
+          {
+            "target": "six",
+            "translation": "six"
+          },
+          {
+            "target": "sept",
+            "translation": "seven"
+          },
+          {
+            "target": "huit",
+            "translation": "eight"
+          },
+          {
+            "target": "neuf",
+            "translation": "nine"
+          },
+          {
+            "target": "dix",
+            "translation": "ten"
+          },
+          {
+            "target": "rouge",
+            "translation": "red"
+          },
+          {
+            "target": "bleu",
+            "translation": "blue"
+          },
+          {
+            "target": "vert",
+            "translation": "green"
+          },
+          {
+            "target": "jaune",
+            "translation": "yellow"
+          },
+          {
+            "target": "blanc",
+            "translation": "white"
+          },
+          {
+            "target": "noir",
+            "translation": "black"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "J'ai cinq ans.",
+            "translation": "I am five years old."
+          },
+          {
+            "target": "Le ciel est bleu.",
+            "translation": "The sky is blue."
+          },
+          {
+            "target": "Ma couleur préférée est le vert.",
+            "translation": "My favorite color is green."
+          },
+          {
+            "target": "Il y a trois pommes.",
+            "translation": "There are three apples."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Family & People",
+        "icon": "👨‍👩‍👧",
+        "desc": "Talking about family",
+        "vocab": [
+          {
+            "target": "mère",
+            "translation": "mother"
+          },
+          {
+            "target": "père",
+            "translation": "father"
+          },
+          {
+            "target": "frère",
+            "translation": "brother"
+          },
+          {
+            "target": "sœur",
+            "translation": "sister"
+          },
+          {
+            "target": "fils",
+            "translation": "son"
+          },
+          {
+            "target": "fille",
+            "translation": "daughter"
+          },
+          {
+            "target": "grand-père",
+            "translation": "grandfather"
+          },
+          {
+            "target": "grand-mère",
+            "translation": "grandmother"
+          },
+          {
+            "target": "ami",
+            "translation": "friend"
+          },
+          {
+            "target": "famille",
+            "translation": "family"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "J'ai deux frères.",
+            "translation": "I have two brothers."
+          },
+          {
+            "target": "Ma mère est professeure.",
+            "translation": "My mother is a teacher."
+          },
+          {
+            "target": "Je vis avec ma famille.",
+            "translation": "I live with my family."
+          },
+          {
+            "target": "Mon meilleur ami s'appelle Pierre.",
+            "translation": "My best friend's name is Pierre."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Food & Drinks",
+        "icon": "🍽️",
+        "desc": "Ordering and describing food",
+        "vocab": [
+          {
+            "target": "eau",
+            "translation": "water"
+          },
+          {
+            "target": "pain",
+            "translation": "bread"
+          },
+          {
+            "target": "café",
+            "translation": "coffee"
+          },
+          {
+            "target": "thé",
+            "translation": "tea"
+          },
+          {
+            "target": "lait",
+            "translation": "milk"
+          },
+          {
+            "target": "vin",
+            "translation": "wine"
+          },
+          {
+            "target": "bière",
+            "translation": "beer"
+          },
+          {
+            "target": "pomme",
+            "translation": "apple"
+          },
+          {
+            "target": "fromage",
+            "translation": "cheese"
+          },
+          {
+            "target": "viande",
+            "translation": "meat"
+          },
+          {
+            "target": "poisson",
+            "translation": "fish"
+          },
+          {
+            "target": "riz",
+            "translation": "rice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Je voudrais un café, s'il vous plaît.",
+            "translation": "I'd like a coffee, please."
+          },
+          {
+            "target": "Avez-vous un menu en anglais?",
+            "translation": "Do you have a menu in English?"
+          },
+          {
+            "target": "L'addition, s'il vous plaît.",
+            "translation": "The bill, please."
+          },
+          {
+            "target": "Je suis végétarien.",
+            "translation": "I am vegetarian."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Daily Routine",
+        "icon": "⏰",
+        "desc": "Describing your day",
+        "vocab": [
+          {
+            "target": "se réveiller",
+            "translation": "to wake up"
+          },
+          {
+            "target": "prendre le petit-déjeuner",
+            "translation": "to have breakfast"
+          },
+          {
+            "target": "se doucher",
+            "translation": "to shower"
+          },
+          {
+            "target": "travailler",
+            "translation": "to work"
+          },
+          {
+            "target": "manger",
+            "translation": "to eat"
+          },
+          {
+            "target": "dormir",
+            "translation": "to sleep"
+          },
+          {
+            "target": "étudier",
+            "translation": "to study"
+          },
+          {
+            "target": "lire",
+            "translation": "to read"
+          },
+          {
+            "target": "matin",
+            "translation": "morning"
+          },
+          {
+            "target": "après-midi",
+            "translation": "afternoon"
+          },
+          {
+            "target": "soir",
+            "translation": "evening"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Je me réveille à sept heures.",
+            "translation": "I wake up at seven."
+          },
+          {
+            "target": "Je travaille de neuf à cinq.",
+            "translation": "I work from nine to five."
+          },
+          {
+            "target": "L'après-midi j'étudie le français.",
+            "translation": "In the afternoon I study French."
+          },
+          {
+            "target": "Je me couche à onze heures.",
+            "translation": "I go to bed at eleven."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Travel & Places",
+        "icon": "✈️",
+        "desc": "Asking directions, hotels",
+        "vocab": [
+          {
+            "target": "aéroport",
+            "translation": "airport"
+          },
+          {
+            "target": "hôtel",
+            "translation": "hotel"
+          },
+          {
+            "target": "gare",
+            "translation": "station"
+          },
+          {
+            "target": "rue",
+            "translation": "street"
+          },
+          {
+            "target": "carte",
+            "translation": "map"
+          },
+          {
+            "target": "droite",
+            "translation": "right"
+          },
+          {
+            "target": "gauche",
+            "translation": "left"
+          },
+          {
+            "target": "près",
+            "translation": "near"
+          },
+          {
+            "target": "loin",
+            "translation": "far"
+          },
+          {
+            "target": "chambre",
+            "translation": "room"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Où est la gare?",
+            "translation": "Where is the station?"
+          },
+          {
+            "target": "Tournez à droite.",
+            "translation": "Turn right."
+          },
+          {
+            "target": "Je voudrais réserver une chambre.",
+            "translation": "I would like to book a room."
+          },
+          {
+            "target": "Combien ça coûte?",
+            "translation": "How much does it cost?"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Past & Future",
+        "icon": "📅",
+        "desc": "Tenses beyond the present",
+        "vocab": [
+          {
+            "target": "hier",
+            "translation": "yesterday"
+          },
+          {
+            "target": "aujourd'hui",
+            "translation": "today"
+          },
+          {
+            "target": "demain",
+            "translation": "tomorrow"
+          },
+          {
+            "target": "la semaine dernière",
+            "translation": "last week"
+          },
+          {
+            "target": "l'année prochaine",
+            "translation": "next year"
+          },
+          {
+            "target": "je suis allé",
+            "translation": "I went"
+          },
+          {
+            "target": "j'ai mangé",
+            "translation": "I ate"
+          },
+          {
+            "target": "j'ai fait",
+            "translation": "I did"
+          },
+          {
+            "target": "j'irai",
+            "translation": "I will go"
+          },
+          {
+            "target": "je ferai",
+            "translation": "I will do"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Hier je suis allé au cinéma.",
+            "translation": "Yesterday I went to the cinema."
+          },
+          {
+            "target": "Demain je voyagerai à Paris.",
+            "translation": "Tomorrow I will travel to Paris."
+          },
+          {
+            "target": "La semaine dernière j'ai vu Marie.",
+            "translation": "Last week I saw Marie."
+          },
+          {
+            "target": "L'année prochaine j'apprendrai l'espagnol.",
+            "translation": "Next year I will learn Spanish."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Opinions & Feelings",
+        "icon": "💭",
+        "desc": "Expressing yourself",
+        "vocab": [
+          {
+            "target": "je pense que",
+            "translation": "I think that"
+          },
+          {
+            "target": "j'aime",
+            "translation": "I like"
+          },
+          {
+            "target": "je n'aime pas",
+            "translation": "I don't like"
+          },
+          {
+            "target": "je préfère",
+            "translation": "I prefer"
+          },
+          {
+            "target": "je suis d'accord",
+            "translation": "I agree"
+          },
+          {
+            "target": "heureux",
+            "translation": "happy"
+          },
+          {
+            "target": "triste",
+            "translation": "sad"
+          },
+          {
+            "target": "en colère",
+            "translation": "angry"
+          },
+          {
+            "target": "fatigué",
+            "translation": "tired"
+          },
+          {
+            "target": "excité",
+            "translation": "excited"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Je pense que c'est une bonne idée.",
+            "translation": "I think it's a good idea."
+          },
+          {
+            "target": "J'aime beaucoup la musique.",
+            "translation": "I really like music."
+          },
+          {
+            "target": "Je suis un peu fatigué aujourd'hui.",
+            "translation": "I'm a bit tired today."
+          },
+          {
+            "target": "Qu'en penses-tu?",
+            "translation": "What do you think?"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Complex Conversations",
+        "icon": "💬",
+        "desc": "Real-life dialogues",
+        "vocab": [
+          {
+            "target": "bien que",
+            "translation": "although"
+          },
+          {
+            "target": "cependant",
+            "translation": "however"
+          },
+          {
+            "target": "donc",
+            "translation": "therefore"
+          },
+          {
+            "target": "de plus",
+            "translation": "moreover"
+          },
+          {
+            "target": "malgré",
+            "translation": "despite"
+          },
+          {
+            "target": "pendant que",
+            "translation": "while"
+          },
+          {
+            "target": "concernant",
+            "translation": "regarding"
+          },
+          {
+            "target": "en fait",
+            "translation": "in fact"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Bien qu'il pleuve, je sors.",
+            "translation": "Although it's raining, I'm going out."
+          },
+          {
+            "target": "Je voudrais parler au directeur.",
+            "translation": "I'd like to speak with the manager."
+          },
+          {
+            "target": "Pourriez-vous répéter, s'il vous plaît?",
+            "translation": "Could you repeat, please?"
+          },
+          {
+            "target": "Je ne suis pas sûr, laissez-moi réfléchir.",
+            "translation": "I'm not sure, let me think."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Advanced Mastery",
+        "icon": "🎓",
+        "desc": "Idioms and nuances",
+        "vocab": [
+          {
+            "target": "être dans la lune",
+            "translation": "to be daydreaming"
+          },
+          {
+            "target": "se faire avoir",
+            "translation": "to be tricked"
+          },
+          {
+            "target": "avoir le coup de foudre",
+            "translation": "love at first sight"
+          },
+          {
+            "target": "coûter les yeux de la tête",
+            "translation": "to cost an arm and a leg"
+          },
+          {
+            "target": "c'est du gâteau",
+            "translation": "it's a piece of cake"
+          },
+          {
+            "target": "briser la glace",
+            "translation": "to break the ice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Cet examen, c'était du gâteau.",
+            "translation": "That exam was a piece of cake."
+          },
+          {
+            "target": "Tu es dans la lune!",
+            "translation": "You're daydreaming!"
+          },
+          {
+            "target": "Cette voiture coûte les yeux de la tête.",
+            "translation": "This car costs an arm and a leg."
+          },
+          {
+            "target": "Essayons de briser la glace.",
+            "translation": "Let's try to break the ice."
+          }
+        ]
+      }
+    ],
+    "placement_test": [
+      {
+        "level": 1,
+        "question": "How do you say 'hello' in French?",
+        "options": [
+          "au revoir",
+          "bonjour",
+          "merci",
+          "pardon"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 1,
+        "question": "What does 'merci' mean?",
+        "options": [
+          "please",
+          "sorry",
+          "thank you",
+          "yes"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 2,
+        "question": "How do you say 'five'?",
+        "options": [
+          "quatre",
+          "cinq",
+          "six",
+          "trois"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 3,
+        "question": "What does 'frère' mean?",
+        "options": [
+          "sister",
+          "brother",
+          "father",
+          "friend"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 4,
+        "question": "How do you order coffee?",
+        "options": [
+          "Je veux du thé",
+          "Je voudrais un café",
+          "Je bois de l'eau",
+          "Je mange du pain"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 5,
+        "question": "Complete: 'Je me ___ à sept heures.'",
+        "options": [
+          "mange",
+          "dors",
+          "réveille",
+          "travaille"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 6,
+        "question": "How do you ask 'Where is the station?'",
+        "options": [
+          "Quand est-ce?",
+          "Où est la gare?",
+          "Qui est-ce?",
+          "Comment ça va?"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 7,
+        "question": "Past tense of 'je vais' (I go):",
+        "options": [
+          "j'irai",
+          "je vais",
+          "je suis allé",
+          "j'allais"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 8,
+        "question": "Which expresses preference?",
+        "options": [
+          "Je suis fatigué",
+          "Je préfère le thé",
+          "Il fait froid",
+          "Je parle français"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 10,
+        "question": "What does 'c'est du gâteau' mean?",
+        "options": [
+          "it's cake",
+          "it's easy",
+          "it's tasty",
+          "it's sweet"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  "de": {
+    "language_code": "de",
+    "levels": [
+      {
+        "id": 1,
+        "name": "First Words",
+        "icon": "👋",
+        "desc": "Greetings and basic words",
+        "vocab": [
+          {
+            "target": "hallo",
+            "translation": "hello"
+          },
+          {
+            "target": "tschüss",
+            "translation": "bye"
+          },
+          {
+            "target": "ja",
+            "translation": "yes"
+          },
+          {
+            "target": "nein",
+            "translation": "no"
+          },
+          {
+            "target": "bitte",
+            "translation": "please"
+          },
+          {
+            "target": "danke",
+            "translation": "thank you"
+          },
+          {
+            "target": "entschuldigung",
+            "translation": "sorry"
+          },
+          {
+            "target": "guten Morgen",
+            "translation": "good morning"
+          },
+          {
+            "target": "gute Nacht",
+            "translation": "good night"
+          },
+          {
+            "target": "ich",
+            "translation": "I"
+          },
+          {
+            "target": "du",
+            "translation": "you"
+          },
+          {
+            "target": "er",
+            "translation": "he"
+          },
+          {
+            "target": "sie",
+            "translation": "she"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Wie heißt du?",
+            "translation": "What's your name?"
+          },
+          {
+            "target": "Ich heiße Anna.",
+            "translation": "My name is Anna."
+          },
+          {
+            "target": "Freut mich.",
+            "translation": "Nice to meet you."
+          },
+          {
+            "target": "Wie geht es dir?",
+            "translation": "How are you?"
+          },
+          {
+            "target": "Mir geht es gut, danke.",
+            "translation": "I'm well, thank you."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Numbers & Colors",
+        "icon": "🔢",
+        "desc": "Counting and naming colors",
+        "vocab": [
+          {
+            "target": "eins",
+            "translation": "one"
+          },
+          {
+            "target": "zwei",
+            "translation": "two"
+          },
+          {
+            "target": "drei",
+            "translation": "three"
+          },
+          {
+            "target": "vier",
+            "translation": "four"
+          },
+          {
+            "target": "fünf",
+            "translation": "five"
+          },
+          {
+            "target": "sechs",
+            "translation": "six"
+          },
+          {
+            "target": "sieben",
+            "translation": "seven"
+          },
+          {
+            "target": "acht",
+            "translation": "eight"
+          },
+          {
+            "target": "neun",
+            "translation": "nine"
+          },
+          {
+            "target": "zehn",
+            "translation": "ten"
+          },
+          {
+            "target": "rot",
+            "translation": "red"
+          },
+          {
+            "target": "blau",
+            "translation": "blue"
+          },
+          {
+            "target": "grün",
+            "translation": "green"
+          },
+          {
+            "target": "gelb",
+            "translation": "yellow"
+          },
+          {
+            "target": "weiß",
+            "translation": "white"
+          },
+          {
+            "target": "schwarz",
+            "translation": "black"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ich bin fünf Jahre alt.",
+            "translation": "I am five years old."
+          },
+          {
+            "target": "Der Himmel ist blau.",
+            "translation": "The sky is blue."
+          },
+          {
+            "target": "Meine Lieblingsfarbe ist grün.",
+            "translation": "My favorite color is green."
+          },
+          {
+            "target": "Es gibt drei Äpfel.",
+            "translation": "There are three apples."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Family & People",
+        "icon": "👨‍👩‍👧",
+        "desc": "Talking about family",
+        "vocab": [
+          {
+            "target": "Mutter",
+            "translation": "mother"
+          },
+          {
+            "target": "Vater",
+            "translation": "father"
+          },
+          {
+            "target": "Bruder",
+            "translation": "brother"
+          },
+          {
+            "target": "Schwester",
+            "translation": "sister"
+          },
+          {
+            "target": "Sohn",
+            "translation": "son"
+          },
+          {
+            "target": "Tochter",
+            "translation": "daughter"
+          },
+          {
+            "target": "Großvater",
+            "translation": "grandfather"
+          },
+          {
+            "target": "Großmutter",
+            "translation": "grandmother"
+          },
+          {
+            "target": "Freund",
+            "translation": "friend"
+          },
+          {
+            "target": "Familie",
+            "translation": "family"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ich habe zwei Brüder.",
+            "translation": "I have two brothers."
+          },
+          {
+            "target": "Meine Mutter ist Lehrerin.",
+            "translation": "My mother is a teacher."
+          },
+          {
+            "target": "Ich wohne mit meiner Familie.",
+            "translation": "I live with my family."
+          },
+          {
+            "target": "Mein bester Freund heißt Thomas.",
+            "translation": "My best friend's name is Thomas."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Food & Drinks",
+        "icon": "🍽️",
+        "desc": "Ordering and describing food",
+        "vocab": [
+          {
+            "target": "Wasser",
+            "translation": "water"
+          },
+          {
+            "target": "Brot",
+            "translation": "bread"
+          },
+          {
+            "target": "Kaffee",
+            "translation": "coffee"
+          },
+          {
+            "target": "Tee",
+            "translation": "tea"
+          },
+          {
+            "target": "Milch",
+            "translation": "milk"
+          },
+          {
+            "target": "Wein",
+            "translation": "wine"
+          },
+          {
+            "target": "Bier",
+            "translation": "beer"
+          },
+          {
+            "target": "Apfel",
+            "translation": "apple"
+          },
+          {
+            "target": "Käse",
+            "translation": "cheese"
+          },
+          {
+            "target": "Fleisch",
+            "translation": "meat"
+          },
+          {
+            "target": "Fisch",
+            "translation": "fish"
+          },
+          {
+            "target": "Reis",
+            "translation": "rice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ich möchte einen Kaffee, bitte.",
+            "translation": "I'd like a coffee, please."
+          },
+          {
+            "target": "Haben Sie eine Speisekarte auf Englisch?",
+            "translation": "Do you have an English menu?"
+          },
+          {
+            "target": "Die Rechnung, bitte.",
+            "translation": "The bill, please."
+          },
+          {
+            "target": "Ich bin Vegetarier.",
+            "translation": "I am vegetarian."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Daily Routine",
+        "icon": "⏰",
+        "desc": "Describing your day",
+        "vocab": [
+          {
+            "target": "aufwachen",
+            "translation": "to wake up"
+          },
+          {
+            "target": "frühstücken",
+            "translation": "to have breakfast"
+          },
+          {
+            "target": "duschen",
+            "translation": "to shower"
+          },
+          {
+            "target": "arbeiten",
+            "translation": "to work"
+          },
+          {
+            "target": "essen",
+            "translation": "to eat"
+          },
+          {
+            "target": "schlafen",
+            "translation": "to sleep"
+          },
+          {
+            "target": "studieren",
+            "translation": "to study"
+          },
+          {
+            "target": "lesen",
+            "translation": "to read"
+          },
+          {
+            "target": "Morgen",
+            "translation": "morning"
+          },
+          {
+            "target": "Nachmittag",
+            "translation": "afternoon"
+          },
+          {
+            "target": "Abend",
+            "translation": "evening"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ich wache um sieben Uhr auf.",
+            "translation": "I wake up at seven."
+          },
+          {
+            "target": "Ich arbeite von neun bis fünf.",
+            "translation": "I work from nine to five."
+          },
+          {
+            "target": "Am Nachmittag lerne ich Deutsch.",
+            "translation": "In the afternoon I study German."
+          },
+          {
+            "target": "Ich gehe um elf Uhr ins Bett.",
+            "translation": "I go to bed at eleven."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Travel & Places",
+        "icon": "✈️",
+        "desc": "Asking directions, hotels",
+        "vocab": [
+          {
+            "target": "Flughafen",
+            "translation": "airport"
+          },
+          {
+            "target": "Hotel",
+            "translation": "hotel"
+          },
+          {
+            "target": "Bahnhof",
+            "translation": "station"
+          },
+          {
+            "target": "Straße",
+            "translation": "street"
+          },
+          {
+            "target": "Karte",
+            "translation": "map"
+          },
+          {
+            "target": "rechts",
+            "translation": "right"
+          },
+          {
+            "target": "links",
+            "translation": "left"
+          },
+          {
+            "target": "nah",
+            "translation": "near"
+          },
+          {
+            "target": "weit",
+            "translation": "far"
+          },
+          {
+            "target": "Zimmer",
+            "translation": "room"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Wo ist der Bahnhof?",
+            "translation": "Where is the station?"
+          },
+          {
+            "target": "Biegen Sie rechts ab.",
+            "translation": "Turn right."
+          },
+          {
+            "target": "Ich möchte ein Zimmer reservieren.",
+            "translation": "I would like to book a room."
+          },
+          {
+            "target": "Wie viel kostet das?",
+            "translation": "How much does it cost?"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Past & Future",
+        "icon": "📅",
+        "desc": "Tenses beyond the present",
+        "vocab": [
+          {
+            "target": "gestern",
+            "translation": "yesterday"
+          },
+          {
+            "target": "heute",
+            "translation": "today"
+          },
+          {
+            "target": "morgen",
+            "translation": "tomorrow"
+          },
+          {
+            "target": "letzte Woche",
+            "translation": "last week"
+          },
+          {
+            "target": "nächstes Jahr",
+            "translation": "next year"
+          },
+          {
+            "target": "ich bin gegangen",
+            "translation": "I went"
+          },
+          {
+            "target": "ich habe gegessen",
+            "translation": "I ate"
+          },
+          {
+            "target": "ich habe gemacht",
+            "translation": "I did"
+          },
+          {
+            "target": "ich werde gehen",
+            "translation": "I will go"
+          },
+          {
+            "target": "ich werde machen",
+            "translation": "I will do"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Gestern bin ich ins Kino gegangen.",
+            "translation": "Yesterday I went to the cinema."
+          },
+          {
+            "target": "Morgen reise ich nach Berlin.",
+            "translation": "Tomorrow I'll travel to Berlin."
+          },
+          {
+            "target": "Letzte Woche habe ich Maria gesehen.",
+            "translation": "Last week I saw Maria."
+          },
+          {
+            "target": "Nächstes Jahr lerne ich Französisch.",
+            "translation": "Next year I'll learn French."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Opinions & Feelings",
+        "icon": "💭",
+        "desc": "Expressing yourself",
+        "vocab": [
+          {
+            "target": "ich denke, dass",
+            "translation": "I think that"
+          },
+          {
+            "target": "ich mag",
+            "translation": "I like"
+          },
+          {
+            "target": "ich mag nicht",
+            "translation": "I don't like"
+          },
+          {
+            "target": "ich bevorzuge",
+            "translation": "I prefer"
+          },
+          {
+            "target": "ich stimme zu",
+            "translation": "I agree"
+          },
+          {
+            "target": "glücklich",
+            "translation": "happy"
+          },
+          {
+            "target": "traurig",
+            "translation": "sad"
+          },
+          {
+            "target": "wütend",
+            "translation": "angry"
+          },
+          {
+            "target": "müde",
+            "translation": "tired"
+          },
+          {
+            "target": "aufgeregt",
+            "translation": "excited"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Ich denke, das ist eine gute Idee.",
+            "translation": "I think it's a good idea."
+          },
+          {
+            "target": "Ich mag Musik sehr.",
+            "translation": "I really like music."
+          },
+          {
+            "target": "Ich bin heute ein bisschen müde.",
+            "translation": "I'm a bit tired today."
+          },
+          {
+            "target": "Was denkst du?",
+            "translation": "What do you think?"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Complex Conversations",
+        "icon": "💬",
+        "desc": "Real-life dialogues",
+        "vocab": [
+          {
+            "target": "obwohl",
+            "translation": "although"
+          },
+          {
+            "target": "jedoch",
+            "translation": "however"
+          },
+          {
+            "target": "deshalb",
+            "translation": "therefore"
+          },
+          {
+            "target": "außerdem",
+            "translation": "moreover"
+          },
+          {
+            "target": "trotz",
+            "translation": "despite"
+          },
+          {
+            "target": "während",
+            "translation": "while"
+          },
+          {
+            "target": "bezüglich",
+            "translation": "regarding"
+          },
+          {
+            "target": "tatsächlich",
+            "translation": "in fact"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Obwohl es regnet, gehe ich raus.",
+            "translation": "Although it's raining, I'm going out."
+          },
+          {
+            "target": "Ich möchte mit dem Manager sprechen.",
+            "translation": "I'd like to speak with the manager."
+          },
+          {
+            "target": "Könnten Sie das wiederholen, bitte?",
+            "translation": "Could you repeat, please?"
+          },
+          {
+            "target": "Ich bin nicht sicher, lass mich denken.",
+            "translation": "I'm not sure, let me think."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Advanced Mastery",
+        "icon": "🎓",
+        "desc": "Idioms and nuances",
+        "vocab": [
+          {
+            "target": "auf Wolke sieben sein",
+            "translation": "to be on cloud nine"
+          },
+          {
+            "target": "jemanden auf den Arm nehmen",
+            "translation": "to pull someone's leg"
+          },
+          {
+            "target": "Tomaten auf den Augen haben",
+            "translation": "to be blind to something"
+          },
+          {
+            "target": "ein Vermögen kosten",
+            "translation": "to cost a fortune"
+          },
+          {
+            "target": "ein Kinderspiel sein",
+            "translation": "to be a piece of cake"
+          },
+          {
+            "target": "das Eis brechen",
+            "translation": "to break the ice"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Diese Prüfung war ein Kinderspiel.",
+            "translation": "That exam was a piece of cake."
+          },
+          {
+            "target": "Nimm mich nicht auf den Arm!",
+            "translation": "Don't pull my leg!"
+          },
+          {
+            "target": "Das Auto kostet ein Vermögen.",
+            "translation": "The car costs a fortune."
+          },
+          {
+            "target": "Wir sollten das Eis brechen.",
+            "translation": "We should break the ice."
+          }
+        ]
+      }
+    ],
+    "placement_test": [
+      {
+        "level": 1,
+        "question": "How do you say 'hello' in German?",
+        "options": [
+          "tschüss",
+          "hallo",
+          "danke",
+          "bitte"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 1,
+        "question": "What does 'danke' mean?",
+        "options": [
+          "please",
+          "thank you",
+          "sorry",
+          "yes"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 2,
+        "question": "How do you say 'six'?",
+        "options": [
+          "fünf",
+          "sechs",
+          "sieben",
+          "vier"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 3,
+        "question": "What does 'Schwester' mean?",
+        "options": [
+          "brother",
+          "sister",
+          "mother",
+          "friend"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 4,
+        "question": "How do you order coffee?",
+        "options": [
+          "Ich will Tee",
+          "Ich möchte einen Kaffee",
+          "Ich trinke Wasser",
+          "Ich esse Brot"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 5,
+        "question": "Complete: 'Ich ___ um sieben Uhr auf.'",
+        "options": [
+          "esse",
+          "schlafe",
+          "wache",
+          "arbeite"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 6,
+        "question": "How do you ask 'Where is the station?'",
+        "options": [
+          "Wann ist es?",
+          "Wo ist der Bahnhof?",
+          "Wer ist das?",
+          "Wie geht es?"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 7,
+        "question": "Past tense of 'ich gehe' (I go):",
+        "options": [
+          "ich werde gehen",
+          "ich gehe",
+          "ich bin gegangen",
+          "ich ging"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 8,
+        "question": "Which expresses preference?",
+        "options": [
+          "Ich bin müde",
+          "Ich bevorzuge Tee",
+          "Es ist kalt",
+          "Ich spreche Deutsch"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 10,
+        "question": "What does 'ein Kinderspiel' mean idiomatically?",
+        "options": [
+          "a children's game",
+          "very easy",
+          "playful",
+          "noisy"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  "en": {
+    "language_code": "en",
+    "levels": [
+      {
+        "id": 1,
+        "name": "First Words",
+        "icon": "👋",
+        "desc": "Greetings and basic words",
+        "vocab": [
+          {
+            "target": "hello",
+            "translation": "ciao/hola/bonjour"
+          },
+          {
+            "target": "goodbye",
+            "translation": "addio"
+          },
+          {
+            "target": "yes",
+            "translation": "sì"
+          },
+          {
+            "target": "no",
+            "translation": "no"
+          },
+          {
+            "target": "please",
+            "translation": "per favore"
+          },
+          {
+            "target": "thank you",
+            "translation": "grazie"
+          },
+          {
+            "target": "sorry",
+            "translation": "scusa"
+          },
+          {
+            "target": "good morning",
+            "translation": "buongiorno"
+          },
+          {
+            "target": "good night",
+            "translation": "buonanotte"
+          },
+          {
+            "target": "I",
+            "translation": "io"
+          },
+          {
+            "target": "you",
+            "translation": "tu"
+          },
+          {
+            "target": "he",
+            "translation": "lui"
+          },
+          {
+            "target": "she",
+            "translation": "lei"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "What's your name?",
+            "translation": "Come ti chiami?"
+          },
+          {
+            "target": "My name is Anna.",
+            "translation": "Mi chiamo Anna."
+          },
+          {
+            "target": "Nice to meet you.",
+            "translation": "Piacere."
+          },
+          {
+            "target": "How are you?",
+            "translation": "Come stai?"
+          },
+          {
+            "target": "I'm fine, thank you.",
+            "translation": "Sto bene, grazie."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Numbers & Colors",
+        "icon": "🔢",
+        "desc": "Counting and naming colors",
+        "vocab": [
+          {
+            "target": "one",
+            "translation": "uno"
+          },
+          {
+            "target": "two",
+            "translation": "due"
+          },
+          {
+            "target": "three",
+            "translation": "tre"
+          },
+          {
+            "target": "four",
+            "translation": "quattro"
+          },
+          {
+            "target": "five",
+            "translation": "cinque"
+          },
+          {
+            "target": "six",
+            "translation": "sei"
+          },
+          {
+            "target": "seven",
+            "translation": "sette"
+          },
+          {
+            "target": "eight",
+            "translation": "otto"
+          },
+          {
+            "target": "nine",
+            "translation": "nove"
+          },
+          {
+            "target": "ten",
+            "translation": "dieci"
+          },
+          {
+            "target": "red",
+            "translation": "rosso"
+          },
+          {
+            "target": "blue",
+            "translation": "blu"
+          },
+          {
+            "target": "green",
+            "translation": "verde"
+          },
+          {
+            "target": "yellow",
+            "translation": "giallo"
+          },
+          {
+            "target": "white",
+            "translation": "bianco"
+          },
+          {
+            "target": "black",
+            "translation": "nero"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "I am five years old.",
+            "translation": "Ho cinque anni."
+          },
+          {
+            "target": "The sky is blue.",
+            "translation": "Il cielo è blu."
+          },
+          {
+            "target": "My favorite color is green.",
+            "translation": "Il mio colore preferito è il verde."
+          },
+          {
+            "target": "There are three apples.",
+            "translation": "Ci sono tre mele."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Family & People",
+        "icon": "👨‍👩‍👧",
+        "desc": "Talking about family",
+        "vocab": [
+          {
+            "target": "mother",
+            "translation": "madre"
+          },
+          {
+            "target": "father",
+            "translation": "padre"
+          },
+          {
+            "target": "brother",
+            "translation": "fratello"
+          },
+          {
+            "target": "sister",
+            "translation": "sorella"
+          },
+          {
+            "target": "son",
+            "translation": "figlio"
+          },
+          {
+            "target": "daughter",
+            "translation": "figlia"
+          },
+          {
+            "target": "grandfather",
+            "translation": "nonno"
+          },
+          {
+            "target": "grandmother",
+            "translation": "nonna"
+          },
+          {
+            "target": "friend",
+            "translation": "amico"
+          },
+          {
+            "target": "family",
+            "translation": "famiglia"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "I have two brothers.",
+            "translation": "Ho due fratelli."
+          },
+          {
+            "target": "My mother is a teacher.",
+            "translation": "Mia madre è insegnante."
+          },
+          {
+            "target": "I live with my family.",
+            "translation": "Vivo con la mia famiglia."
+          },
+          {
+            "target": "My best friend is John.",
+            "translation": "Il mio migliore amico è John."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Food & Drinks",
+        "icon": "🍽️",
+        "desc": "Ordering and describing food",
+        "vocab": [
+          {
+            "target": "water",
+            "translation": "acqua"
+          },
+          {
+            "target": "bread",
+            "translation": "pane"
+          },
+          {
+            "target": "coffee",
+            "translation": "caffè"
+          },
+          {
+            "target": "tea",
+            "translation": "tè"
+          },
+          {
+            "target": "milk",
+            "translation": "latte"
+          },
+          {
+            "target": "wine",
+            "translation": "vino"
+          },
+          {
+            "target": "beer",
+            "translation": "birra"
+          },
+          {
+            "target": "apple",
+            "translation": "mela"
+          },
+          {
+            "target": "cheese",
+            "translation": "formaggio"
+          },
+          {
+            "target": "meat",
+            "translation": "carne"
+          },
+          {
+            "target": "fish",
+            "translation": "pesce"
+          },
+          {
+            "target": "rice",
+            "translation": "riso"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "I'd like a coffee, please.",
+            "translation": "Vorrei un caffè, per favore."
+          },
+          {
+            "target": "Do you have a menu in English?",
+            "translation": "Avete un menù in inglese?"
+          },
+          {
+            "target": "The bill, please.",
+            "translation": "Il conto, per favore."
+          },
+          {
+            "target": "I am vegetarian.",
+            "translation": "Sono vegetariano."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Daily Routine",
+        "icon": "⏰",
+        "desc": "Describing your day",
+        "vocab": [
+          {
+            "target": "to wake up",
+            "translation": "svegliarsi"
+          },
+          {
+            "target": "to have breakfast",
+            "translation": "fare colazione"
+          },
+          {
+            "target": "to shower",
+            "translation": "farsi la doccia"
+          },
+          {
+            "target": "to work",
+            "translation": "lavorare"
+          },
+          {
+            "target": "to eat",
+            "translation": "mangiare"
+          },
+          {
+            "target": "to sleep",
+            "translation": "dormire"
+          },
+          {
+            "target": "to study",
+            "translation": "studiare"
+          },
+          {
+            "target": "to read",
+            "translation": "leggere"
+          },
+          {
+            "target": "morning",
+            "translation": "mattina"
+          },
+          {
+            "target": "afternoon",
+            "translation": "pomeriggio"
+          },
+          {
+            "target": "evening",
+            "translation": "sera"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "I wake up at seven.",
+            "translation": "Mi sveglio alle sette."
+          },
+          {
+            "target": "I work from nine to five.",
+            "translation": "Lavoro dalle nove alle cinque."
+          },
+          {
+            "target": "In the afternoon I study English.",
+            "translation": "Il pomeriggio studio inglese."
+          },
+          {
+            "target": "I go to bed at eleven.",
+            "translation": "Vado a letto alle undici."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Travel & Places",
+        "icon": "✈️",
+        "desc": "Asking directions, hotels",
+        "vocab": [
+          {
+            "target": "airport",
+            "translation": "aeroporto"
+          },
+          {
+            "target": "hotel",
+            "translation": "hotel"
+          },
+          {
+            "target": "station",
+            "translation": "stazione"
+          },
+          {
+            "target": "street",
+            "translation": "strada"
+          },
+          {
+            "target": "map",
+            "translation": "mappa"
+          },
+          {
+            "target": "right",
+            "translation": "destra"
+          },
+          {
+            "target": "left",
+            "translation": "sinistra"
+          },
+          {
+            "target": "near",
+            "translation": "vicino"
+          },
+          {
+            "target": "far",
+            "translation": "lontano"
+          },
+          {
+            "target": "room",
+            "translation": "camera"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Where is the station?",
+            "translation": "Dov'è la stazione?"
+          },
+          {
+            "target": "Turn right.",
+            "translation": "Giri a destra."
+          },
+          {
+            "target": "I would like to book a room.",
+            "translation": "Vorrei prenotare una camera."
+          },
+          {
+            "target": "How much does it cost?",
+            "translation": "Quanto costa?"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Past & Future",
+        "icon": "📅",
+        "desc": "Tenses beyond the present",
+        "vocab": [
+          {
+            "target": "yesterday",
+            "translation": "ieri"
+          },
+          {
+            "target": "today",
+            "translation": "oggi"
+          },
+          {
+            "target": "tomorrow",
+            "translation": "domani"
+          },
+          {
+            "target": "last week",
+            "translation": "la settimana scorsa"
+          },
+          {
+            "target": "next year",
+            "translation": "l'anno prossimo"
+          },
+          {
+            "target": "I went",
+            "translation": "sono andato"
+          },
+          {
+            "target": "I ate",
+            "translation": "ho mangiato"
+          },
+          {
+            "target": "I did",
+            "translation": "ho fatto"
+          },
+          {
+            "target": "I will go",
+            "translation": "andrò"
+          },
+          {
+            "target": "I will do",
+            "translation": "farò"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Yesterday I went to the cinema.",
+            "translation": "Ieri sono andato al cinema."
+          },
+          {
+            "target": "Tomorrow I will travel.",
+            "translation": "Domani viaggerò."
+          },
+          {
+            "target": "Last week I saw Maria.",
+            "translation": "La settimana scorsa ho visto Maria."
+          },
+          {
+            "target": "Next year I'll learn French.",
+            "translation": "L'anno prossimo imparerò il francese."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Opinions & Feelings",
+        "icon": "💭",
+        "desc": "Expressing yourself",
+        "vocab": [
+          {
+            "target": "I think that",
+            "translation": "penso che"
+          },
+          {
+            "target": "I like",
+            "translation": "mi piace"
+          },
+          {
+            "target": "I don't like",
+            "translation": "non mi piace"
+          },
+          {
+            "target": "I prefer",
+            "translation": "preferisco"
+          },
+          {
+            "target": "I agree",
+            "translation": "sono d'accordo"
+          },
+          {
+            "target": "happy",
+            "translation": "felice"
+          },
+          {
+            "target": "sad",
+            "translation": "triste"
+          },
+          {
+            "target": "angry",
+            "translation": "arrabbiato"
+          },
+          {
+            "target": "tired",
+            "translation": "stanco"
+          },
+          {
+            "target": "excited",
+            "translation": "emozionato"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "I think it's a good idea.",
+            "translation": "Penso che sia una buona idea."
+          },
+          {
+            "target": "I really like music.",
+            "translation": "Mi piace molto la musica."
+          },
+          {
+            "target": "I'm a bit tired today.",
+            "translation": "Sono un po' stanco oggi."
+          },
+          {
+            "target": "What do you think?",
+            "translation": "Cosa ne pensi?"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Complex Conversations",
+        "icon": "💬",
+        "desc": "Real-life dialogues",
+        "vocab": [
+          {
+            "target": "although",
+            "translation": "anche se"
+          },
+          {
+            "target": "however",
+            "translation": "tuttavia"
+          },
+          {
+            "target": "therefore",
+            "translation": "quindi"
+          },
+          {
+            "target": "moreover",
+            "translation": "inoltre"
+          },
+          {
+            "target": "despite",
+            "translation": "nonostante"
+          },
+          {
+            "target": "while",
+            "translation": "mentre"
+          },
+          {
+            "target": "regarding",
+            "translation": "riguardo a"
+          },
+          {
+            "target": "in fact",
+            "translation": "infatti"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "Although it's raining, I'll go out.",
+            "translation": "Anche se piove, esco."
+          },
+          {
+            "target": "I'd like to speak with the manager.",
+            "translation": "Vorrei parlare con il direttore."
+          },
+          {
+            "target": "Could you repeat, please?",
+            "translation": "Potrebbe ripetere, per favore?"
+          },
+          {
+            "target": "I'm not sure, let me think.",
+            "translation": "Non sono sicuro, fammi pensare."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Advanced Mastery",
+        "icon": "🎓",
+        "desc": "Idioms and nuances",
+        "vocab": [
+          {
+            "target": "to be on cloud nine",
+            "translation": "essere al settimo cielo"
+          },
+          {
+            "target": "to pull someone's leg",
+            "translation": "prendere in giro"
+          },
+          {
+            "target": "to break the ice",
+            "translation": "rompere il ghiaccio"
+          },
+          {
+            "target": "to cost an arm and a leg",
+            "translation": "costare un occhio della testa"
+          },
+          {
+            "target": "piece of cake",
+            "translation": "gioco da ragazzi"
+          },
+          {
+            "target": "to hit the nail on the head",
+            "translation": "dare nel segno"
+          }
+        ],
+        "phrases": [
+          {
+            "target": "That exam was a piece of cake.",
+            "translation": "Quell'esame è stato un gioco da ragazzi."
+          },
+          {
+            "target": "Don't pull my leg!",
+            "translation": "Non prendermi in giro!"
+          },
+          {
+            "target": "I'm on cloud nine!",
+            "translation": "Sono al settimo cielo!"
+          },
+          {
+            "target": "Let's break the ice.",
+            "translation": "Cerchiamo di rompere il ghiaccio."
+          }
+        ]
+      }
+    ],
+    "placement_test": [
+      {
+        "level": 1,
+        "question": "How do you say 'thank you' in English?",
+        "options": [
+          "please",
+          "thank you",
+          "sorry",
+          "yes"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 1,
+        "question": "What is 'goodbye' in English?",
+        "options": [
+          "goodbye",
+          "good night",
+          "good morning",
+          "hi"
+        ],
+        "correct": 0
+      },
+      {
+        "level": 2,
+        "question": "How do you say the number '7'?",
+        "options": [
+          "six",
+          "seven",
+          "eight",
+          "nine"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 3,
+        "question": "What does 'sister' mean?",
+        "options": [
+          "brother",
+          "female sibling",
+          "mother",
+          "aunt"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 4,
+        "question": "How do you order coffee?",
+        "options": [
+          "I want tea",
+          "I'd like a coffee",
+          "I drink water",
+          "I eat bread"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 5,
+        "question": "Complete: 'I ___ up at seven.'",
+        "options": [
+          "eat",
+          "sleep",
+          "wake",
+          "work"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 6,
+        "question": "How do you ask 'Where is the station?'",
+        "options": [
+          "When is it?",
+          "Where is the station?",
+          "Who is it?",
+          "How are you?"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 7,
+        "question": "Past tense of 'go':",
+        "options": [
+          "will go",
+          "go",
+          "went",
+          "going"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 8,
+        "question": "Which expresses preference?",
+        "options": [
+          "I'm tired",
+          "I prefer tea",
+          "It's cold",
+          "I speak English"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 10,
+        "question": "What does 'piece of cake' mean idiomatically?",
+        "options": [
+          "a slice of cake",
+          "very easy",
+          "delicious",
+          "small portion"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}
