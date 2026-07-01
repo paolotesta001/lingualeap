@@ -163,6 +163,28 @@
         </div>
     </div>
 
+    <!-- Edit Word Modal -->
+    <div class="modal-overlay hidden" id="editWordModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>✏️ Edit word</h2>
+                <button class="modal-close" id="editModalClose">✕</button>
+            </div>
+            <div class="modal-body">
+                <label class="modal-label">Word / Phrase</label>
+                <input type="text" class="text-input" id="editModalSource" placeholder="Word">
+                <label class="modal-label">Main translation</label>
+                <input type="text" class="text-input" id="editModalTranslation" placeholder="Main translation">
+                <label class="modal-label">Other translations <span style="opacity:.7;font-weight:400">(comma-separated)</span></label>
+                <input type="text" class="text-input" id="editModalOthers" placeholder="synonym1, synonym2">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" id="editModalCancel">Cancel</button>
+                <button class="btn btn-primary" id="editModalConfirm">✓ Save changes</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Learned Words Modal -->
     <div class="modal-overlay hidden" id="learnedModal">
         <div class="modal modal-wide">
@@ -351,6 +373,7 @@
                     <div class="flashcard-side flashcard-back hidden" id="flashcardBack">
                         <div class="flashcard-label">Translation</div>
                         <div class="flashcard-word" id="flashcardTranslation">translation</div>
+                        <div class="flashcard-others" id="flashcardTranslationOthers"></div>
                     </div>
                 </div>
                 <button class="flashcard-listen" id="flashcardListenBtn" title="Listen to pronunciation">🔊 Listen</button>

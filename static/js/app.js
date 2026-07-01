@@ -323,6 +323,14 @@ const App = {
             if (e.target.id === 'saveWordModal') this.closeSaveModal();
         });
 
+        // Edit word modal
+        document.getElementById('editModalClose').addEventListener('click', () => this.closeEditModal());
+        document.getElementById('editModalCancel').addEventListener('click', () => this.closeEditModal());
+        document.getElementById('editModalConfirm').addEventListener('click', () => this.confirmEditModal());
+        document.getElementById('editWordModal').addEventListener('click', (e) => {
+            if (e.target.id === 'editWordModal') this.closeEditModal();
+        });
+
         // Lessons
         document.getElementById('openLessonsBtn').addEventListener('click', () => this.openLessons());
         document.getElementById('backFromLessons').addEventListener('click', () => {
@@ -627,16 +635,17 @@ const App = {
 
     _processImportData(data) {
         const incoming = data.words || [];
-        const incomplete = data.incomplete || [];
+        const rawIncomplete = data.incomplete || [];
         let added = 0;
         let skipped = 0;
 
+        // A word counts as "already present" if its SOURCE is in My Words,
+        // regardless of the translation or language pair.
+        const known = new Set(this.savedWords.map(s => (s.source || '').toLowerCase()));
+
         for (const w of incoming) {
-            const dup = this.savedWords.some(s =>
-                s.source.toLowerCase() === w.source.toLowerCase() &&
-                s.langFrom === w.langFrom && s.langTo === w.langTo
-            );
-            if (dup) { skipped++; continue; }
+            const key = (w.source || '').toLowerCase();
+            if (!key || known.has(key)) { skipped++; continue; }
             this.savedWords.push({
                 source: w.source,
                 translation: w.translation,
@@ -645,19 +654,34 @@ const App = {
                 langTo: w.langTo,
                 addedAt: Date.now(),
             });
+            known.add(key);
             added++;
         }
+
+        // Only ask about incomplete words whose source is NOT already saved,
+        // and never ask about the same word twice.
+        const incomplete = [];
+        const seenIncomplete = new Set();
+        for (const w of rawIncomplete) {
+            const key = (w.source || '').toLowerCase();
+            if (!key) continue;
+            if (known.has(key)) { skipped++; continue; }   // already have this word
+            if (seenIncomplete.has(key)) continue;          // duplicate inside the CSV
+            seenIncomplete.add(key);
+            incomplete.push(w);
+        }
+
         this.saveProgress();
         this.renderMyWords();
 
         let msg = `Imported ${added} new word${added !== 1 ? 's' : ''}`;
-        if (skipped) msg += ` (${skipped} already saved)`;
+        if (skipped) msg += ` (${skipped} already saved or duplicate)`;
         if (incomplete.length > 0) {
-            msg += `\n\n${incomplete.length} word${incomplete.length !== 1 ? 's are' : ' is'} incomplete and need${incomplete.length === 1 ? 's' : ''} your input.`;
+            msg += `\n\n${incomplete.length} new word${incomplete.length !== 1 ? 's need' : ' needs'} a translation you can add.`;
         }
         alert(msg);
 
-        // Start processing incomplete words one by one
+        // Start processing the remaining (genuinely new) incomplete words one by one
         if (incomplete.length > 0) {
             this._pendingIncomplete = incomplete;
             this._pendingIncompleteIdx = 0;
@@ -748,6 +772,7 @@ const App = {
                     <div class="my-word-meta">
                         <div class="my-word-langs">${names[w.langFrom] || w.langFrom} › ${names[w.langTo] || w.langTo}</div>
                     </div>
+                    <button class="my-word-edit" data-idx="${realIdx}" title="Edit">✏️</button>
                     <button class="my-word-delete" data-idx="${realIdx}" title="Remove">🗑️</button>
                 </div>
             `;
@@ -760,10 +785,18 @@ const App = {
             });
         });
 
-        // Delete buttons
+        // Edit buttons
+        container.querySelectorAll('.my-word-edit').forEach(btn => {
+            btn.addEventListener('click', () => this.openEditModal(parseInt(btn.dataset.idx)));
+        });
+
+        // Delete buttons — ask for confirmation first
         container.querySelectorAll('.my-word-delete').forEach(btn => {
             btn.addEventListener('click', () => {
                 const idx = parseInt(btn.dataset.idx);
+                const w = list[idx];
+                const label = w ? `"${w.source}"` : 'this word';
+                if (!confirm(`Delete ${label}?`)) return;  // No = keep it
                 if (isReverse) {
                     this.reverseWords.splice(idx, 1);
                     this.wordsLearned++;
@@ -777,6 +810,60 @@ const App = {
                 this.renderMyWords();
             });
         });
+    },
+
+    // ===== EDIT WORD =====
+    _editList: null,
+    _editIdx: null,
+
+    openEditModal(realIdx) {
+        const isReverse = this.currentWordsTab === 'reverse';
+        const isSentences = this.currentWordsTab === 'sentences';
+        const list = isReverse ? this.reverseWords
+            : isSentences ? this.mySentences
+            : this.savedWords;
+        const w = list[realIdx];
+        if (!w) return;
+        this._editList = list;
+        this._editIdx = realIdx;
+        document.getElementById('editModalSource').value = w.source || '';
+        document.getElementById('editModalTranslation').value = w.translation || '';
+        const others = (w.allTranslations || []).filter(t => t !== w.translation);
+        document.getElementById('editModalOthers').value = others.join(', ');
+        document.getElementById('editWordModal').classList.remove('hidden');
+        document.getElementById('editModalTranslation').focus();
+    },
+
+    closeEditModal() {
+        document.getElementById('editWordModal').classList.add('hidden');
+        this._editList = null;
+        this._editIdx = null;
+    },
+
+    confirmEditModal() {
+        if (!this._editList || this._editIdx == null) return this.closeEditModal();
+        const w = this._editList[this._editIdx];
+        if (!w) return this.closeEditModal();
+
+        const source = document.getElementById('editModalSource').value.trim();
+        const translation = document.getElementById('editModalTranslation').value.trim();
+        const othersRaw = document.getElementById('editModalOthers').value.trim();
+        if (!source || !translation) {
+            alert('Please fill in the word and its main translation.');
+            return;
+        }
+        const all = [translation];
+        if (othersRaw) {
+            othersRaw.split(',').map(s => s.trim()).filter(Boolean).forEach(o => {
+                if (!all.some(x => x.toLowerCase() === o.toLowerCase())) all.push(o);
+            });
+        }
+        w.source = source;
+        w.translation = translation;
+        w.allTranslations = all;
+        this.saveProgress();
+        this.closeEditModal();
+        this.renderMyWords();
     },
 
     // ===== FLASHCARD GAME =====
@@ -842,6 +929,10 @@ const App = {
         this.flashcardCard = card;
         document.getElementById('flashcardWord').textContent = card.source;
         document.getElementById('flashcardTranslation').textContent = card.translation;
+        // Show all the other saved translations underneath (grey, smaller)
+        const others = (card.allTranslations || []).filter(t => t && t !== card.translation);
+        document.getElementById('flashcardTranslationOthers').textContent =
+            others.length ? others.join(', ') : '';
         document.getElementById('flashcardFront').classList.remove('hidden');
         document.getElementById('flashcardBack').classList.add('hidden');
         document.getElementById('flashcardButtons').classList.add('hidden');

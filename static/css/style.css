@@ -1498,6 +1498,21 @@ body {
     opacity: 1;
 }
 
+.my-word-edit {
+    background: none;
+    border: none;
+    font-size: 1.05rem;
+    cursor: pointer;
+    padding: 4px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+}
+
+.my-word-edit:hover {
+    opacity: 1;
+}
+
 .my-word-text {
     flex: 1;
     min-width: 0;
@@ -1612,6 +1627,20 @@ body {
 
 .flashcard-back .flashcard-word {
     color: var(--yellow);
+}
+
+.flashcard-others {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: -6px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.flashcard-others:empty {
+    display: none;
 }
 
 .flashcard-tap {
