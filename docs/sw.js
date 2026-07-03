@@ -2,7 +2,7 @@
 // Cache-first for the app shell + bundled data so it works offline and installs
 // to the home screen. Cross-origin calls (Gemini, MyMemory, Google Fonts) are
 // left untouched so they always hit the live network.
-const CACHE_NAME = "lingualeap-v4";
+const CACHE_NAME = "lingualeap-v5";
 
 const ASSETS = [
     "./",

@@ -2,6 +2,7 @@
 
 const App = {
     // State
+    version: '1.0.0',
     languages: [],
     currentLang: null,
     currentLangData: null,
@@ -57,6 +58,9 @@ const App = {
         this.checkSpeechSupport();
         this.fetchLanguages();
         this.updateTopBar();
+        const vEl = document.getElementById('appVersion');
+        if (vEl) vEl.textContent = this.version;
+        this.showScreen('welcome');  // start on the welcome splash (hides top bar)
     },
 
     // ===== PERSISTENCE =====
@@ -175,6 +179,7 @@ const App = {
     // ===== DOM =====
     cacheDOM() {
         this.screens = {
+            welcome: document.getElementById('welcomeScreen'),
             language: document.getElementById('languageScreen'),
             dashboard: document.getElementById('dashboardScreen'),
             exercise: document.getElementById('exerciseScreen'),
@@ -193,9 +198,16 @@ const App = {
     showScreen(name) {
         Object.values(this.screens).forEach(s => s.classList.remove('active'));
         this.screens[name].classList.add('active');
+        // Clean full-screen splash: hide the top bar only on the welcome screen
+        const topBar = document.querySelector('.top-bar');
+        if (topBar) topBar.style.display = (name === 'welcome') ? 'none' : '';
     },
 
     bindEvents() {
+        document.getElementById('enterAppBtn').addEventListener('click', () => {
+            this.showScreen('language');
+        });
+
         document.getElementById('backToLanguages').addEventListener('click', () => {
             this.showScreen('language');
         });
@@ -639,36 +651,44 @@ const App = {
         let added = 0;
         let skipped = 0;
 
-        // A word counts as "already present" if its SOURCE is in My Words,
-        // regardless of the translation or language pair.
-        const known = new Set(this.savedWords.map(s => (s.source || '').toLowerCase()));
+        // A word counts as "already present" if the word ITSELF or ANY of its
+        // translations already appears anywhere in My Words (as a word or as a
+        // translation). Language pair is ignored.
+        const known = new Set();
+        const register = (w) => {
+            if (w.source) known.add(w.source.trim().toLowerCase());
+            if (w.translation) known.add(w.translation.trim().toLowerCase());
+            (w.allTranslations || []).forEach(t => { if (t) known.add(t.trim().toLowerCase()); });
+        };
+        const isKnown = (w) => {
+            const cands = [w.source, w.translation, ...(w.allTranslations || [])]
+                .filter(Boolean).map(x => x.trim().toLowerCase());
+            return cands.some(c => known.has(c));
+        };
+        this.savedWords.forEach(register);
 
         for (const w of incoming) {
-            const key = (w.source || '').toLowerCase();
-            if (!key || known.has(key)) { skipped++; continue; }
-            this.savedWords.push({
+            if (isKnown(w)) { skipped++; continue; }
+            const entry = {
                 source: w.source,
                 translation: w.translation,
                 allTranslations: w.allTranslations || [w.translation],
                 langFrom: w.langFrom,
                 langTo: w.langTo,
                 addedAt: Date.now(),
-            });
-            known.add(key);
+            };
+            this.savedWords.push(entry);
+            register(entry);
             added++;
         }
 
-        // Only ask about incomplete words whose source is NOT already saved,
-        // and never ask about the same word twice.
+        // Only ask about incomplete words that are genuinely NEW (word and
+        // translation both unseen), and never ask about the same word twice.
         const incomplete = [];
-        const seenIncomplete = new Set();
         for (const w of rawIncomplete) {
-            const key = (w.source || '').toLowerCase();
-            if (!key) continue;
-            if (known.has(key)) { skipped++; continue; }   // already have this word
-            if (seenIncomplete.has(key)) continue;          // duplicate inside the CSV
-            seenIncomplete.add(key);
+            if (isKnown(w)) { skipped++; continue; }   // already have this word or its translation
             incomplete.push(w);
+            register(w);                                // so later duplicates are skipped too
         }
 
         this.saveProgress();
