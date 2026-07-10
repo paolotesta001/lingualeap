@@ -535,7 +535,7 @@ import re
 
 LANG_NAMES = {
     "en": "English", "es": "Spanish", "it": "Italian",
-    "fr": "French", "de": "German",
+    "fr": "French", "de": "German", "pl": "Polish",
 }
 
 GRAMMAR_TIPS = {

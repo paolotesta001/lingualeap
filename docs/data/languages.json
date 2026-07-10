@@ -3,5 +3,6 @@
   { "language": "Spanish", "code": "es", "flag": "🇪🇸", "file": "spanish.json" },
   { "language": "Italian", "code": "it", "flag": "🇮🇹", "file": "italian.json" },
   { "language": "French",  "code": "fr", "flag": "🇫🇷", "file": "french.json" },
-  { "language": "German",  "code": "de", "flag": "🇩🇪", "file": "german.json" }
+  { "language": "German",  "code": "de", "flag": "🇩🇪", "file": "german.json" },
+  { "language": "Polish",  "code": "pl", "flag": "🇵🇱", "file": "polish.json" }
 ]

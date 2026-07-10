@@ -1,0 +1,686 @@
+{
+  "language": "Polish",
+  "code": "pl",
+  "flag": "🇵🇱",
+  "tts_code": "pl-PL",
+  "levels": [
+    {
+      "id": 1,
+      "name": "Basics",
+      "icon": "🌱",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Cześć! Jestem Ania. To jest mój pies, Burek. Burek lubi jeść i spać. Ja lubię czytać książki.",
+            "translation": "Hi! I am Ania. This is my dog, Burek. Burek likes to eat and sleep. I like to read books.",
+            "questions": [
+              {
+                "question": "Who is Ania?",
+                "options": [
+                  "A cat",
+                  "A dog",
+                  "A person",
+                  "A book"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "What does Burek like to do?",
+                "options": [
+                  "Read and sleep",
+                  "Eat and sleep",
+                  "Eat and read",
+                  "Sleep and play"
+                ],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "To jest dom. Dom ma drzwi i okna. W domu mieszka rodzina. Rodzina je obiad w kuchni.",
+            "translation": "This is a house. The house has doors and windows. A family lives in the house. The family eats dinner in the kitchen.",
+            "questions": [
+              {
+                "question": "What does the house have?",
+                "options": [
+                  "Trees and flowers",
+                  "Doors and windows",
+                  "Cars and bikes",
+                  "Books and toys"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "Where does the family eat dinner?",
+                "options": [
+                  "In the garden",
+                  "In the bedroom",
+                  "In the kitchen",
+                  "In the living room"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "W parku jest dużo drzew. Dzieci bawią się na placu zabaw. Słońce świeci. Jest ciepło.",
+            "translation": "There are many trees in the park. Children play on the playground. The sun is shining. It is warm.",
+            "questions": [
+              {
+                "question": "What is in the park?",
+                "options": [
+                  "Many cars",
+                  "Many trees",
+                  "Many shops",
+                  "Many houses"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "What are the children doing?",
+                "options": [
+                  "Sleeping",
+                  "Eating",
+                  "Playing",
+                  "Reading"
+                ],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "Hello, how are you?",
+            "acceptable_answers": [
+              "Cześć, jak się masz?",
+              "Czesc, jak sie masz?",
+              "cześć, jak się masz?"
+            ],
+            "hint": "Cześć..."
+          },
+          {
+            "id": "w2",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "I am a student.",
+            "acceptable_answers": [
+              "Jestem studentem.",
+              "Jestem studentką.",
+              "Jestem studentem",
+              "Jestem studentka",
+              "jestem studentem",
+              "jestem studentka"
+            ],
+            "hint": "Jestem..."
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "This is my car.",
+            "acceptable_answers": [
+              "To jest mój samochód.",
+              "To jest moj samochod.",
+              "to jest mój samochód"
+            ],
+            "hint": "To..."
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "Thank you very much.",
+            "acceptable_answers": [
+              "Dziękuję bardzo.",
+              "Dziekuje bardzo.",
+              "dziękuję bardzo"
+            ],
+            "hint": "Dziękuję..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Dzień dobry.",
+            "translation": "Good morning.",
+            "acceptable_answers": [
+              "Dzień dobry.",
+              "Dzien dobry.",
+              "dzień dobry."
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "type_heard",
+            "text": "Do widzenia.",
+            "translation": "Goodbye.",
+            "acceptable_answers": [
+              "Do widzenia.",
+              "Do widzenia",
+              "do widzenia."
+            ]
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Proszę.",
+            "translation": "Please.",
+            "acceptable_answers": [
+              "Proszę.",
+              "Prosze.",
+              "proszę."
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "type_heard",
+            "text": "Przepraszam.",
+            "translation": "Excuse me.",
+            "acceptable_answers": [
+              "Przepraszam.",
+              "Przepraszam",
+              "przepraszam."
+            ]
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Nazywam się Tomek.",
+            "translation": "My name is Tomek.",
+            "key_words": [
+              "nazywam",
+              "się",
+              "tomek"
+            ]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Lubię kawę z mlekiem.",
+            "translation": "I like coffee with milk.",
+            "key_words": [
+              "lubię",
+              "kawę",
+              "mlekiem"
+            ]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Mam kota i psa.",
+            "translation": "I have a cat and a dog.",
+            "key_words": [
+              "mam",
+              "kota",
+              "psa"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Everyday",
+      "icon": "🏠",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Codziennie rano wstaję o siódmej. Jem śniadanie, zazwyczaj płatki z mlekiem. Potem idę do pracy. Pracuję w biurze do godziny szesnastej. Po pracy wracam do domu i gotuję obiad.",
+            "translation": "Every morning I wake up at seven. I eat breakfast, usually cereal with milk. Then I go to work. I work in an office until four o'clock. After work, I come home and cook dinner.",
+            "questions": [
+              {
+                "question": "What time does the person wake up?",
+                "options": [
+                  "Six o'clock",
+                  "Seven o'clock",
+                  "Eight o'clock",
+                  "Nine o'clock"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "What does the person do after work?",
+                "options": [
+                  "Goes to the gym",
+                  "Watches TV",
+                  "Cooks dinner",
+                  "Reads a book"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "W weekendy lubię spędzać czas na świeżym powietrzu. Często chodzę na spacery do lasu lub jeżdżę na rowerze. Czasami spotykam się ze znajomymi w kawiarni. Wieczorem oglądam film.",
+            "translation": "On weekends, I like to spend time outdoors. I often go for walks in the forest or ride my bike. Sometimes I meet friends at a cafe. In the evening, I watch a movie.",
+            "questions": [
+              {
+                "question": "What does the person like to do on weekends?",
+                "options": [
+                  "Stay at home",
+                  "Work extra hours",
+                  "Spend time outdoors",
+                  "Go shopping"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "Where does the person sometimes meet friends?",
+                "options": [
+                  "At the cinema",
+                  "At the park",
+                  "At a cafe",
+                  "At home"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "Mój ulubiony sport to piłka nożna. Gram w nią co tydzień z moimi kolegami. Jestem bramkarzem. Po meczu zawsze idziemy na pizzę i rozmawiamy o grze. To świetna zabawa.",
+            "translation": "My favorite sport is football. I play it every week with my friends. I am a goalkeeper. After the match, we always go for pizza and talk about the game. It's great fun.",
+            "questions": [
+              {
+                "question": "What is the person's favorite sport?",
+                "options": [
+                  "Basketball",
+                  "Tennis",
+                  "Football",
+                  "Volleyball"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "What do they do after the match?",
+                "options": [
+                  "Go home",
+                  "Go to a restaurant",
+                  "Go for pizza",
+                  "Go shopping"
+                ],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "I need a ticket to Warsaw.",
+            "acceptable_answers": [
+              "Potrzebuję biletu do Warszawy.",
+              "Potrzebuje biletu do Warszawy.",
+              "potrzebuję biletu do warszawy."
+            ],
+            "hint": "Potrzebuję..."
+          },
+          {
+            "id": "w2",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "Can I have a coffee, please?",
+            "acceptable_answers": [
+              "Czy mogę prosić o kawę?",
+              "Czy moge prosic o kawe?",
+              "czy mogę prosić o kawę?"
+            ],
+            "hint": "Czy..."
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "Where is the nearest bus stop?",
+            "acceptable_answers": [
+              "Gdzie jest najbliższy przystanek autobusowy?",
+              "Gdzie jest najblizszy przystanek autobusowy?",
+              "gdzie jest najbliższy przystanek autobusowy?"
+            ],
+            "hint": "Gdzie..."
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "I would like to pay by card.",
+            "acceptable_answers": [
+              "Chciałbym zapłacić kartą.",
+              "Chciałabym zapłacić kartą.",
+              "Chcialbym zaplacic karta.",
+              "chciałbym zapłacić kartą."
+            ],
+            "hint": "Chciałbym/Chciałabym..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Ile to kosztuje?",
+            "translation": "How much does it cost?",
+            "acceptable_answers": [
+              "Ile to kosztuje?",
+              "Ile to kosztuje",
+              "ile to kosztuje?"
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "type_heard",
+            "text": "Mam rezerwację na dwie osoby.",
+            "translation": "I have a reservation for two people.",
+            "acceptable_answers": [
+              "Mam rezerwację na dwie osoby.",
+              "Mam rezerwacje na dwie osoby.",
+              "mam rezerwację na dwie osoby."
+            ]
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Czy mogę zobaczyć menu?",
+            "translation": "Can I see the menu?",
+            "acceptable_answers": [
+              "Czy mogę zobaczyć menu?",
+              "Czy moge zobaczyc menu?",
+              "czy mogę zobaczyć menu?"
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "type_heard",
+            "text": "Smacznego!",
+            "translation": "Enjoy your meal!",
+            "acceptable_answers": [
+              "Smacznego!",
+              "Smacznego",
+              "smacznego!"
+            ]
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Pociąg odjeżdża o dziesiątej.",
+            "translation": "The train departs at ten o'clock.",
+            "key_words": [
+              "pociąg",
+              "odjeżdża",
+              "dziesiątej"
+            ]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Gdzie jest toaleta?",
+            "translation": "Where is the toilet?",
+            "key_words": [
+              "gdzie",
+              "jest",
+              "toaleta"
+            ]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "Chciałbym zamówić herbatę.",
+            "translation": "I would like to order tea.",
+            "key_words": [
+              "chciałbym",
+              "zamówić",
+              "herbatę"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Conversation",
+      "icon": "💬",
+      "exercises": {
+        "reading": [
+          {
+            "id": "r1",
+            "type": "comprehension",
+            "text": "Wczoraj miałem interesującą rozmowę z moim kolegą z pracy na temat przyszłości technologii. On uważa, że sztuczna inteligencja zmieni świat w sposób, którego jeszcze nie rozumiemy. Ja jestem bardziej sceptyczny, ale zgadzam się, że musimy być gotowi na zmiany. Rozmawialiśmy też o etycznych aspektach rozwoju AI.",
+            "translation": "Yesterday I had an interesting conversation with my colleague from work about the future of technology. He believes that artificial intelligence will change the world in ways we don't yet understand. I am more skeptical, but I agree that we need to be ready for changes. We also talked about the ethical aspects of AI development.",
+            "questions": [
+              {
+                "question": "What was the main topic of the conversation?",
+                "options": [
+                  "The past of technology",
+                  "The future of technology",
+                  "The present state of technology",
+                  "The history of AI"
+                ],
+                "correct": 1
+              },
+              {
+                "question": "What is the speaker's stance on AI?",
+                "options": [
+                  "Very enthusiastic",
+                  "Completely against it",
+                  "More skeptical but open to changes",
+                  "Uninterested"
+                ],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": "r2",
+            "type": "comprehension",
+            "text": "Planuję podróż do Krakowa na długi weekend. Chcę zwiedzić Wawel, Rynek Główny i Kazimierz. Zarezerwowałem już nocleg w małym hotelu blisko centrum. Mam nadzieję, że pogoda będzie ładna, żeby móc dużo spacerować. Myślę, żeby spróbować lokalnych specjałów, takich jak obwarzanki i pierogi.",
+            "translation": "I am planning a trip to Krakow for a long weekend. I want to visit Wawel, the Main Market Square, and Kazimierz. I have already booked accommodation in a small hotel near the center. I hope the weather will be nice so I can walk a lot. I'm thinking of trying local specialties like obwarzanki and pierogi.",
+            "questions": [
+              {
+                "question": "Where is the person planning to travel?",
+                "options": [
+                  "Warsaw",
+                  "Gdańsk",
+                  "Krakow",
+                  "Wrocław"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "What local specialties does the person want to try?",
+                "options": [
+                  "Sausages and bread",
+                  "Obwarzanki and pierogi",
+                  "Soup and salad",
+                  "Fish and chips"
+                ],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": "r3",
+            "type": "comprehension",
+            "text": "W dzisiejszych czasach coraz więcej ludzi pracuje zdalnie. Ma to swoje plusy i minusy. Z jednej strony, daje to większą elastyczność i oszczędność czasu na dojazdy. Z drugiej strony, może prowadzić do izolacji i trudności w oddzieleniu życia prywatnego od zawodowego. Ważne jest, aby znaleźć odpowiednią równowagę.",
+            "translation": "Nowadays, more and more people work remotely. This has its pros and cons. On the one hand, it offers greater flexibility and saves commuting time. On the other hand, it can lead to isolation and difficulties in separating private and professional life. It is important to find the right balance.",
+            "questions": [
+              {
+                "question": "What is a positive aspect of remote work?",
+                "options": [
+                  "More isolation",
+                  "Difficulties in separating life",
+                  "Greater flexibility",
+                  "Longer working hours"
+                ],
+                "correct": 2
+              },
+              {
+                "question": "What is important when working remotely?",
+                "options": [
+                  "Working all the time",
+                  "Avoiding social interaction",
+                  "Finding the right balance",
+                  "Never leaving home"
+                ],
+                "correct": 2
+              }
+            ]
+          }
+        ],
+        "writing": [
+          {
+            "id": "w1",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "Could you please explain that again?",
+            "acceptable_answers": [
+              "Czy mógłbyś to jeszcze raz wytłumaczyć?",
+              "Czy mogłabyś to jeszcze raz wytłumaczyć?",
+              "Czy moglbys to jeszcze raz wytlumaczyc?",
+              "czy mógłbyś to jeszcze raz wytłumaczyć?"
+            ],
+            "hint": "Czy mógłbyś/mogłabyś..."
+          },
+          {
+            "id": "w2",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "What do you think about this idea?",
+            "acceptable_answers": [
+              "Co sądzisz o tym pomyśle?",
+              "Co sadzisz o tym pomyśle?",
+              "co sądzisz o tym pomyśle?"
+            ],
+            "hint": "Co sądzisz..."
+          },
+          {
+            "id": "w3",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "I agree with you completely.",
+            "acceptable_answers": [
+              "Zgadzam się z tobą całkowicie.",
+              "Zgadzam sie z toba calkowicie.",
+              "zgadzam się z tobą całkowicie."
+            ],
+            "hint": "Zgadzam..."
+          },
+          {
+            "id": "w4",
+            "type": "translate",
+            "prompt": "Translate to Polish:",
+            "sentence": "I'm not sure if that's a good idea.",
+            "acceptable_answers": [
+              "Nie jestem pewien, czy to dobry pomysł.",
+              "Nie jestem pewna, czy to dobry pomysł.",
+              "Nie jestem pewien, czy to dobry pomysl.",
+              "nie jestem pewien, czy to dobry pomysł."
+            ],
+            "hint": "Nie jestem pewien/pewna..."
+          }
+        ],
+        "listening": [
+          {
+            "id": "l1",
+            "type": "type_heard",
+            "text": "Jakie są twoje plany na przyszłość?",
+            "translation": "What are your plans for the future?",
+            "acceptable_answers": [
+              "Jakie są twoje plany na przyszłość?",
+              "Jakie sa twoje plany na przyszlosc?",
+              "jakie są twoje plany na przyszłość?"
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "type_heard",
+            "text": "Czy masz jakieś pytania?",
+            "translation": "Do you have any questions?",
+            "acceptable_answers": [
+              "Czy masz jakieś pytania?",
+              "Czy masz jakies pytania?",
+              "czy masz jakieś pytania?"
+            ]
+          },
+          {
+            "id": "l3",
+            "type": "type_heard",
+            "text": "Bardzo miło mi cię poznać.",
+            "translation": "It's very nice to meet you.",
+            "acceptable_answers": [
+              "Bardzo miło mi cię poznać.",
+              "Bardzo milo mi cie poznac.",
+              "bardzo miło mi cię poznać."
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "type_heard",
+            "text": "Co o tym myślisz?",
+            "translation": "What do you think about it?",
+            "acceptable_answers": [
+              "Co o tym myślisz?",
+              "Co o tym myslisz?",
+              "co o tym myślisz?"
+            ]
+          }
+        ],
+        "speaking": [
+          {
+            "id": "s1",
+            "type": "repeat",
+            "text": "Możemy porozmawiać o tym później?",
+            "translation": "Can we talk about it later?",
+            "key_words": [
+              "możemy",
+              "porozmawiać",
+              "później"
+            ]
+          },
+          {
+            "id": "s2",
+            "type": "repeat",
+            "text": "Co byś zrobił na moim miejscu?",
+            "translation": "What would you do in my place?",
+            "key_words": [
+              "co",
+              "zrobił",
+              "miejscu"
+            ]
+          },
+          {
+            "id": "s3",
+            "type": "repeat",
+            "text": "To bardzo interesujące zagadnienie.",
+            "translation": "That's a very interesting issue.",
+            "key_words": [
+              "bardzo",
+              "interesujące",
+              "zagadnienie"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

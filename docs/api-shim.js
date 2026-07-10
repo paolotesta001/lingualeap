@@ -9,9 +9,9 @@
     const DATA = './data/';
     const CODE_FILE = {
         en: 'english.json', es: 'spanish.json', it: 'italian.json',
-        fr: 'french.json', de: 'german.json',
+        fr: 'french.json', de: 'german.json', pl: 'polish.json',
     };
-    const LANG_NAMES = { en: 'English', es: 'Spanish', it: 'Italian', fr: 'French', de: 'German' };
+    const LANG_NAMES = { en: 'English', es: 'Spanish', it: 'Italian', fr: 'French', de: 'German', pl: 'Polish' };
     const DEEPSEEK_MODEL = 'deepseek-v4-flash';
     // V4 Flash is a reasoning model: it spends tokens on hidden reasoning before
     // the answer, so we pad the output budget to leave room for the content.

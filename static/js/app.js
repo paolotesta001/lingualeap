@@ -2,7 +2,7 @@
 
 const App = {
     // State
-    version: '1.0.0',
+    version: '1.1.0',
     languages: [],
     currentLang: null,
     currentLangData: null,
@@ -21,11 +21,14 @@ const App = {
     streak: 0,
     lastPractice: null,
     hearts: 5,
+    // Per-language word lists. `wordsByLang[code] = {saved, reverse, learned, sentences}`.
+    // The four lists below are ACTIVE references into the current language's bucket.
+    wordsByLang: {},
     savedWords: [], // [{source, translation, langFrom, langTo, addedAt}]
     reverseWords: [], // Words deleted from flashcards — reversed direction
     learnedWords: [], // Words fully learned (deleted from reverse tab)
     mySentences: [], // Phrases saved from Movie Phrases [{source, translation, langFrom, langTo}]
-    wordsLearned: 0, // legacy counter, kept for backwards compat
+    wordsLearned: 0, // learned count for the ACTIVE language
     currentWordsTab: 'saved', // 'saved', 'reverse', 'sentences', or 'learned' (virtual, via modal)
 
     // Movie phrases state
@@ -70,11 +73,48 @@ const App = {
         this.streak = data.streak || 0;
         this.lastPractice = data.lastPractice || null;
         this.hearts = data.hearts !== undefined ? data.hearts : 5;
-        this.savedWords = data.savedWords || [];
-        this.reverseWords = data.reverseWords || [];
-        this.learnedWords = data.learnedWords || [];
-        this.mySentences = data.mySentences || [];
-        this.wordsLearned = data.wordsLearned || this.learnedWords.length || 0;
+
+        if (data.wordsByLang) {
+            this.wordsByLang = data.wordsByLang;
+        } else {
+            // Migrate legacy shared lists (pre v1.1) into the English bucket once —
+            // the old data was English vocabulary. Everything is per-language now.
+            this.wordsByLang = {};
+            if (data.savedWords || data.reverseWords || data.learnedWords || data.mySentences) {
+                this.wordsByLang.en = {
+                    saved: data.savedWords || [],
+                    reverse: data.reverseWords || [],
+                    learned: data.learnedWords || [],
+                    sentences: data.mySentences || [],
+                };
+            }
+        }
+        // Active lists start empty; _activateLang() points them at a bucket
+        // once a language is chosen.
+        this.savedWords = [];
+        this.reverseWords = [];
+        this.learnedWords = [];
+        this.mySentences = [];
+        this.wordsLearned = 0;
+        if (this.currentLang) this._activateLang(this.currentLang);
+    },
+
+    // Point the active word lists at the given language's bucket (creating it if new).
+    _activateLang(code) {
+        if (!code) return;
+        if (!this.wordsByLang[code]) {
+            this.wordsByLang[code] = { saved: [], reverse: [], learned: [], sentences: [] };
+        }
+        const b = this.wordsByLang[code];
+        b.saved = b.saved || [];
+        b.reverse = b.reverse || [];
+        b.learned = b.learned || [];
+        b.sentences = b.sentences || [];
+        this.savedWords = b.saved;
+        this.reverseWords = b.reverse;
+        this.learnedWords = b.learned;
+        this.mySentences = b.sentences;
+        this.wordsLearned = b.learned.length;
     },
 
     _getDataSnapshot() {
@@ -84,11 +124,7 @@ const App = {
             streak: this.streak,
             lastPractice: this.lastPractice,
             hearts: this.hearts,
-            savedWords: this.savedWords,
-            reverseWords: this.reverseWords,
-            learnedWords: this.learnedWords,
-            mySentences: this.mySentences,
-            wordsLearned: this.wordsLearned,
+            wordsByLang: this.wordsByLang,
         };
     },
 
@@ -362,6 +398,7 @@ const App = {
         { code: 'it', name: 'Italian', flag: '🇮🇹' },
         { code: 'fr', name: 'French', flag: '🇫🇷' },
         { code: 'de', name: 'German', flag: '🇩🇪' },
+        { code: 'pl', name: 'Polish', flag: '🇵🇱' },
     ],
 
     openDictionary() {
@@ -541,7 +578,7 @@ const App = {
             // Listen to source word
             const listenBtn = document.getElementById('dictListenSource');
             if (listenBtn) {
-                const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE' };
+                const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE', pl: 'pl-PL' };
                 listenBtn.addEventListener('click', () => {
                     this.speak(data.query, ttsMap[this.dictFromLang] || 'en-US');
                 });
@@ -549,7 +586,7 @@ const App = {
         }
 
         // Listen buttons on examples
-        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE' };
+        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE', pl: 'pl-PL' };
         container.querySelectorAll('.dict-example-listen').forEach(btn => {
             btn.addEventListener('click', () => {
                 this.speak(btn.dataset.text, ttsMap[this.dictFromLang] || 'en-US');
@@ -746,7 +783,7 @@ const App = {
 
         // Update stats
         document.getElementById('myWordsTotal').textContent = this.savedWords.length;
-        document.getElementById('myWordsLearned').textContent = this.wordsLearned;
+        document.getElementById('myWordsLearned').textContent = this.learnedWords.length;
 
         // Update tab counts + active state
         document.getElementById('tabCountSaved').textContent = this.savedWords.length;
@@ -774,8 +811,8 @@ const App = {
         }
 
         practiceBtn.disabled = false;
-        const names = { en: 'EN', es: 'ES', it: 'IT', fr: 'FR', de: 'DE' };
-        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE' };
+        const names = { en: 'EN', es: 'ES', it: 'IT', fr: 'FR', de: 'DE', pl: 'PL' };
+        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE', pl: 'pl-PL' };
 
         container.innerHTML = list.slice().reverse().map((w, displayIdx) => {
             const realIdx = list.length - 1 - displayIdx;
@@ -819,12 +856,10 @@ const App = {
                 if (!confirm(`Delete ${label}?`)) return;  // No = keep it
                 if (isReverse) {
                     this.reverseWords.splice(idx, 1);
-                    this.wordsLearned++;
                 } else if (isSentences) {
                     this.mySentences.splice(idx, 1);
                 } else {
                     this.savedWords.splice(idx, 1);
-                    this.wordsLearned++;
                 }
                 this.saveProgress();
                 this.renderMyWords();
@@ -903,7 +938,7 @@ const App = {
     // ===== LEARNED WORDS MODAL =====
     openLearnedModal() {
         const body = document.getElementById('learnedModalBody');
-        const names = { en: 'EN', es: 'ES', it: 'IT', fr: 'FR', de: 'DE' };
+        const names = { en: 'EN', es: 'ES', it: 'IT', fr: 'FR', de: 'DE', pl: 'PL' };
         document.getElementById('learnedModalCount').textContent = this.learnedWords.length;
 
         if (this.learnedWords.length === 0) {
@@ -1102,7 +1137,7 @@ const App = {
     },
 
     ttsCodeFor(lang) {
-        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE' };
+        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE', pl: 'pl-PL' };
         return ttsMap[lang] || 'en-US';
     },
 
@@ -1272,6 +1307,7 @@ const App = {
             }
             this.currentLangData = await res.json();
             this.currentLang = code;
+            this._activateLang(code);  // switch My Words to this language's own lists
             return true;
         } catch (err) {
             console.error('Failed to load language data:', err);
@@ -2239,7 +2275,7 @@ const App = {
 
         document.getElementById('lessonDetailTitle').textContent = `${level.icon} Level ${level.id}: ${level.name}`;
         const body = document.getElementById('lessonDetailBody');
-        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE' };
+        const ttsMap = { en: 'en-US', es: 'es-ES', it: 'it-IT', fr: 'fr-FR', de: 'de-DE', pl: 'pl-PL' };
         const ttsCode = ttsMap[this.currentLang] || 'en-US';
 
         let html = `<p style="color: var(--text-secondary); margin-bottom: 20px;">${level.desc}</p>`;

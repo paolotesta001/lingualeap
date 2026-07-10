@@ -4023,5 +4023,522 @@
         "correct": 1
       }
     ]
+  },
+  "pl": {
+    "language_code": "pl",
+    "levels": [
+      {
+        "id": 1,
+        "name": "First Words",
+        "icon": "👋",
+        "desc": "Learn basic greetings and introductions.",
+        "vocab": [
+          {
+            "target": "Cześć",
+            "translation": "Hi / Hello"
+          },
+          {
+            "target": "Dzień dobry",
+            "translation": "Good morning / Good day"
+          },
+          {
+            "target": "Dobry wieczór",
+            "translation": "Good evening"
+          },
+          {
+            "target": "Do widzenia",
+            "translation": "Goodbye"
+          },
+          {
+            "target": "Proszę",
+            "translation": "Please / You're welcome"
+          },
+          {
+            "target": "Dziękuję",
+            "translation": "Thank you"
+          },
+          {
+            "target": "Przepraszam",
+            "translation": "Excuse me / Sorry"
+          },
+          {
+            "target": "Tak",
+            "translation": "Yes"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Numbers & Colors",
+        "icon": "🔢",
+        "desc": "Count and describe things with colors.",
+        "vocab": [
+          {
+            "target": "Jeden",
+            "translation": "One"
+          },
+          {
+            "target": "Dwa",
+            "translation": "Two"
+          },
+          {
+            "target": "Trzy",
+            "translation": "Three"
+          },
+          {
+            "target": "Czerwony",
+            "translation": "Red"
+          },
+          {
+            "target": "Niebieski",
+            "translation": "Blue"
+          },
+          {
+            "target": "Zielony",
+            "translation": "Green"
+          },
+          {
+            "target": "Czarny",
+            "translation": "Black"
+          },
+          {
+            "target": "Biały",
+            "translation": "White"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Family & People",
+        "icon": "👨‍👩‍👧‍👦",
+        "desc": "Talk about your family and other people.",
+        "vocab": [
+          {
+            "target": "Mama",
+            "translation": "Mom"
+          },
+          {
+            "target": "Tata",
+            "translation": "Dad"
+          },
+          {
+            "target": "Brat",
+            "translation": "Brother"
+          },
+          {
+            "target": "Siostra",
+            "translation": "Sister"
+          },
+          {
+            "target": "Rodzina",
+            "translation": "Family"
+          },
+          {
+            "target": "Kobieta",
+            "translation": "Woman"
+          },
+          {
+            "target": "Mężczyzna",
+            "translation": "Man"
+          },
+          {
+            "target": "Dziecko",
+            "translation": "Child"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Food & Drink",
+        "icon": "🍔",
+        "desc": "Order food and drinks in Polish.",
+        "vocab": [
+          {
+            "target": "Woda",
+            "translation": "Water"
+          },
+          {
+            "target": "Kawa",
+            "translation": "Coffee"
+          },
+          {
+            "target": "Herbata",
+            "translation": "Tea"
+          },
+          {
+            "target": "Chleb",
+            "translation": "Bread"
+          },
+          {
+            "target": "Ser",
+            "translation": "Cheese"
+          },
+          {
+            "target": "Jabłko",
+            "translation": "Apple"
+          },
+          {
+            "target": "Mięso",
+            "translation": "Meat"
+          },
+          {
+            "target": "Jem",
+            "translation": "I eat"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Everyday Verbs",
+        "icon": "🏃",
+        "desc": "Learn common actions and activities.",
+        "vocab": [
+          {
+            "target": "Iść",
+            "translation": "To go"
+          },
+          {
+            "target": "Mówić",
+            "translation": "To speak"
+          },
+          {
+            "target": "Czytać",
+            "translation": "To read"
+          },
+          {
+            "target": "Pisać",
+            "translation": "To write"
+          },
+          {
+            "target": "Spaś",
+            "translation": "To sleep"
+          },
+          {
+            "target": "Pracować",
+            "translation": "To work"
+          },
+          {
+            "target": "Mieć",
+            "translation": "To have"
+          },
+          {
+            "target": "Być",
+            "translation": "To be"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Home & Places",
+        "icon": "🏠",
+        "desc": "Describe your home and navigate places.",
+        "vocab": [
+          {
+            "target": "Dom",
+            "translation": "House / Home"
+          },
+          {
+            "target": "Pokój",
+            "translation": "Room"
+          },
+          {
+            "target": "Łazienka",
+            "translation": "Bathroom"
+          },
+          {
+            "target": "Kuchnia",
+            "translation": "Kitchen"
+          },
+          {
+            "target": "Miasto",
+            "translation": "City"
+          },
+          {
+            "target": "Ulica",
+            "translation": "Street"
+          },
+          {
+            "target": "Sklep",
+            "translation": "Shop"
+          },
+          {
+            "target": "Szkoła",
+            "translation": "School"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Time & Days",
+        "icon": "⏰",
+        "desc": "Talk about time, days, and dates.",
+        "vocab": [
+          {
+            "target": "Dzisiaj",
+            "translation": "Today"
+          },
+          {
+            "target": "Jutro",
+            "translation": "Tomorrow"
+          },
+          {
+            "target": "Wczoraj",
+            "translation": "Yesterday"
+          },
+          {
+            "target": "Poniedziałek",
+            "translation": "Monday"
+          },
+          {
+            "target": "Niedziela",
+            "translation": "Sunday"
+          },
+          {
+            "target": "Godzina",
+            "translation": "Hour / O'clock"
+          },
+          {
+            "target": "Minuta",
+            "translation": "Minute"
+          },
+          {
+            "target": "Teraz",
+            "translation": "Now"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Travel",
+        "icon": "✈️",
+        "desc": "Learn phrases for traveling and asking directions.",
+        "vocab": [
+          {
+            "target": "Pociąg",
+            "translation": "Train"
+          },
+          {
+            "target": "Autobus",
+            "translation": "Bus"
+          },
+          {
+            "target": "Samochód",
+            "translation": "Car"
+          },
+          {
+            "target": "Lotnisko",
+            "translation": "Airport"
+          },
+          {
+            "target": "Hotel",
+            "translation": "Hotel"
+          },
+          {
+            "target": "Bilet",
+            "translation": "Ticket"
+          },
+          {
+            "target": "Gdzie?",
+            "translation": "Where?"
+          },
+          {
+            "target": "Jak dojechać?",
+            "translation": "How to get there?"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Feelings & Adjectives",
+        "icon": "😊",
+        "desc": "Express emotions and describe things.",
+        "vocab": [
+          {
+            "target": "Szczęśliwy",
+            "translation": "Happy (masc.)"
+          },
+          {
+            "target": "Smutny",
+            "translation": "Sad (masc.)"
+          },
+          {
+            "target": "Zmęczony",
+            "translation": "Tired (masc.)"
+          },
+          {
+            "target": "Głodny",
+            "translation": "Hungry (masc.)"
+          },
+          {
+            "target": "Duży",
+            "translation": "Big"
+          },
+          {
+            "target": "Mały",
+            "translation": "Small"
+          },
+          {
+            "target": "Dobry",
+            "translation": "Good"
+          },
+          {
+            "target": "Zły",
+            "translation": "Bad"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Useful Phrases",
+        "icon": "💬",
+        "desc": "Master common phrases for various situations.",
+        "vocab": [
+          {
+            "target": "Nie rozumiem",
+            "translation": "I don't understand"
+          },
+          {
+            "target": "Mówisz po angielsku?",
+            "translation": "Do you speak English?"
+          },
+          {
+            "target": "Pomocy!",
+            "translation": "Help!"
+          },
+          {
+            "target": "Ile to kosztuje?",
+            "translation": "How much does it cost?"
+          },
+          {
+            "target": "Nie ma za co",
+            "translation": "You're welcome"
+          },
+          {
+            "target": "Smacznego!",
+            "translation": "Enjoy your meal!"
+          },
+          {
+            "target": "Na zdrowie!",
+            "translation": "Cheers! / Bless you!"
+          },
+          {
+            "target": "Powodzenia!",
+            "translation": "Good luck!"
+          }
+        ]
+      }
+    ],
+    "placement_test": [
+      {
+        "level": 1,
+        "question": "How do you say 'Thank you' in Polish?",
+        "options": [
+          "Cześć",
+          "Dzień dobry",
+          "Dziękuję",
+          "Do widzenia"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 2,
+        "question": "How do you say 'Two' in Polish?",
+        "options": [
+          "Jeden",
+          "Trzy",
+          "Dwa",
+          "Cztery"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 3,
+        "question": "How do you say 'Family' in Polish?",
+        "options": [
+          "Mama",
+          "Tata",
+          "Rodzina",
+          "Dziecko"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 4,
+        "question": "How do you say 'Water' in Polish?",
+        "options": [
+          "Kawa",
+          "Herbata",
+          "Wino",
+          "Woda"
+        ],
+        "correct": 3
+      },
+      {
+        "level": 5,
+        "question": "How do you say 'To read' in Polish?",
+        "options": [
+          "Pisać",
+          "Czytać",
+          "Mówić",
+          "Spaś"
+        ],
+        "correct": 1
+      },
+      {
+        "level": 6,
+        "question": "How do you say 'House' in Polish?",
+        "options": [
+          "Ulica",
+          "Miasto",
+          "Dom",
+          "Sklep"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 7,
+        "question": "How do you say 'Tomorrow' in Polish?",
+        "options": [
+          "Dzisiaj",
+          "Wczoraj",
+          "Jutro",
+          "Teraz"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 8,
+        "question": "How do you say 'Airport' in Polish?",
+        "options": [
+          "Hotel",
+          "Dworzec",
+          "Lotnisko",
+          "Port"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 9,
+        "question": "How do you say 'Happy' (masculine) in Polish?",
+        "options": [
+          "Smutny",
+          "Zmęczony",
+          "Szczęśliwy",
+          "Głodny"
+        ],
+        "correct": 2
+      },
+      {
+        "level": 10,
+        "question": "How do you say 'I don't understand' in Polish?",
+        "options": [
+          "Rozumiem",
+          "Mówisz po angielsku?",
+          "Nie rozumiem",
+          "Pomocy!"
+        ],
+        "correct": 2
+      }
+    ]
   }
 }
